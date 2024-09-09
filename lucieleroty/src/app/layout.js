@@ -1,0 +1,25 @@
+import localFont from "next/font/local";
+import "./globals.css";
+
+const pompiere = localFont({
+  src: "../../public/fonts/Pompiere.ttf",
+  variable: "--font-pompiere",
+  weight: "100 900",
+});
+
+export const metadata = {
+  title: "Lucie Leroty - Développeuse web et photographe freelance - Création de sites web",
+  description: "Lucie Leroty, développeuse web et photographe freelance, propose des services de création de sites web professionnels et de photographie sur mesure. Découvrez comment nous pouvons transformer vos idées en réalité avec des solutions web et visuelles adaptées à vos besoins.",
+};
+
+export default function RootLayout({ children }) {
+  return (
+    <html lang="fr">
+      <body
+        className={`${pompiere.variable} antialiased`}
+      >
+        {children}
+      </body>
+    </html>
+  );
+}
