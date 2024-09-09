@@ -16,7 +16,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="fr">
       <body
-        className={`${pompiere.variable} antialiased`}
+        className={`${pompiere.variable} antialiased flex flex-col min-h-screen`}
       >
         {children}
       </body>

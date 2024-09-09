@@ -65,7 +65,9 @@ const Header = () => {
           <li>Photographie</li>
           <li className="lg:text-white">Contact</li>
         </ul>
-        <span className="lg:z-10 flex absolute lg:w-40 lg:h-40 lg:bg-darkgreen text-white rounded-full lg:-mt-20 lg:-right-16"></span>
+        <div className="relative">
+        <span className="lg:z-10 flex absolute lg:w-40 lg:h-40 lg:bg-darkgreen text-white rounded-full lg:-mt-20 lg:-right-12 overflow-hidden"></span>
+        </div>
       </nav>
     </header>
   );
