@@ -57,7 +57,7 @@ const Header = () => {
         } absolute right-0 w-32 md:w-40 p-3 rounded-bl-xl bg-verylightgray shadow-lg lg:relative lg:top-0 lg:left-auto lg:flex lg:space-x-6 lg:w-auto lg:bg-transparent lg:shadow-none`}
       >
         <ul
-          className={`lg:z-30 lg:flex flex-row lg:space-x-10 text-xs md:text-sm lg:text-lg lg:mr-4`}
+          className={`lg:z-30 lg:flex flex-row lg:space-x-10 text-xs md:text-sm lg:text-lg lg:mr-4 lg:mt-1`}
         >
           <li>Accueil</li>
           <li>Création de sites</li>
