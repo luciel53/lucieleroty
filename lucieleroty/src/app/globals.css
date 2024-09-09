@@ -5,12 +5,13 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --color-darkgreen: #59A76B;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --font-color: #0a0a0a;
+    --background: #EAE4E4;
   }
 }
 
@@ -22,7 +23,10 @@ body {
   color: var(--foreground);
   background: var(--background);
   font-family: var(--font-pompiere), Arial, Helvetica, sans-serif;
+}
 
+.font-glitch-important {
+  font-family: var(--font-glitch) !important;
 }
 
 @layer utilities {

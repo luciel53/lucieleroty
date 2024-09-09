@@ -4,14 +4,23 @@ module.exports = {
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./node_modules/tailwindcss-animated/**/*.js",
   ],
   theme: {
     extend: {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        darkgreen: "#59A76B",
+        lightgray: "#EAE4E4",
+        verylightgray: "#F7F4F4",
       },
+      dropShadow: {
+        'left': '-10px 5px 8px rgba(0, 0, 0, 0.23)',
+      }
     },
   },
-  plugins: [],
+  plugins: [
+    require('tailwindcss-animated'),
+  ],
 };
