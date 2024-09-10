@@ -2,7 +2,8 @@ import Image from "next/image";
 import localFont from "next/font/local";
 import Header from "./components/Header.js";
 import Footer from "./components/Footer.js";
-import Bio from "./components/Bio.js";
+import Bio from "./components/Home/Bio.js";
+import HomeCarousel from "./components/HomeCarousel/CarouselHome.js";
 
 export default function Home() {
   return (
@@ -19,9 +20,11 @@ export default function Home() {
           </h2>
         </div>
         {/* Bubble */}
-        <div className="lg:w-80 lg:h-80 bg-lightgreen animate-bounce drop-shadow-lg rounded-full"></div>
+        <div className="lg:w-80 lg:h-80 bg-lightgreen z-0 absolute drop-shadow-lg rounded-full"></div>
         {/* Carousel */}
-        <section></section>
+        <section className="z-20 relative lg:mt-7">
+          <HomeCarousel />
+        </section>
 
         {/* Bio */}
         <Bio />

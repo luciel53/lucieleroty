@@ -11,7 +11,7 @@ module.exports = {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
-        darkgreen: "#59A76B",
+        darkgreen: "#317A42",
         lightgreen: "#7CC78D",
         lightgray: "#EAE4E4",
         verylightgray: "#F7F4F4",
