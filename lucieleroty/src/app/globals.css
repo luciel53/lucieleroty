@@ -2,17 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: 'SpecialElite';
+  src: url('/fonts/SpecialElite-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
   --color-darkgreen: #59A76B;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --font-color: #0a0a0a;
-    --background: #EAE4E4;
-  }
+  --font-specialelite: 'SpecialElite', sans-serif;
 }
 
 html {

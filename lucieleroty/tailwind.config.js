@@ -17,7 +17,10 @@ module.exports = {
       },
       dropShadow: {
         'left': '-10px 5px 8px rgba(0, 0, 0, 0.23)',
-      }
+      },
+      fontFamily: {
+        specialelite: ['var(--font-specialelite)', 'sans-serif'],
+      },
     },
   },
   plugins: [
