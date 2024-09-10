@@ -23,11 +23,11 @@ export default function Home() {
         <section></section>
 
         {/* Bio */}
-        <section className="flex flex-row">
-          <div className="flex flex-col  w-56 h-56 bg-darkgreen rounded-full -ml-10">
-            <div className="p-3 w-40 h-auto ml-10">
-              <h3 className="text-[0.6rem] ml-6 mb-3 font-specialelite">Qui suis-je?</h3>
-              <p className="text-[0.55rem] text-justify">
+        <section className="flex flex-row mt-10 lg:justify-evenly lg:space-x-72">
+          <div className="flex flex-col z-10 w-56 h-56 md:w-80 lg:w-96 md:h-80 lg:h-96 bg-darkgreen rounded-full drop-shadow-lg -ml-10 md:-ml-5 ">
+            <div className="p-3 w-40 md:w-52 lg:w-72 h-auto ml-10 md:ml-12">
+              <h3 className="text-[0.6rem] md:text-[0.8rem] lg:text-[1.1rem] md:mt-1 lg:mt-3 ml-6 md:ml-12 lg:ml-16 mb-3 font-specialelite">Qui suis-je?</h3>
+              <p className="text-[0.55rem] md:text-[0.8rem] lg:text-[1rem] text-justify">
                 En tant que développeuse web freelance et photographe, diplômée
                 de l’école internationale Holberton School. Polyvalente, je crée
                 des sites internet sur-mesure qui reflètent votre univers. De la
@@ -40,7 +40,9 @@ export default function Home() {
             </div>
           </div>
           {/* avatar */}
-          <div></div>
+          <div className="w-20 md:w-36 h-20 md:h-36 absolute -mt-5 right-4 lg:right-auto overflow-hidden">
+            <Image src="/images/Photos/CVme1.png" alt="Avatar" layout="responsive" width={400} height={400} className=" relative" />
+          </div>
         </section>
       </main>
       <Footer />
