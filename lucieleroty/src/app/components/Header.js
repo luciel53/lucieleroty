@@ -40,7 +40,7 @@ const Header = () => {
         {/* Burger Menu for tablet and mobile */}
         <button
           onClick={toggleMenu}
-          className="relative z-10 block bg-darkgreen rounded-full w-16 md:w-20 h-16 md:h-20 -mt-6 md:-mt-4 -mr-6 md:-mr-5 lg:hidden p-2"
+          className="relative z-30 block bg-darkgreen rounded-full w-16 md:w-20 h-16 md:h-20 -mt-6 md:-mt-4 -mr-6 md:-mr-5 lg:hidden p-2"
         >
           <span className="sr-only">Ouvrir le menu</span>
           <Image
@@ -54,7 +54,7 @@ const Header = () => {
       <nav
         className={`lg:flex lg:space-x-6 ${
           isMenuOpen ? "block animate-fade-left" : "hidden"
-        } absolute right-0 w-32 md:w-40 p-3 rounded-bl-xl bg-verylightgray shadow-lg lg:relative lg:top-0 lg:left-auto lg:flex lg:space-x-6 lg:w-auto lg:bg-transparent lg:shadow-none`}
+        } absolute z-10 right-0 w-32 md:w-40 p-3 rounded-bl-xl bg-verylightgray shadow-lg lg:relative lg:top-0 lg:left-auto lg:flex lg:space-x-6 lg:w-auto lg:bg-transparent lg:shadow-none`}
       >
         <ul
           className={`lg:z-30 lg:flex flex-row lg:space-x-10 text-xs md:text-base lg:text-lg lg:mr-4 lg:mt-1`}
