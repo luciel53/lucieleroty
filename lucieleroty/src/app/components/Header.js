@@ -66,7 +66,7 @@ const Header = () => {
           <li className="lg:text-white">Contact</li>
         </ul>
         <div className="relative">
-        <span className="lg:z-10 flex absolute lg:w-40 lg:h-40 lg:bg-darkgreen text-white rounded-full lg:-mt-20 lg:-right-12 overflow-hidden"></span>
+        <span className="lg:z-10 flex absolute drop-shadow-lg animate-bounce lg:w-40 lg:h-40 lg:bg-darkgreen text-white rounded-full lg:-mt-20 lg:-right-12 overflow-hidden"></span>
         </div>
       </nav>
     </header>

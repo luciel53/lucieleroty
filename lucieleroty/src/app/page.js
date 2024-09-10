@@ -8,10 +8,40 @@ export default function Home() {
     <>
       <Header />
       <main className="flex-grow">
+        {/* title */}
         <div className="flex flex-col z-0 font-specialelite mt-1">
-          <h1 className="mx-auto drop-shadow-left text-[0.7rem] md:text-lg lg:text-2xl">Développeuse Web Freelance</h1>
-          <h2 className="mx-auto drop-shadow-left text-gray-500 text-[0.6rem] md:text-sm lg:text-lg -mt-1">& Photographe</h2>
+          <h1 className="mx-auto drop-shadow-left text-[0.7rem] md:text-lg lg:text-2xl">
+            Développeuse Web Freelance
+          </h1>
+          <h2 className="mx-auto drop-shadow-left text-gray-500 text-[0.6rem] md:text-sm lg:text-lg -mt-1">
+            & Photographe
+          </h2>
         </div>
+        {/* Bubble */}
+        <div className="lg:w-80 lg:h-80 bg-lightgreen animate-bounce drop-shadow-lg rounded-full"></div>
+        {/* Carousel */}
+        <section></section>
+
+        {/* Bio */}
+        <section className="flex flex-row">
+          <div className="flex flex-col  w-56 h-56 bg-darkgreen rounded-full -ml-10">
+            <div className="p-3 w-40 h-auto ml-10">
+              <h3 className="text-[0.6rem] ml-6 mb-3 font-specialelite">Qui suis-je?</h3>
+              <p className="text-[0.55rem] text-justify">
+                En tant que développeuse web freelance et photographe, diplômée
+                de l’école internationale Holberton School. Polyvalente, je crée
+                des sites internet sur-mesure qui reflètent votre univers. De la
+                conception graphique à la programmation, je vous accompagne pas
+                à pas pour donner vie à votre projet web. Des sites "one-page"
+                aux sites multipages, je m'adapte à vos besoins. Passionnée de
+                photographie, je vous accompagne également pour la réalisation
+                de vos projets photographiques (particuliers ou professionnels).
+              </p>
+            </div>
+          </div>
+          {/* avatar */}
+          <div></div>
+        </section>
       </main>
       <Footer />
     </>
