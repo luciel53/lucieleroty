@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const HomeCarouselCard = ({ img, title, quote, paragraph }) => {
   return (
-    <div className="flex flex-row justify-center space-x-12 mx-auto lg:w-[55rem] lg:h-[20rem] bg-verylightgray rounded-xl border-2 border-lightgreen shadow-lg opacity-90">
+    <div className="flex flex-row justify-center space-x-12 mx-auto lg:w-[55rem] lg:h-[20rem] bg-verylightgray rounded-xl border-2 border-lightgreen shadow-lg opacity-90 transition-transform duration-500 ease-in-out transform">
       {/* Description of the card */}
       <div className="flex flex-col lg:w-64 justify-around">
         <div className="flex flex-row lg:mt-4">

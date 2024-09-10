@@ -84,8 +84,17 @@ const HomeCarousel = () => {
       >
         <ArrowLeft />
       </button>
-      <div>
-        <Card {...cards[currentIndex]} />
+      <div className="overflow-hidden">
+        <div
+          className="flex transition-transform duration-500 ease-in-out"
+          style={{ transform: `translateX(-${currentIndex * 100}%)` }}
+        >
+          {cards.map((card, index) => (
+            <div key={index} className="flex-none w-full">
+              <Card {...card} />
+            </div>
+          ))}
+        </div>
       </div>
       <button
         onClick={nextCard}
