@@ -77,10 +77,10 @@ const HomeCarousel = () => {
   };
 
   return (
-    <div className=" flex items-center justify-center -space-x-16">
+    <div className=" flex items-center justify-center -space-x-12">
       <button
         onClick={prevCard}
-        className="bg-darkgreen relative z-30 p-2 rounded-full shadow-md hover:bg-lightgreen transition"
+        className="bg-darkgreen relative z-30 p-2 left-16 rounded-full shadow-md hover:bg-lightgreen transition"
       >
         <ArrowLeft />
       </button>
@@ -98,7 +98,7 @@ const HomeCarousel = () => {
       </div>
       <button
         onClick={nextCard}
-        className="bg-darkgreen relative z-30 p-2 rounded-full shadow-md hover:bg-lightgreen transition"
+        className="bg-darkgreen relative right-16 z-30 p-2 rounded-full shadow-md hover:bg-lightgreen transition"
       >
         <ArrowRight />
       </button>
