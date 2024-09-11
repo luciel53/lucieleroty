@@ -24,7 +24,7 @@ const cards = [
     quote:
       '"La photographie est le seul langage qui peut être compris partout dans le monde." Bruno Barbey',
     paragraph:
-      "Je crée des sites web, sites vitrines pour les artisans, PME... Un site sur mesure permet de répondre à vos besoins et objectifs particuliers. Démarquez-vous avec un site web professionnel à votre image, adapté à tous les écrans (tablettes, mobiles...)! Un site web est important pour attirer de nouveaux clients et faire grandir votre entreprise.",
+      "Possibilité de réaliser des photos pour illustrer votre site web, mais je suis également disponible  pour les particuliers (grossesse, mariage, cérémonies, photos familiales, reportages photos, animaux, paysages, ...)",
   },
 ];
 
