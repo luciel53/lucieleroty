@@ -22,7 +22,7 @@ export default function Home() {
         {/* Bubble */}
         <div className="lg:w-80 lg:h-80 bg-lightgreen z-0 absolute drop-shadow-lg rounded-full"></div>
         {/* Carousel */}
-        <section className="z-20 relative lg:mt-7">
+        <section className="z-10 relative mt-3 md:mt-7">
           <HomeCarousel />
         </section>
 
