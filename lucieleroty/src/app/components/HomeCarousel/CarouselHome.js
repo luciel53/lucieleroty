@@ -35,7 +35,7 @@ const ArrowLeft = () => (
     fill="none"
     viewBox="0 0 24 24"
     stroke="currentColor"
-    className="w-8 h-8"
+    className="w-4 h-4 md:w-8 md:h-8"
   >
     <path
       strokeLinecap="round"
@@ -52,7 +52,7 @@ const ArrowRight = () => (
     fill="none"
     viewBox="0 0 24 24"
     stroke="currentColor"
-    className="w-8 h-8"
+    className="w-4 h-4 md:w-8 md:h-8"
   >
     <path
       strokeLinecap="round"
@@ -78,9 +78,10 @@ const HomeCarousel = () => {
 
   return (
     <div className=" flex items-center justify-center -space-x-12">
+      {/* Left button */}
       <button
         onClick={prevCard}
-        className="bg-darkgreen relative z-30 p-2 left-16 rounded-full shadow-md hover:bg-lightgreen transition"
+        className="bg-darkgreen relative z-30 p-0.5 md:p-2 left-2 md:left-16 rounded-full shadow-md hover:bg-lightgreen transition"
       >
         <ArrowLeft />
       </button>
@@ -96,9 +97,10 @@ const HomeCarousel = () => {
           ))}
         </div>
       </div>
+      {/* Right button */}
       <button
         onClick={nextCard}
-        className="bg-darkgreen relative right-16 z-30 p-2 rounded-full shadow-md hover:bg-lightgreen transition"
+        className="bg-darkgreen relative right-2 md:right-16 z-30 p-0.5 md:p-2 rounded-full shadow-md hover:bg-lightgreen transition"
       >
         <ArrowRight />
       </button>
