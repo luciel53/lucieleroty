@@ -85,7 +85,7 @@ const HomeCarousel = () => {
       >
         <ArrowLeft />
       </button>
-      <div className="overflow-hidden w-screen">
+      <div className="overflow-hidden w-full">
         <div
           className="flex transition-transform duration-500 ease-in-out"
           style={{ transform: `translateX(-${currentIndex * 100}%)` }}

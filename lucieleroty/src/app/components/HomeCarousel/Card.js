@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const HomeCarouselCard = ({ img, title, quote, paragraph }) => {
   return (
-    <div className="flex flex-wrap-reverse z-0 md:flex-row md:justify-center lg:space-x-12 lg:space-x-0 mx-auto w-[11rem] md:w-[24rem] h-auto lg:pl-12 lg:w-[55rem] lg:h-[20rem] bg-verylightgray rounded-xl border-2 border-lightgreen shadow-lg opacity-90 transition-transform duration-500 ease-in-out transform">
+    <div className="flex flex-wrap-reverse z-20 md:flex-row md:justify-center lg:space-x-12 lg:space-x-0 mx-auto w-[11rem] md:w-[24rem] h-auto lg:pl-12 lg:w-[55rem] lg:h-[20rem] bg-verylightgray rounded-xl border-2 border-lightgreen shadow-lg opacity-90 transition-transform duration-500 ease-in-out transform">
       {/* Description of the card */}
       <div className="flex flex-col lg:flex-grow w-[8rem] md:w-80 lg:w-64 justify-around mx-auto lg:p-10">
         {/* Title & icon */}
