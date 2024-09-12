@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 const HomeCarouselCard = ({ img, title, quote, paragraph }) => {
   return (
@@ -18,15 +19,28 @@ const HomeCarouselCard = ({ img, title, quote, paragraph }) => {
             {title}
           </h2>
         </div>
-        <quote className="text-[0.4rem] md:text-[0.5rem] lg:text-[0.7rem] mx-auto mb-2">{quote}</quote>
-        <p className="text-justify text-[0.5rem] md:text-[0.8rem] lg:text-[1rem] mb-2 lg:my-auto">{paragraph}</p>
-        <button className="bg-darkgreen w-12 h-4 md:w-20 md:h-8 mb-2 lg:mb-2 mx-20 md:mx-60 lg:mx-56 rounded-lg shadow-lg text-verylightgray text-[0.6rem] md:text-lg hover:text-darkgreen hover:bg-verylightgray hover:border-2 hover:border-darkgreen transition-transform duration-300 ease-in-out transform">
-          En savoir +
-        </button>
+        <quote className="text-[0.4rem] md:text-[0.5rem] lg:text-[0.7rem] mx-auto mb-2">
+          {quote}
+        </quote>
+        <p className="text-justify text-[0.5rem] md:text-[0.8rem] lg:text-[1rem] mb-2 lg:my-auto">
+          {paragraph}
+        </p>
+        <Link href="website-creation">
+          <button className="bg-darkgreen w-12 h-4 md:w-20 md:h-8 mb-2 lg:mb-2 mx-20 md:mx-60 lg:mx-56 rounded-lg shadow-lg text-verylightgray text-[0.6rem] md:text-lg hover:text-darkgreen hover:bg-verylightgray hover:border-2 hover:border-darkgreen transition-transform duration-300 ease-in-out transform">
+            En savoir +
+          </button>
+        </Link>
       </div>
       {/* Picture */}
       <div className="my-auto lg:mx-auto lg:flex-grow ">
-        <Image src={img} alt={title} width={800} height={800} priority className="rounded-2xl p-2 lg:pr-auto" />
+        <Image
+          src={img}
+          alt={title}
+          width={800}
+          height={800}
+          priority
+          className="rounded-2xl p-2 lg:pr-auto"
+        />
       </div>
     </div>
   );

@@ -25,6 +25,7 @@ const Header = () => {
   return (
     <header className="flex flex-row justify-between w-full lg:justify-around">
       {/* Logo */}
+      <Link href="/">
       <div className="flex flex-row animate-rotate-y animate-once animate-delay-[1000ms] animate-ease-in">
         <Image
           src={logo}
@@ -37,6 +38,7 @@ const Header = () => {
           Lucie Leroty
         </span>
       </div>
+      </Link>
       {/* Container to hide overflow */}
       <div className="relative overflow-hidden">
         {/* Burger Menu for tablet and mobile */}
@@ -61,15 +63,31 @@ const Header = () => {
         <ul
           className={`lg:z-30 lg:flex flex-row lg:space-x-10 text-xs md:text-base lg:text-lg lg:mr-4 lg:mt-1`}
         >
-          <li>Accueil</li>
+          <li>
+          <Link href="/">
+            Accueil
+            </Link>
+            </li>
           <li>
             <Link href="/website-creation">
               Création de sites
             </Link>
           </li>
-          <li>Design</li>
-          <li>Photographie</li>
-          <li className="lg:text-white">Contact</li>
+          <li>
+            <Link href="/design">
+            Design
+            </Link>
+            </li>
+          <li>
+            <Link href="/photography">
+            Photographie
+            </Link>
+            </li>
+          <li className="lg:text-white">
+            <Link href="/contact">
+            Contact
+            </Link>
+            </li>
         </ul>
         {/* Bubble on Contact */}
         <div className="relative">
