@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Card from "./Card";
 
 const cards = [
@@ -34,7 +34,7 @@ const ArrowLeft = () => (
     xmlns="http://www.w3.org/2000/svg"
     fill="none"
     viewBox="0 0 24 24"
-    stroke="currentColor"
+    stroke="lightgray"
     className="w-4 h-4 lg:w-8 lg:h-8"
   >
     <path
@@ -51,7 +51,7 @@ const ArrowRight = () => (
     xmlns="http://www.w3.org/2000/svg"
     fill="none"
     viewBox="0 0 24 24"
-    stroke="currentColor"
+    stroke="lightgray"
     className="w-4 h-4 lg:w-8 lg:h-8"
   >
     <path
@@ -75,6 +75,17 @@ const HomeCarousel = () => {
       prevIndex === 0 ? cards.length - 1 : prevIndex - 1
     );
   };
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      nextCard();
+    }, 3000);
+
+    // Clean up
+    return () => {
+      clearInterval(interval);
+    };
+  }, []);
 
   return (
     <div className=" flex flex-row items-center justify-center -space-x-5 md:-space-x-12 z-0">
