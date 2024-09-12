@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 
-const HomeCarouselCard = ({ img, title, quote, paragraph }) => {
+const HomeCarouselCard = ({ img, title, quote, paragraph, link }) => {
   return (
     <div className="flex flex-wrap-reverse z-20 md:flex-row md:justify-center mx-auto w-[11rem] md:w-[24rem] h-auto lg:pl-12 lg:w-[55rem] lg:h-[20.5rem] bg-verylightgray rounded-xl border-2 border-lightgreen shadow-lg opacity-90 transition-transform duration-500 ease-in-out transform">
       {/* Description of the card */}
@@ -25,7 +25,7 @@ const HomeCarouselCard = ({ img, title, quote, paragraph }) => {
         <p className="text-justify text-[0.5rem] md:text-[0.8rem] lg:text-[1rem] mb-2 lg:my-auto">
           {paragraph}
         </p>
-        <Link href="website-creation">
+        <Link href={link}>
           <button className="bg-darkgreen w-12 h-4 md:w-20 md:h-8 mb-2 lg:mb-2 mx-20 md:mx-60 lg:mx-56 rounded-lg shadow-lg text-verylightgray text-[0.6rem] md:text-lg hover:text-darkgreen hover:bg-verylightgray hover:border-2 hover:border-darkgreen transition-transform duration-300 ease-in-out transform">
             En savoir +
           </button>

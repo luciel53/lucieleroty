@@ -10,14 +10,16 @@ const cards = [
     quote: '"Votre entreprise, votre histoire, votre site web."',
     paragraph:
       "Je crée des sites web, sites vitrines pour les artisans, PME... Un site sur mesure permet de répondre à vos besoins et objectifs particuliers. Démarquez-vous avec un site web professionnel à votre image, adapté à tous les écrans (tablettes, mobiles..) ! Un site web est important pour attirer de nouveaux clients et faire grandir votre entreprise. ",
-  },
+    link: "/website-creation",
+    },
   {
     img: "/images/CarouselHome/design.png",
     title: "Création de designs",
     quote: '"Le design est la pensée rendue visuelle." Saul Bass',
     paragraph:
       "Réalisation de maquettes pour vos sites web, vos flyers ou encore vos logos. Je suis à l'éccoute de vos préférences pour mettre en place une chartre graphique qui vous ressemble.",
-  },
+    link: "/design",
+    },
   {
     img: "/images/CarouselHome/chenonceau.jpg",
     title: "Photographie",
@@ -25,7 +27,8 @@ const cards = [
       '"La photographie est le seul langage qui peut être compris partout dans le monde." Bruno Barbey',
     paragraph:
       "Possibilité de réaliser des photos pour illustrer votre site web, mais je suis également disponible  pour les particuliers (grossesse, mariage, cérémonies, photos familiales, reportages photos, animaux, paysages, ...)",
-  },
+    link: "/photography",
+    },
 ];
 
 // Arrows
