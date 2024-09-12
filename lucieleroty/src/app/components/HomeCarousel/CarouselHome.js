@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import Card from "./Card";
 
 const cards = [
@@ -65,6 +65,7 @@ const ArrowRight = () => (
 
 const HomeCarousel = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const intervalRef = useRef(null); // Use a ref to keep track of the interval
 
   const nextCard = () => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % cards.length);
@@ -76,19 +77,36 @@ const HomeCarousel = () => {
     );
   };
 
-  useEffect(() => {
-    const interval = setInterval(() => {
+   // Function to start the interval
+   const startAutoSlide = () => {
+    intervalRef.current = setInterval(() => {
       nextCard();
-    }, 3000);
+    }, 15000);
+  };
 
-    // Clean up
+  // Function to stop the interval
+  const stopAutoSlide = () => {
+    if (intervalRef.current) {
+      clearInterval(intervalRef.current);
+    }
+  };
+
+
+  useEffect(() => {
+    startAutoSlide(); // Start the auto-slide on component mount
+
+    // Clean up interval on unmount
     return () => {
-      clearInterval(interval);
+      stopAutoSlide();
     };
-  }, []);
+  }, [])
 
   return (
-    <div className=" flex flex-row items-center justify-center -space-x-5 md:-space-x-12 z-0">
+    <div
+    className="flex flex-row items-center justify-center -space-x-5 md:-space-x-12 z-0"
+    onMouseEnter={stopAutoSlide} // Stop auto-slide on hover
+    onMouseLeave={startAutoSlide} // Restart auto-slide when the mouse leaves
+  >
       {/* Left button */}
       <button
         onClick={prevCard}

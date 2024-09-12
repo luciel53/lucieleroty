@@ -1,11 +1,13 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 import Image from "next/image";
 import burger from "../../../public/images/icons/burgertablet.png";
 import logo from "../../../public/images/logo.png";
 import localFont from "next/font/local";
 import "../globals.css";
+
 
 const glitch = localFont({
   src: "../../../public/fonts/Glitch.ttf",
@@ -23,7 +25,7 @@ const Header = () => {
   return (
     <header className="flex flex-row justify-between w-full lg:justify-around">
       {/* Logo */}
-      <div className="flex flex-row">
+      <div className="flex flex-row animate-rotate-y animate-once animate-delay-[1000ms] animate-ease-in">
         <Image
           src={logo}
           alt="Logo"
@@ -60,13 +62,18 @@ const Header = () => {
           className={`lg:z-30 lg:flex flex-row lg:space-x-10 text-xs md:text-base lg:text-lg lg:mr-4 lg:mt-1`}
         >
           <li>Accueil</li>
-          <li>Création de sites</li>
+          <li>
+            <Link href="/website-creation">
+              Création de sites
+            </Link>
+          </li>
           <li>Design</li>
           <li>Photographie</li>
           <li className="lg:text-white">Contact</li>
         </ul>
+        {/* Bubble on Contact */}
         <div className="relative">
-        <span className="lg:z-10 flex absolute drop-shadow-lg animate-bounce lg:w-40 lg:h-40 lg:bg-darkgreen text-white rounded-full lg:-mt-20 lg:-right-12 overflow-hidden"></span>
+        <span className="lg:z-10 flex absolute drop-shadow-lg animate-bounce animate-duration-[800ms] animate-delay-[20000ms] animate-ease-out lg:w-40 lg:h-40 lg:bg-darkgreen text-white rounded-full lg:-mt-20 lg:-right-12 overflow-hidden"></span>
         </div>
       </nav>
     </header>
