@@ -3,17 +3,17 @@ import Link from "next/link";
 
 const PhotographyCarouselCard = ({ img, title, quote }) => {
   return (
-    <div className="relative flex flex-col z-20 justify-center mx-auto w-[15rem] h-[20rem] md:w-[24rem] md:h-[30rem] lg:h-[30rem] lg:w-[30rem] bg-verylightgray rounded-xl border-2 border-lightgreen shadow-lg opacity-90 transition-transform duration-500 ease-in-out transform">
+    <div className="relative flex flex-col z-20 justify-center mx-auto w-[15rem] h-[20rem] md:w-[24rem] md:h-[30rem] lg:h-[24rem] lg:w-[29rem] bg-verylightgray rounded-xl border-2 border-lightgreen shadow-lg opacity-90 transition-transform duration-500 ease-in-out transform">
 
       {/* Picture */}
-      <div className="mx-auto max-w-[95%] max-h-[85%] relative group">
+      <div className="mx-auto max-w-[95%] max-h-[95%] relative group">
         <Image
           src={img}
           alt={title}
           width={800}
           height={800}
           priority
-          className="object-cover w-full h-full"
+          className="object-cover w-full h-full rounded-lg"
         />
 
 

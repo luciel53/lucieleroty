@@ -11,6 +11,90 @@ const card = {
   img: "/images/CarouselHome/chenonceau.jpg",
 };
 
+const portraitPhotos = [
+  {
+    img: "/images/CarouselPhotos/test/familleheureuse.jpg",
+    title: "Une famille heureuse, dans les bois",
+    quote: "Une famille heureuse, dans les bois",
+  },
+  {
+    img: "/images/CarouselPhotos/test/mariage.jpg",
+    title: "Mariage",
+    quote: "Mariage",
+  },
+  {
+    img: "/images/CarouselPhotos/test/enfant-dune-du-pilat.jpg",
+    title: "Dune du pilat",
+    quote: "Dune du pilat",
+  },
+  {
+    img: "/images/CarouselPhotos/test/balinais.jpg",
+    title: "Balinais",
+    quote: "Balinais",
+  },
+  {
+    img: "/images/CarouselPhotos/test/pied-nourrisson.jpg",
+    title: "Naissance",
+    quote: "Naissance",
+  },
+];
+
+const animalsPhotos = [
+  {
+    img: "/images/CarouselPhotos/test/ecureuil-roux.jpg",
+    title: "Ecureil roux en Mayenne",
+    quote: "Ecureil roux en Mayenne",
+  },
+  {
+    img: "/images/CarouselPhotos/puydufou.jpg",
+    title: "Puy-Du-Fou",
+    quote: "Puy-Du-Fou",
+  },
+  {
+    img: "/images/CarouselPhotos/test/gorille.jpg",
+    title: "Gorille au zoo de Beauval",
+    quote: "Gorille au zoo de Beauval",
+  },
+  {
+    img: "/images/CarouselPhotos/test/chatbengal.jpg",
+    title: "Chat de race Bengal",
+    quote: "Chat Bengal blue sepia",
+  },
+  {
+    img: "/images/CarouselPhotos/test/chevalnoir.jpg",
+    title: "Cheval selle français noir",
+    quote: "Cheval selle français noir",
+  },
+];
+
+const landscapePhotos = [
+  {
+    img: "/images/CarouselPhotos/test/site-de-coupeau.jpg",
+    title: "Site de Coupeau à Saint-Berthevin en Mayenne",
+    quote: "Site de Coupeau, Saint-Berthevin, Mayenne",
+  },
+  {
+    img: "/images/CarouselPhotos/test/perth.jpg",
+    title: "Perth, en Australie",
+    quote: "Perth, en Australie",
+  },
+  {
+    img: "/images/CarouselPhotos/test/laval.jpg",
+    title: "Laval en Mayenne",
+    quote: "Laval en Mayenne",
+  },
+  {
+    img: "/images/CarouselPhotos/test/etnabrumeneige.jpg",
+    title: "Etna sous la brume et la neige",
+    quote: "Etna sous la brume et la neige",
+  },
+  {
+    img: "/images/CarouselPhotos/test/phare-australie.jpg",
+    title: "Phare à Exmouth en Australie",
+    quote: "Phare à Exmouth en Australie",
+  },
+];
+
 const Photography = () => {
   return (
     <>
@@ -25,7 +109,24 @@ const Photography = () => {
         {/* Bubble */}
         <div className="lg:w-80 lg:h-80 bg-lightgreen z-0 absolute drop-shadow-lg rounded-full animate-fade animate-duration-1000 animate-delay-[400ms] animate-ease-in"></div>
         <ServiceCard {...card} />
-        <PhotographyCarousel />
+        <div className="mb-10">
+          <h2 className="text-center font-specialelite mt-12 mb-3">
+            Portraits, Photos de grossesse, naissances, mariage...
+          </h2>
+          <PhotographyCarousel photos={portraitPhotos} />
+        </div>
+        <div>
+          <h2 className="text-center font-specialelite mt-12 mb-3">
+            Paysages, architecture, immobilier...
+          </h2>
+          <PhotographyCarousel photos={landscapePhotos} />
+        </div>
+        <div>
+          <h2 className="text-center font-specialelite mt-12 mb-3">
+            Photos animalières, chats, chiens, chevaux...
+          </h2>
+          <PhotographyCarousel photos={animalsPhotos} />
+        </div>
       </main>
       <Footer />
     </>

@@ -3,33 +3,6 @@
 import { useState, useEffect, useRef } from "react";
 import Card from "./PhotographyCarouselCard";
 
-const cards = [
-  {
-    img: "/images/CarouselPhotos/test/familleheureuse.jpg",
-    title: "Une famille heureuse, dans les bois",
-    quote: "Une famille heureuse, dans les bois",
-    },
-  {
-    img: "/images/CarouselPhotos/test/mariage.jpg",
-    title: "Mariage",
-    quote: "Mariage",
-    },
-  {
-    img: "/images/CarouselPhotos/test/enfant-dune-du-pylat.jpg",
-    title: "Dune du pylat",
-    quote: "Dune du pylat",
-    },
-  {
-    img: "/images/CarouselPhotos/test/enfant-dune-du-pylat.jpg",
-    title: "Dune du pylat",
-    quote: "Dune du pylat",
-    },
-    {
-      img: "/images/CarouselPhotos/test/pied-nourrisson.jpg",
-      title: "Naissance",
-      quote: "Naissance",
-      },
-];
 
 // Arrows
 const ArrowLeft = () => (
@@ -66,17 +39,17 @@ const ArrowRight = () => (
   </svg>
 );
 
-const PhotographyCarousel = () => {
+const PhotographyCarousel = ({ photos }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const intervalRef = useRef(null); // Use a ref to keep track of the interval
 
   const nextCard = () => {
-    setCurrentIndex((prevIndex) => (prevIndex + 1) % cards.length);
+    setCurrentIndex((prevIndex) => (prevIndex + 1) % photos.length);
   };
 
   const prevCard = () => {
     setCurrentIndex((prevIndex) =>
-      prevIndex === 0 ? cards.length - 1 : prevIndex - 1
+      prevIndex === 0 ? photos.length - 1 : prevIndex - 1
     );
   };
 
@@ -113,7 +86,7 @@ const PhotographyCarousel = () => {
       {/* Left button */}
       <button
         onClick={prevCard}
-        className="bg-darkgreen relative z-30 p-0.5 md:p-2 left-2 md:left-6 rounded-full shadow-md hover:bg-lightgreen transition"
+        className="bg-darkgreen relative z-30 p-0.5 md:p-2 left-2 md:left-6 lg:left-44 rounded-full shadow-md hover:bg-lightgreen transition"
       >
         <ArrowLeft />
       </button>
@@ -122,7 +95,7 @@ const PhotographyCarousel = () => {
           className="flex transition-transform duration-500 ease-in-out"
           style={{ transform: `translateX(-${currentIndex * 100}%)` }}
         >
-          {cards.map((card, index) => (
+          {photos.map((card, index) => (
             <div key={index} className="flex-none w-full max-w-full">
               <Card {...card} />
             </div>
@@ -132,7 +105,7 @@ const PhotographyCarousel = () => {
       {/* Right button */}
       <button
         onClick={nextCard}
-        className="bg-darkgreen relative right-2 md:right-6 z-30 p-0.5 md:p-2 rounded-full shadow-md hover:bg-lightgreen transition"
+        className="bg-darkgreen relative right-2 md:right-6 lg:right-44 z-30 p-0.5 md:p-2 rounded-full shadow-md hover:bg-lightgreen transition"
       >
         <ArrowRight />
       </button>
