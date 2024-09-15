@@ -35,7 +35,7 @@ const Header = () => {
         <span
           className={`font-glitch-important text-xs md:text-lg mt-3 md:mt-4 -ml-1 md:-ml-2 ${glitch.variable} antialiased`}
         >
-          Lucie Leroty
+          EYE<span className="text-darkgreen">TO</span>PIXEL
         </span>
       </div>
       </Link>

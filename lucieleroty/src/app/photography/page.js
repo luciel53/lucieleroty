@@ -1,5 +1,7 @@
+import Image from "next/image";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
+import PhotographyCarousel from "../components/PhotographyCarousel/PhotographyCarousel";
 import ServiceCard from "../components/ServiceCard";
 
 const card = {
@@ -9,13 +11,13 @@ const card = {
   img: "/images/CarouselHome/chenonceau.jpg",
 };
 
-const WebsiteCreation = () => {
+const Photography = () => {
   return (
     <>
       <Header />
       <main className="flex-grow">
         {/* title */}
-        <div className="flex flex-col z-0 font-specialelite mt-1 mb-2 animate-flip-down">
+        <div className="flex flex-col z-0 font-specialelite mt-1 lg:mt-3 mb-2 animate-flip-down">
           <h1 className="mx-auto drop-shadow-left text-[0.6rem] md:text-lg lg:text-xl">
             Photographie
           </h1>
@@ -23,10 +25,11 @@ const WebsiteCreation = () => {
         {/* Bubble */}
         <div className="lg:w-80 lg:h-80 bg-lightgreen z-0 absolute drop-shadow-lg rounded-full animate-fade animate-duration-1000 animate-delay-[400ms] animate-ease-in"></div>
         <ServiceCard {...card} />
+        <PhotographyCarousel />
       </main>
       <Footer />
     </>
   );
 };
 
-export default WebsiteCreation;
+export default Photography;
