@@ -8,7 +8,7 @@ const WebsiteCreationCard = ({ srcImg, title, ul }) => {
         <div>
           <Image src={srcImg} alt={title} width={300} height={300} />
         </div>
-        <div className="flex flex-col">
+        <div className="flex flex-col w-[60%]">
           <div>{ul}</div>
         </div>
       </div>
