@@ -121,11 +121,17 @@ const Photography = () => {
           </h2>
           <PhotographyCarousel photos={landscapePhotos} />
         </div>
-        <div>
+        <div className="mb-10">
           <h2 className="text-center font-specialelite mt-12 mb-3 text-[50%] md:text-sm">
             Photos animalières, chats, chiens, chevaux...
           </h2>
           <PhotographyCarousel photos={animalsPhotos} />
+        </div>
+        {/* Price */}
+        <div className="flex flex-row justify-center items-center mx-auto mb-10 animate-wiggle">
+          <div className=" border-darkgreen border-4 w-auto h-auto rounded-lg text-center shadow-lg">
+            <p className="text-darkgreen font-specialelite p-4">A partir de 60€ la séance</p>
+          </div>
         </div>
       </main>
       <Footer />
