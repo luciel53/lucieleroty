@@ -1,3 +1,4 @@
+
 import Image from "next/image";
 import localFont from "next/font/local";
 import Header from "./components/Header.js";
@@ -6,6 +7,7 @@ import Bio from "./components/Home/Bio.js";
 import HomeCarousel from "./components/HomeCarousel/CarouselHome.js";
 
 export default function Home() {
+
   return (
     <main className="flex-grow">
       {/* title */}
@@ -25,7 +27,7 @@ export default function Home() {
       </section>
 
       {/* Bio */}
-      <Bio />
+      <Bio  />
     </main>
   );
 }
