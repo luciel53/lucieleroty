@@ -1,6 +1,7 @@
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 import ServiceCard from "../components/ServiceCard";
+import WebsiteCreationCard from "../components/WebsiteCreation/WebsiteCreationCard";
 
 const card = {
   title: "Création de sites web sur mesure",
@@ -21,6 +22,55 @@ const WebsiteCreation = () => {
       {/* Bubble */}
       <div className="lg:w-80 lg:h-80 bg-lightgreen z-0 absolute drop-shadow-lg rounded-full animate-fade animate-duration-1000 animate-delay-[400ms] animate-ease-in"></div>
       <ServiceCard {...card} />
+      <WebsiteCreationCard
+        srcImg="/images/Photos/cahierdescharges.png"
+        title="1. Etude du cahier des charges"
+        ul={
+          <ul className="ml-4 ">
+            <li>- Analyse de vos besoins</li>
+            <li>- Objectifs du site</li>
+            <li>- Définir la structure (menu, ...)</li>
+            <li>- Choix des technologies</li>
+            <li>- Vos goûts</li>
+          </ul>
+        }
+      />
+      <WebsiteCreationCard
+        srcImg="/images/Photos/maquette.png"
+        title="2. Conception de la maquette"
+        ul={
+          <ul className="ml-4 ">
+            <li>- Définition de la charte graphique</li>
+            <li>- Réalisation de la maquette en tenant compte de vos goûts</li>
+          </ul>
+        }
+      />
+      <WebsiteCreationCard
+        srcImg="/images/Photos/developpement.png"
+        title="3. Développement"
+        ul={
+          <ul className="ml-4 ">
+            <li>- Codage du site en suivant la maquette</li>
+            <li>- Optimisation SEO</li>
+            <li>- Site responsive</li>
+            <li>
+              - Options possibles (rédaction de contenus, photographies...)
+            </li>
+          </ul>
+        }
+      />
+      <WebsiteCreationCard
+        srcImg="/images/Photos/livraisondusite.png"
+        title="4. La livraison"
+        ul={
+          <ul className="ml-4 ">
+            <li>- Déploiement du site</li>
+            <li>- Tests et corrections d'éventuels bugs</li>
+            <li>- Définir la structure (menu, ...)</li>
+            <li>- Livraison de votre site web!</li>
+          </ul>
+        }
+      />
     </main>
   );
 };
