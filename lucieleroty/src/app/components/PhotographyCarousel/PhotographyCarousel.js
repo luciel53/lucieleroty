@@ -86,7 +86,7 @@ const PhotographyCarousel = ({ photos }) => {
       {/* Left button */}
       <button
         onClick={prevCard}
-        className="bg-darkgreen relative z-30 p-0.5 md:p-2 left-2 md:left-6 lg:left-44 rounded-full shadow-md hover:bg-lightgreen transition"
+        className="bg-darkgreen relative z-30 p-0.5 md:p-2 left-2 lg:left-44 rounded-full shadow-md hover:bg-lightgreen transition"
       >
         <ArrowLeft />
       </button>
@@ -105,7 +105,7 @@ const PhotographyCarousel = ({ photos }) => {
       {/* Right button */}
       <button
         onClick={nextCard}
-        className="bg-darkgreen relative right-2 md:right-6 lg:right-44 z-30 p-0.5 md:p-2 rounded-full shadow-md hover:bg-lightgreen transition"
+        className="bg-darkgreen relative right-2 lg:right-44 z-30 p-0.5 md:p-2 rounded-full shadow-md hover:bg-lightgreen transition"
       >
         <ArrowRight />
       </button>
