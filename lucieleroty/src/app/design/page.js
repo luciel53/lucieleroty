@@ -5,8 +5,6 @@ import ServiceCard from "../components/ServiceCard";
 
 const WebsiteCreation = () => {
   return (
-    <>
-      <Header />
       <main className="flex-grow">
         {/* title */}
         <div className="flex flex-col z-0 font-specialelite mt-1 lg:mt-3 mb-2 animate-flip-down">
@@ -101,8 +99,6 @@ const WebsiteCreation = () => {
           </div>
         </div>
       </main>
-      <Footer />
-    </>
   );
 };
 

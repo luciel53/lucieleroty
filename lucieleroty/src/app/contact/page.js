@@ -11,8 +11,6 @@ const card = {
 
 const WebsiteCreation = () => {
   return (
-    <>
-      <Header />
       <main className="flex-grow">
         {/* title */}
         <div className="flex flex-col z-0 font-specialelite mt-1 lg:mt-3 mb-2 animate-flip-down">
@@ -24,8 +22,6 @@ const WebsiteCreation = () => {
         <div className="lg:w-80 lg:h-80 bg-lightgreen z-0 absolute drop-shadow-lg rounded-full animate-fade animate-duration-1000 animate-delay-[400ms] animate-ease-in"></div>
         <ServiceCard {...card} />
       </main>
-      <Footer />
-    </>
   );
 };
 

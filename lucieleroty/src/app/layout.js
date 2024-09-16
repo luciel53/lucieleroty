@@ -1,5 +1,7 @@
 import localFont from "next/font/local";
 import "./globals.css";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
 
 const pompiere = localFont({
   src: "../../public/fonts/Pompiere.ttf",
@@ -8,8 +10,10 @@ const pompiere = localFont({
 });
 
 export const metadata = {
-  title: "Lucie Leroty - Développeuse web et photographe freelance - Création de sites web",
-  description: "Lucie Leroty, développeuse web et photographe freelance, propose des services de création de sites web professionnels et de photographie sur mesure. Découvrez comment nous pouvons transformer vos idées en réalité avec des solutions web et visuelles adaptées à vos besoins.",
+  title:
+    "Lucie Leroty - Développeuse web et photographe freelance - Création de sites web",
+  description:
+    "Lucie Leroty, développeuse web et photographe freelance, propose des services de création de sites web professionnels et de photographie sur mesure. Découvrez comment nous pouvons transformer vos idées en réalité avec des solutions web et visuelles adaptées à vos besoins.",
 };
 
 export default function RootLayout({ children }) {
@@ -18,7 +22,10 @@ export default function RootLayout({ children }) {
       <body
         className={`${pompiere.variable} antialiased flex flex-col min-h-screen bg-lightgray`}
       >
+        <Header />
+
         {children}
+        <Footer />
       </body>
     </html>
   );

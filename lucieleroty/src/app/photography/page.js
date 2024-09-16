@@ -97,8 +97,6 @@ const landscapePhotos = [
 
 const Photography = () => {
   return (
-    <>
-      <Header />
       <main className="flex-grow">
         {/* title */}
         <div className="flex flex-col z-0 font-specialelite mt-1 lg:mt-3 mb-2 animate-flip-down">
@@ -134,8 +132,6 @@ const Photography = () => {
           </div>
         </div>
       </main>
-      <Footer />
-    </>
   );
 };
 

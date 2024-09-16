@@ -4,8 +4,6 @@ import Footer from "./components/Footer.js";
 
 export default function Home() {
   return (
-    <>
-      <Header />
       <main className="flex-grow">
         {/* title */}
         <div className="flex flex-col z-0 font-specialelite mt-1">
@@ -53,7 +51,5 @@ export default function Home() {
           </div>
         </section>
       </main>
-      <Footer />
-    </>
   );
 }
