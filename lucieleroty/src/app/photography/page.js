@@ -116,28 +116,28 @@ const Photography = () => {
         {/* Bubble */}
         <div className="lg:w-80 lg:h-80 bg-lightgreen z-0 absolute drop-shadow-lg rounded-full animate-fade animate-duration-1000 animate-delay-[400ms] animate-ease-in"></div>
         <ServiceCard {...card} />
-        <div className="mb-10" data-aos="fade-up" data-aos-transform="translate">
-          <h2 className="text-center font-specialelite mt-12 mb-3 text-[50%] md:text-sm">
+        <div className="md:mb-10" data-aos="fade-up" data-aos-transform="translate">
+          <h2 className="text-center font-specialelite mt-5 md:mt-12 mb-3 text-[50%] md:text-sm">
             Portraits, Photos de grossesse, naissances, mariage...
           </h2>
           <PhotographyCarousel photos={portraitPhotos} />
         </div>
-        <div data-aos="fade-up" data-aos-transform="translate">
-          <h2 className="text-center font-specialelite mt-12 mb-3 text-[50%] md:text-sm">
+        <div className="md:mb-10" data-aos="fade-up" data-aos-transform="translate">
+          <h2 className="text-center font-specialelite mt-5 md:mt-12 mb-3 text-[50%] md:text-sm">
             Paysages, architecture, immobilier...
           </h2>
           <PhotographyCarousel photos={landscapePhotos} />
         </div>
         <div className="mb-10" data-aos="fade-up" data-aos-transform="translate">
-          <h2 className="text-center font-specialelite mt-12 mb-3 text-[50%] md:text-sm">
+          <h2 className="text-center font-specialelite mt-5 md:mt-12 mb-3 text-[50%] md:text-sm">
             Photos animalières, chats, chiens, chevaux...
           </h2>
           <PhotographyCarousel photos={animalsPhotos} />
         </div>
         {/* Price */}
-        <div className="flex flex-row justify-center items-center mx-auto mb-10 animate-wiggle">
-          <div className=" border-darkgreen border-4 w-auto h-auto rounded-lg text-center shadow-lg">
-            <p className="text-darkgreen font-specialelite p-4">A partir de 60€ la séance</p>
+        <div className="flex flex-row justify-center items-center mx-auto mb-10 lg:animate-wiggle">
+          <div className=" border-darkgreen border-4 w-32 md:w-auto h-auto rounded-lg text-center shadow-lg">
+            <p className="text-darkgreen font-specialelite text-[60%] md:text-sm p-2 md:p-4">A partir de 60€ la séance</p>
           </div>
         </div>
       </main>

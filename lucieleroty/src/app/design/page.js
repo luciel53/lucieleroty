@@ -10,7 +10,7 @@ import ServiceCard from "../components/ServiceCard";
 const WebsiteCreation = () => {
   useEffect(() => {
     AOS.init({ duration: 1000,
-	offset: 250 });
+	offset: 150 });
   }, []);
 
   return (
