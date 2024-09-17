@@ -10,7 +10,7 @@ import ServiceCard from "../components/ServiceCard";
 const WebsiteCreation = () => {
   useEffect(() => {
     AOS.init({ duration: 1000,
-	offset: 350 });
+	offset: 250 });
   }, []);
 
   return (
@@ -44,13 +44,13 @@ const WebsiteCreation = () => {
         img="/images/CarouselHome/design.png"
       />
       {/* Cartes de visites */}
-      <div className="flex flex-wrap-reverse lg:flex-nowrap md:flex-col h-auto p-4 mx-64 mb-10 z-10 relative justify-center items-center opacity-90 bg-verylightgray border-2 border-lightgreen rounded-lg"
+      <div className="flex flex-wrap lg:flex-nowrap md:flex-col h-auto p-4 mt-2 md:mt-5 mx-1 md:mx-4 lg:mx-64 md:mb-10 z-10 relative justify-center items-center opacity-90 bg-verylightgray border-2 border-lightgreen rounded-lg"
        data-aos="fade-up" data-aos-transform="translate">
-        <p className="pb-4 font-specialelite text-sm drop-shadow-left">
-          Exemples de carte de visite:
+        <p className="pb-4 font-specialelite text-[60%] md:text-sm drop-shadow-left">
+          Cartes de visite
         </p>
         <div className="flex flex-row justify-center ">
-          <div>
+          <div className="p-0.5">
             <Image
               src="/images/design/llrecto.png"
               alt="Carte de visite de Lucie Leroty"
@@ -58,7 +58,7 @@ const WebsiteCreation = () => {
               height={400}
             />
           </div>
-          <div>
+          <div className="p-0.5">
             <Image
               src="/images/design/llverso.png"
               alt="Carte de visite de Lucie Leroty"
@@ -68,7 +68,7 @@ const WebsiteCreation = () => {
           </div>
         </div>
         <div className="flex flex-row justify-center ">
-          <div>
+          <div className="p-0.5">
             <Image
               src="/images/design/jrrecto.png"
               alt="Carte de visite de Lucie Leroty"
@@ -76,7 +76,7 @@ const WebsiteCreation = () => {
               height={400}
             />
           </div>
-          <div>
+          <div className="p-0.5">
             <Image
               src="/images/design/jrverso.png"
               alt="Carte de visite de Lucie Leroty"
@@ -87,10 +87,10 @@ const WebsiteCreation = () => {
         </div>
       </div>
       {/* Flyers */}
-      <div className="flex flex-wrap-reverse lg:flex-nowrap md:flex-col h-auto p-4 mx-64 z-10 relative justify-center items-center opacity-90 bg-verylightgray border-2 border-lightgreen rounded-lg mb-10"
+      <div className="flex flex-wrap lg:flex-nowrap md:flex-col h-auto p-4 mt-2 md:mt-5 mx-1 md:mx-4 lg:mx-64 z-10 relative justify-center items-center opacity-90 bg-verylightgray border-2 border-lightgreen rounded-lg mb-10"
        data-aos="fade-up" data-aos-transform="translate">
-        <p className="pb-4 font-specialelite text-sm drop-shadow-left">
-          Exemples de carte de visite:
+        <p className="pb-4 font-specialelite text-[60%] md:text-sm drop-shadow-left">
+          Flyers
         </p>
         <div className="flex flex-row justify-center ">
           <div>
@@ -104,10 +104,10 @@ const WebsiteCreation = () => {
         </div>
       </div>
       {/* Price */}
-      <div className="flex flex-row justify-center items-center mx-auto mb-10 animate-wiggle"
+      <div className="flex flex-row justify-center items-center mx-auto mb-10 lg:animate-wiggle"
        >
-        <div className=" border-darkgreen border-4 w-auto h-auto rounded-lg text-center shadow-lg">
-          <p className="text-darkgreen font-specialelite p-4">
+        <div className=" border-darkgreen border-4 w-32 md:w-auto h-auto rounded-lg text-center shadow-lg">
+          <p className="text-darkgreen font-specialelite text-[60%] md:text-sm p-2 md:p-4">
             Demandez un devis en ligne
           </p>
         </div>
