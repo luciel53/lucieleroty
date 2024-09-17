@@ -1,3 +1,7 @@
+"use client";
+
+import AOS from "aos";
+import { useEffect } from "react";
 import Image from "next/image";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
@@ -96,6 +100,11 @@ const landscapePhotos = [
 ];
 
 const Photography = () => {
+  useEffect(() => {
+    AOS.init({ duration: 1000,
+	offset: 350 });
+  }, []);
+
   return (
       <main className="flex-grow">
         {/* title */}
@@ -107,19 +116,19 @@ const Photography = () => {
         {/* Bubble */}
         <div className="lg:w-80 lg:h-80 bg-lightgreen z-0 absolute drop-shadow-lg rounded-full animate-fade animate-duration-1000 animate-delay-[400ms] animate-ease-in"></div>
         <ServiceCard {...card} />
-        <div className="mb-10">
+        <div className="mb-10" data-aos="fade-up" data-aos-transform="translate">
           <h2 className="text-center font-specialelite mt-12 mb-3 text-[50%] md:text-sm">
             Portraits, Photos de grossesse, naissances, mariage...
           </h2>
           <PhotographyCarousel photos={portraitPhotos} />
         </div>
-        <div>
+        <div data-aos="fade-up" data-aos-transform="translate">
           <h2 className="text-center font-specialelite mt-12 mb-3 text-[50%] md:text-sm">
             Paysages, architecture, immobilier...
           </h2>
           <PhotographyCarousel photos={landscapePhotos} />
         </div>
-        <div className="mb-10">
+        <div className="mb-10" data-aos="fade-up" data-aos-transform="translate">
           <h2 className="text-center font-specialelite mt-12 mb-3 text-[50%] md:text-sm">
             Photos animalières, chats, chiens, chevaux...
           </h2>

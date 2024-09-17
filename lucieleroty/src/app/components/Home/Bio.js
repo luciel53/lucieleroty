@@ -19,7 +19,7 @@ const Bio = () => {
           </h3>
           <p className="text-[0.55rem] md:text-[0.8rem] lg:text-[1rem] text-justify">
             En tant que développeuse web freelance et photographe, diplômée de
-            l’école internationale Holberton School. Polyvalente, je crée des
+            l'école internationale Holberton School. Polyvalente, je crée des
             sites internet sur-mesure qui reflètent votre univers. De la
             conception graphique à la programmation, je vous accompagne pas à
             pas pour donner vie à votre projet web. Des sites "one-page" aux
