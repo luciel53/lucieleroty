@@ -23,7 +23,7 @@ const WebsiteCreation = () => {
       <div className="lg:w-80 lg:h-80 bg-lightgreen z-0 absolute drop-shadow-lg rounded-full animate-fade animate-duration-1000 animate-delay-[400ms] animate-ease-in"></div>
       <ServiceCard {...card} />
       {/* title of steps */}
-      <div className="flex flex-row justify-center items-center mt-2 md:mt-2 ml-10">
+      <div className="flex flex-row justify-center items-center mt-2 md:mt-2 md:ml-10">
         <div className="w-5 h-5 md:w-12 md:h-12 bg-lightgreen z-0 relative drop-shadow-lg rounded-full animate-fade animate-duration-1000 animate-delay-[400ms] animate-ease-in"></div>
         <h2 className="z-10 w-40 md:w-80 lg:w-[30rem] text-[50%] md:text-[90%] lg:text-[100%] md:p-2 md:pt-9 lg:pt-2 mt-4 md:mt-2 -ml-3 md:-ml-10 font-specialelite">
           Les étapes de la création d'un site web sur mesures
@@ -79,7 +79,7 @@ const WebsiteCreation = () => {
         }
       />
       {/* Price */}
-      <div className="flex flex-row justify-center items-center w-80 mx-auto mt-7 mb-10 md:animate-wiggle">
+      <div className="flex flex-row justify-center items-center md:w-80 mx-auto mt-7 mb-10 md:animate-wiggle">
         <div className=" border-darkgreen border-4 md:w-auto h-auto rounded-lg text-center shadow-lg">
           <p className="text-darkgreen font-specialelite p-3 md:p-4 text-xs md:text-base">
             Demandez une estimation
