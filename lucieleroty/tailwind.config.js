@@ -26,7 +26,7 @@ module.exports = {
         justify: 'justify',
       },
       backgroundImage: {
-        wallpaper: "url('/images/Photos/abstractwallpaper.jpg')",
+        wallpaper: "url('/images/Photos/lighttransparentwallpaper.jpg')",
       }
     },
   },
