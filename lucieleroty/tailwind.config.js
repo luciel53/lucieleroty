@@ -25,6 +25,9 @@ module.exports = {
       textAlign: {
         justify: 'justify',
       },
+      backgroundImage: {
+        wallpaper: "url('/images/Photos/abstractwallpaper.jpg')",
+      }
     },
   },
   plugins: [
