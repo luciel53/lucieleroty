@@ -80,7 +80,7 @@ const WebsiteCreation = () => {
       />
       {/* Price */}
       <div className="flex flex-row justify-center items-center md:w-80 mx-auto mt-7 mb-10 md:animate-wiggle">
-        <div className=" border-darkgreen border-4 md:w-auto h-auto rounded-lg text-center shadow-lg">
+        <div className=" border-darkgreen bg-verylightgray border-4 md:w-auto h-auto rounded-lg text-center shadow-lg">
           <p className="text-darkgreen font-specialelite p-3 md:p-4 text-xs md:text-base">
             Demandez une estimation
           </p>

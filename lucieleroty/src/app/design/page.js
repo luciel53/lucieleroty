@@ -9,8 +9,7 @@ import ServiceCard from "../components/ServiceCard";
 
 const WebsiteCreation = () => {
   useEffect(() => {
-    AOS.init({ duration: 1000,
-	offset: 150 });
+    AOS.init({ duration: 1000, offset: 200 });
   }, []);
 
   return (
@@ -44,8 +43,11 @@ const WebsiteCreation = () => {
         img="/images/CarouselHome/design.png"
       />
       {/* Cartes de visites */}
-      <div className="flex flex-wrap lg:flex-nowrap md:flex-col h-auto p-4 mt-2 md:mt-5 mx-1 md:mx-4 lg:mx-64 md:mb-10 z-10 relative justify-center items-center opacity-90 bg-verylightgray border-2 border-lightgreen rounded-lg"
-       data-aos="fade-up" data-aos-transform="translate">
+      <div
+        className="flex flex-wrap lg:flex-nowrap md:flex-col h-auto p-4 mt-2 md:mt-5 mx-1 md:mx-4 lg:mx-64 md:mb-10 z-10 relative justify-center items-center opacity-90 bg-verylightgray border-2 border-lightgreen rounded-lg"
+        data-aos="fade-up"
+        data-aos-transform="translate"
+      >
         <p className="pb-4 font-specialelite text-[60%] md:text-sm drop-shadow-left">
           Cartes de visite
         </p>
@@ -87,8 +89,11 @@ const WebsiteCreation = () => {
         </div>
       </div>
       {/* Flyers */}
-      <div className="flex flex-wrap lg:flex-nowrap md:flex-col h-auto p-4 mt-2 md:mt-5 mx-1 md:mx-4 lg:mx-64 z-10 relative justify-center items-center opacity-90 bg-verylightgray border-2 border-lightgreen rounded-lg mb-10"
-       data-aos="fade-up" data-aos-transform="translate">
+      <div
+        className="flex flex-wrap lg:flex-nowrap md:flex-col h-auto p-4 mt-2 md:mt-5 mx-1 md:mx-4 lg:mx-64 z-10 relative justify-center items-center opacity-90 bg-verylightgray border-2 border-lightgreen rounded-lg mb-10"
+        data-aos="fade-up"
+        data-aos-transform="translate"
+      >
         <p className="pb-4 font-specialelite text-[60%] md:text-sm drop-shadow-left">
           Flyers
         </p>
@@ -104,11 +109,10 @@ const WebsiteCreation = () => {
         </div>
       </div>
       {/* Price */}
-      <div className="flex flex-row justify-center items-center mx-auto mb-10 lg:animate-wiggle"
-       >
-        <div className=" border-darkgreen border-4 w-32 md:w-auto h-auto rounded-lg text-center shadow-lg">
+      <div className="flex flex-row justify-center items-center mx-auto mb-10 md:w-80 lg:animate-wiggle">
+        <div className=" border-darkgreen bg-verylightgray border-4 w-32 md:w-auto h-auto rounded-lg text-center shadow-lg">
           <p className="text-darkgreen font-specialelite text-[60%] md:text-sm p-2 md:p-4">
-            Demandez un devis en ligne
+            Demandez une estimation
           </p>
         </div>
       </div>
