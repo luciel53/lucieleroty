@@ -7,7 +7,7 @@ const PhotographyCarouselCard = ({ img, title, quote }) => {
       w-[12rem] h-[14rem]
       md:w-[24rem] md:h-[30rem]
       lg:h-[24rem] lg:w-[29rem]
-      bg-verylightgray rounded-xl border-2 border-lightgreen shadow-lg opacity-90 transition-transform duration-500 ease-in-out transform"
+      bg-verylightgray rounded-xl border-2 border-lightgreen shadow-lg transition-transform duration-500 ease-in-out transform"
     >
       {/* Picture */}
       <div className="mx-auto max-w-[95%] max-h-[95%] relative group">
@@ -21,7 +21,7 @@ const PhotographyCarouselCard = ({ img, title, quote }) => {
         />
         {/* Quote */}
         <blockquote
-          className="absolute bottom-0 left-0 w-full h-[10%] p-5 text-center bg-black bg-opacity-70 text-white text-xs md:text-sm lg:text-base flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500"
+          className="absolute bottom-0 left-0 w-full h-[10%] p-5 text-center bg-black bg-opacity-70 rounded-b-lg text-white text-xs md:text-sm lg:text-base flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500"
         >
           {quote}
         </blockquote>
