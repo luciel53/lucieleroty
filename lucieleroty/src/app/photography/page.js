@@ -7,13 +7,7 @@ import Footer from "../components/Footer";
 import Header from "../components/Header";
 import PhotographyCarousel from "../components/PhotographyCarousel/PhotographyCarousel";
 import ServiceCard from "../components/ServiceCard";
-
-const card = {
-  title: "Photographie",
-  paragraph:
-    "Je propose aux professionnels et aux particuliers des séances photos pour tous leurs projets. Aux professionnels: des clichés pour illustrer leur site web ainsi que leurs supports de communication. Aux particuliers: je vous accompagne dans les différents moments de vie. Grossesse, photos de familles, naissances, mariages, cérémonies, photos d'animaux et paysages...",
-  img: "/images/CarouselHome/chenonceau.jpg",
-};
+import Link from "next/link";
 
 const portraitPhotos = [
   {
@@ -101,46 +95,178 @@ const landscapePhotos = [
 
 const Photography = () => {
   useEffect(() => {
-    AOS.init({ duration: 1000,
-	offset: 350 });
+    AOS.init({ duration: 1000, offset: 350 });
   }, []);
 
   return (
-      <main className="flex-grow">
-        {/* title */}
-        <div className="flex flex-col z-0 font-specialelite mt-1 lg:mt-3 mb-2 animate-flip-down">
-          <h1 className="mx-auto drop-shadow-left text-[0.6rem] md:text-lg lg:text-xl">
-            Photographie
-          </h1>
-        </div>
-        {/* Bubble */}
-        <div className="lg:w-80 lg:h-80 bg-lightgreen z-0 absolute drop-shadow-lg rounded-full animate-fade animate-duration-1000 animate-delay-[400ms] animate-ease-in"></div>
-        <ServiceCard {...card} />
-        <div className="md:mb-10" data-aos="fade-up" data-aos-transform="translate">
-          <h2 className="text-center font-specialelite mt-5 md:mt-12 mb-3 text-[50%] md:text-sm">
-            Portraits, Photos de grossesse, naissances, mariage...
-          </h2>
-          <PhotographyCarousel photos={portraitPhotos} />
-        </div>
-        <div className="md:mb-10" data-aos="fade-up" data-aos-transform="translate">
-          <h2 className="text-center font-specialelite mt-5 md:mt-12 mb-3 text-[50%] md:text-sm">
-            Paysages, architecture, immobilier...
-          </h2>
-          <PhotographyCarousel photos={landscapePhotos} />
-        </div>
-        <div className="mb-10" data-aos="fade-up" data-aos-transform="translate">
-          <h2 className="text-center font-specialelite mt-5 md:mt-12 mb-3 text-[50%] md:text-sm">
-            Photos animalières, chats, chiens, chevaux...
-          </h2>
-          <PhotographyCarousel photos={animalsPhotos} />
-        </div>
-        {/* Price */}
-        <div className="flex flex-row justify-center items-center mx-auto md:w-80 mb-10 lg:animate-wiggle">
-          <div className=" border-darkgreen bg-verylightgray border-4 w-32 md:w-auto h-auto rounded-lg text-center shadow-lg">
-            <p className="text-darkgreen font-specialelite text-[60%] md:text-sm p-2 md:p-4">A partir de 60€ la séance</p>
+    <main className="flex-grow">
+      {/* title */}
+      <div className="flex flex-col z-0 font-specialelite mt-1 lg:mt-3 mb-2 animate-flip-down">
+        <h1 className="mx-auto drop-shadow-left text-[0.6rem] md:text-lg lg:text-xl">
+          Photographie
+        </h1>
+      </div>
+      {/* Bubble */}
+      <div className="lg:w-80 lg:h-80 bg-lightgreen z-0 absolute drop-shadow-lg rounded-full animate-fade animate-duration-1000 animate-delay-[400ms] animate-ease-in"></div>
+      <section className="mx-1 md:mx-4 lg:mx-20 lg:mt-5 lg:mb-10">
+        <div className="flex flex-wrap-reverse lg:flex-nowrap md:flex-row h-auto z-10 relative justify-center opacity-90 bg-verylightgray border-2 border-lightgreen rounded-lg">
+          {/* Paragraph */}
+          <div className="lg:ml-8 mx-3 md:mx-6 lg:mx-0 my-3 lg:my-8 text-justify text-xs md:text-sm lg:text-base lg:w-1/2">
+            {/* Professionals */}
+            <div className="flex flex-row">
+              <Image
+                src="/images/icons/hand.png"
+                alt="Vous êtes un professionnel"
+                width={30}
+                height={30}
+                className="w-5 h-5 mr-4"
+              />
+              <p className="mb-4">
+                Vous êtes un <em className=" not-italic">professionnel</em> ou
+                une <em className="not-italic">association</em>, et vous avez
+                besoin d'illustrer votre <strong>site web</strong> ou vos{" "}
+                <strong>supports de communication</strong> avec des{" "}
+                <strong>photos uniques</strong> qui{" "}
+                <em className="not-italic">reflètent votre identité</em> ?<br />
+                Je vous accompagne dans la{" "}
+                <em className="not-italic">réalisation de vos projets</em>, que
+                ce soit pour une <strong>séance photo</strong> sur-mesure ou la{" "}
+                <em className=" not-italic text-darkgreen hover:opacity-80">
+                  <Link href="/website-creation">
+                    création complète de votre site web
+                  </Link>
+                </em>{" "}
+                et/ou de vos{" "}
+                <Link href="/design">
+                  <em className="not-italic text-darkgreen hover:opacity-80">
+                    supports visuels
+                  </em>
+                </Link>
+                . Ensemble, nous mettrons en valeur votre activité avec des{" "}
+                <em className="not-italic">images percutantes</em> 📸.
+              </p>
+            </div>
+            {/* Particuliers */}
+            <div className="flex flex-row mb-4">
+              <Image
+                src="/images/icons/hand.png"
+                alt="Vous êtes un professionnel"
+                width={30}
+                height={30}
+                className="w-5 h-5 mr-4"
+              />
+              <p>
+                Ou bien vous êtes un <em className="not-italic">particulier</em>{" "}
+                et vous souhaitez{" "}
+                <em className="not-italic">
+                  immortaliser des moments précieux
+                </em>{" "}
+                ? Je vous propose des <strong>séances photos</strong> adaptées à
+                chaque étape de la vie :{" "}
+                <a href="#portraits">
+                  <strong className="text-darkgreen">grossesse</strong> 🤰
+                </a>
+                ,{" "}
+                <a href="#portraits">
+                  <strong className="text-darkgreen">naissance</strong>
+                </a>{" "}
+                👶,{" "}
+                <a href="#portraits">
+                  <strong className="text-darkgreen">famille</strong>
+                </a>{" "}
+                👨‍👩‍👦,{" "}
+                <a href="#animals">
+                  <strong className="text-darkgreen">animaux</strong>🐈🐶🐎
+                </a>
+                , et je me tiens à votre disposition pour des{" "}
+                <a href="#portraits">
+                  <strong className="text-darkgreen">
+                    photo-reportages de mariage
+                  </strong>
+                </a>{" "}
+                qui captureront l'essence de votre journée. 👰
+              </p>
+            </div>
+            {/* Immobilier */}
+            <div className="flex flex-row mb-4">
+              <Image
+                src="/images/icons/hand.png"
+                alt="Vous êtes un professionnel"
+                width={30}
+                height={30}
+                className="w-5 h-5 mr-4"
+              />
+              <p>
+                Vous êtes en train de vendre{" "}
+                <strong>votre bien immobilier</strong> ? De belles photos sont
+                essentielles pour attirer des acheteurs potentiels et{" "}
+                <em className=" not-italic">accélérer la vente</em>. Je suis à
+                votre écoute pour valoriser votre bien avec des clichés mettant
+                votre bien sous son meilleur jour.
+              </p>
+            </div>
+            <p>
+              <em>
+                *Basée au Mans, je me déplace dans un rayon de 30 km. Au-delà,
+                des frais kilométriques sont appliqués.
+              </em>
+            </p>
+          </div>
+          {/* Image */}
+          <div className="mt-3 lg:m-8 w-2/3 lg:w-1/2 lg:my-auto">
+            <Image
+              src="/images/CarouselPhotos/coquelicots.jpg"
+              alt="Coqueliquots"
+              width={800}
+              height={800}
+              priority
+            />
           </div>
         </div>
-      </main>
+      </section>
+
+      {/* Carousel Pregnant, Birth, Portraits... */}
+      <div
+        id="portraits"
+        className=" scroll-mt-20 md:mb-10"
+        data-aos="fade-up"
+        data-aos-transform="translate"
+      >
+        <h2 className="text-center font-specialelite mt-5 md:mt-12 mb-3 text-[50%] md:text-sm">
+          Portraits, Photos de grossesse, naissances, mariage...
+        </h2>
+        <PhotographyCarousel photos={portraitPhotos} />
+      </div>
+      <div
+        className="md:mb-10"
+        data-aos="fade-up"
+        data-aos-transform="translate"
+      >
+        <h2 className="text-center font-specialelite mt-5 md:mt-12 mb-3 text-[50%] md:text-sm">
+          Paysages, architecture, immobilier...
+        </h2>
+        <PhotographyCarousel photos={landscapePhotos} />
+      </div>
+      <div
+        id="animals"
+        className="scroll-mt-20 mb-10"
+        data-aos="fade-up"
+        data-aos-transform="translate"
+      >
+        <h2 className="text-center font-specialelite mt-5 md:mt-12 mb-3 text-[50%] md:text-sm">
+          Photos animalières, chats, chiens, chevaux...
+        </h2>
+        <PhotographyCarousel photos={animalsPhotos} />
+      </div>
+      {/* Price */}
+      <div className="flex flex-row justify-center items-center mx-auto md:w-80 mb-10 lg:animate-wiggle">
+        <div className=" border-darkgreen bg-verylightgray border-4 w-32 md:w-auto h-auto rounded-lg text-center shadow-lg">
+          <p className="text-darkgreen font-specialelite text-[60%] md:text-sm p-2 md:p-4">
+            A partir de 60€ la séance
+          </p>
+        </div>
+      </div>
+    </main>
   );
 };
 
