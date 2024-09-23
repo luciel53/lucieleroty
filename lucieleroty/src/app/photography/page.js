@@ -214,8 +214,11 @@ const Photography = () => {
               </em>
             </p>
             <Link href="/contact">
-              <button className="bg-darkgreen h-4 w-20 md:w-40 lg:w-40 md:h-8 mb-2 lg:mb-0 mx-10 md:mx-20 lg:mx-56 mt-4 rounded-lg shadow-lg text-verylightgray text-[0.6rem] md:text-lg hover:text-darkgreen hover:bg-verylightgray hover:border-2 hover:border-darkgreen transition-transform duration-300 ease-in-out transform">
-                Demandez une estimation
+              <button className="relative overflow-hidden bg-darkgreen w-20 md:w-40 lg:w-40 md:h-8 mb-2  lg:mt-4 mx-10 md:mx-28 lg:mx-56 rounded-lg shadow-lg text-verylightgray text-[0.6rem] md:text-lg border-2 border-darkgreen hover:border-2 hover:border-darkgreen group">
+                <span className="absolute inset-0 bg-verylightgray transition-transform transform -translate-x-full group-hover:translate-x-0 duration-300 ease-in-out"></span>
+                <span className="relative text-verylightgray group-hover:text-darkgreen transition-colors duration-300 ease-in-out">
+                  Demandez une estimation
+                </span>
               </button>
             </Link>
           </div>

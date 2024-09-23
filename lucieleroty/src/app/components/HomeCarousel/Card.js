@@ -26,8 +26,11 @@ const HomeCarouselCard = ({ img, title, quote, paragraph, link }) => {
           {paragraph}
         </p>
         <Link href={link}>
-          <button className="bg-darkgreen w-12 h-4 md:w-20 md:h-8 mb-2 lg:mb-2 mx-20 md:mx-60 lg:mx-56 rounded-lg shadow-lg text-verylightgray text-[0.6rem] md:text-lg hover:text-darkgreen hover:bg-verylightgray hover:border-2 hover:border-darkgreen transition-transform duration-300 ease-in-out transform">
-            En savoir +
+          <button className="relative overflow-hidden bg-darkgreen w-12 h-4 md:w-20 md:h-8 mb-2 lg:mb-2 mx-20 md:mx-60 lg:mx-56 rounded-lg shadow-lg text-verylightgray text-[0.6rem] md:text-lg border-2 border-darkgreen hover:border-2 hover:border-darkgreen group">
+            <span className="absolute inset-0 bg-verylightgray transition-transform transform -translate-x-full group-hover:translate-x-0 duration-300 ease-in-out"></span>
+            <span className="relative text-verylightgray group-hover:text-darkgreen transition-colors duration-700 ease-in-out">
+              En savoir +
+            </span>
           </button>
         </Link>
       </div>

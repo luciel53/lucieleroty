@@ -28,10 +28,11 @@ const Contact = () => {
         </h1>
       </div>
       {/* Bubble */}
-      <div className="lg:w-80 lg:h-80 bg-lightgreen z-0 absolute drop-shadow-lg rounded-full animate-fade animate-duration-1000 animate-delay-[400ms] animate-ease-in"></div>
+      {/* <div className="lg:w-80 lg:h-80 bg-lightgreen z-0 absolute drop-shadow-lg rounded-full animate-fade animate-duration-1000 animate-delay-[400ms] animate-ease-in"></div> */}
       {/* Contact section */}
       <section className="flex flex-col md:flex-row justify-evenly items-center mx-auto md:mb-10 relative z-10 w-[80%] md:w-[90%] p-2 min-h-[28rem]">
         {/* Background image */}
+        <div className=""></div>
         <div className="absolute inset-0 bg-tea bg-cover bg-center opacity-30 z-0"></div>
 
         {/* Presentation and contact */}
@@ -160,7 +161,7 @@ const Contact = () => {
                 politique de confidentialité.
               </label>
             </div>
-            <button className="relative overflow-hidden bg-darkgreen w-20 p-0.5 rounded-lg text-verylightgray mx-auto group">
+            <button className="relative overflow-hidden bg-darkgreen w-20 p-0.5 rounded-lg text-verylightgray mx-auto border-2 border-darkgreen hover:border-darkgreen group">
               <span className="absolute inset-0 bg-verylightgray transition-transform transform -translate-x-full group-hover:translate-x-0 duration-300 ease-in-out"></span>
               <span className="relative text-verylightgray group-hover:text-darkgreen transition-colors duration-300 ease-in-out">
                 Envoyer
