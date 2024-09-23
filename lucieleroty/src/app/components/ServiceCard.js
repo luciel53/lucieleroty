@@ -1,14 +1,22 @@
 import Image from "next/image";
+import Link from "next/link";
 
-const ServiceCard = ({ title, paragraph, ul, paragraph2, img }) => {
+const ServiceCard = ({ title, paragraph, ul, paragraph2, img, link }) => {
   return (
     <section className="mx-1 md:mx-4 lg:mx-20 lg:mt-5 lg:mb-10">
       <div className="flex flex-wrap-reverse lg:flex-nowrap md:flex-row h-auto z-10 relative justify-center opacity-90 bg-verylightgray border-2 border-lightgreen rounded-lg">
-        {/* Paragraph */}
-        <div className="lg:ml-8 mx-3 md:mx-6 lg:mx-0 my-3 lg:my-8 text-justify text-xs md:text-sm lg:text-base lg:w-1/2">
-          {paragraph}
-          {ul}
-          {paragraph2}
+        {/* Paragraph and button */}
+        <div className="flex flex-col lg:w-1/2">
+          <div className="lg:ml-8 mx-3 md:mx-6 lg:mx-0 my-3 lg:my-4 text-justify text-xs md:text-sm lg:text-base ">
+            {paragraph}
+            {ul}
+            {paragraph2}
+          </div>
+          <Link href={link}>
+            <button className="bg-darkgreen h-4 w-20 md:w-40 lg:w-40 md:h-8 mb-2 lg:mb-4 mx-10 md:mx-28 lg:mx-56 rounded-lg shadow-lg text-verylightgray text-[0.6rem] md:text-lg hover:text-darkgreen hover:bg-verylightgray hover:border-2 hover:border-darkgreen transition-transform duration-300 ease-in-out transform">
+              Demandez une estimation
+            </button>
+          </Link>
         </div>
         {/* Image */}
         <div className="mt-3 lg:m-8 w-2/3 lg:w-1/2 lg:my-auto">

@@ -24,27 +24,33 @@ const WebsiteCreation = () => {
       <div className="lg:w-80 lg:h-80 bg-lightgreen z-0 absolute drop-shadow-lg rounded-full animate-fade animate-duration-1000 animate-delay-[400ms] animate-ease-in"></div>
       <ServiceCard
         title="Création de Designs"
-        paragraph={<p>Création de supports de communication tels que:</p>}
+        paragraph={
+          <p>
+            <strong>Création de supports de communication tels que:</strong>
+          </p>
+        }
         ul={
           <ul>
-            <li>- Flyers</li>
-            <li>- Maquettes</li>
-            <li>- Cartes de visite</li>
-            <li>- Affiches</li>
-            <li>- Logos</li>
+            <li className="flex flex-row"><span className="w-1 h-1 mt-2.5 mr-2 bg-black rounded-full" /><a href="#flyers"><strong className="text-darkgreen">Flyers</strong></a></li>
+            <li className="flex flex-row"><span className="w-1 h-1 mt-2.5 mr-2 bg-black rounded-full" /><strong>Maquettes</strong></li>
+            <li className="flex flex-row"><span className="w-1 h-1 mt-2.5 mr-2 bg-black rounded-full" /><a href="#cards"><strong className="text-darkgreen">Cartes de visite</strong></a></li>
+            <li className="flex flex-row"><span className="w-1 h-1 mt-2.5 mr-2 bg-black rounded-full" /><strong>Affiches</strong></li>
+            <li className="flex flex-row"><span className="w-1 h-1 mt-2.5 mr-2 bg-black rounded-full" /><strong>Logos</strong></li>
           </ul>
         }
         paragraph2={
           <p>
-            Le tout en respectant votre charte graphique ou en la créant si elle
+            Le tout en respectant votre <strong>charte graphique</strong> ou en la créant si elle
             n'est pas encore définie!
           </p>
         }
         img="/images/CarouselHome/design.png"
+        link="/design"
       />
       {/* Cartes de visites */}
       <div
-        className="flex flex-wrap lg:flex-nowrap md:flex-col h-auto p-4 mt-2 md:mt-5 mx-1 md:mx-4 lg:mx-64 md:mb-10 z-10 relative justify-center items-center opacity-90 bg-verylightgray border-2 border-lightgreen rounded-lg"
+        id="cards"
+        className="flex flex-wrap scroll-mt-20 lg:flex-nowrap md:flex-col h-auto p-4 mt-2 md:mt-5 mx-1 md:mx-4 lg:mx-64 md:mb-10 z-10 relative justify-center items-center opacity-90 bg-verylightgray border-2 border-lightgreen rounded-lg"
         data-aos="fade-up"
         data-aos-transform="translate"
       >
@@ -90,7 +96,8 @@ const WebsiteCreation = () => {
       </div>
       {/* Flyers */}
       <div
-        className="flex flex-wrap lg:flex-nowrap md:flex-col h-auto p-4 mt-2 md:mt-5 mx-1 md:mx-4 lg:mx-64 z-10 relative justify-center items-center opacity-90 bg-verylightgray border-2 border-lightgreen rounded-lg mb-10"
+        id="flyers"
+        className="flex flex-wrap scroll-mt-20 lg:flex-nowrap md:flex-col h-auto p-4 mt-2 md:mt-5 mx-1 md:mx-4 lg:mx-64 z-10 relative justify-center items-center opacity-90 bg-verylightgray border-2 border-lightgreen rounded-lg mb-10"
         data-aos="fade-up"
         data-aos-transform="translate"
       >

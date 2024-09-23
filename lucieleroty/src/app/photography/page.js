@@ -109,9 +109,9 @@ const Photography = () => {
       {/* Bubble */}
       <div className="lg:w-80 lg:h-80 bg-lightgreen z-0 absolute drop-shadow-lg rounded-full animate-fade animate-duration-1000 animate-delay-[400ms] animate-ease-in"></div>
       <section className="mx-1 md:mx-4 lg:mx-20 lg:mt-5 lg:mb-10">
-        <div className="flex flex-wrap-reverse lg:flex-nowrap md:flex-row h-auto z-10 relative justify-center opacity-90 bg-verylightgray border-2 border-lightgreen rounded-lg">
+        <div className="flex flex-wrap-reverse lg:flex-nowrap md:flex-row h-auto z-10 relative justify-center bg-verylightgray border-2 border-lightgreen rounded-lg">
           {/* Paragraph */}
-          <div className="lg:ml-8 mx-3 md:mx-6 lg:mx-0 my-3 lg:my-8 text-justify text-xs md:text-sm lg:text-base lg:w-1/2">
+          <div className="lg:ml-8 mx-3 md:mx-0 lg:mx-0 my-3 lg:my-8 text-justify text-xs md:text-sm lg:text-base md:w-[80%] lg:w-1/2">
             {/* Professionals */}
             <div className="flex flex-row">
               <Image
@@ -207,10 +207,17 @@ const Photography = () => {
             </div>
             <p>
               <em>
-                *Basée au Mans, je me déplace dans un rayon de 30 km. Au-delà,
-                des frais kilométriques sont appliqués.
+                <small>
+                  *Basée au Mans, je me déplace dans un rayon de 30 km. Au-delà,
+                  des frais kilométriques sont appliqués.
+                </small>
               </em>
             </p>
+            <Link href="/contact">
+              <button className="bg-darkgreen h-4 w-20 md:w-40 lg:w-40 md:h-8 mb-2 lg:mb-0 mx-10 md:mx-20 lg:mx-56 mt-4 rounded-lg shadow-lg text-verylightgray text-[0.6rem] md:text-lg hover:text-darkgreen hover:bg-verylightgray hover:border-2 hover:border-darkgreen transition-transform duration-300 ease-in-out transform">
+                Demandez une estimation
+              </button>
+            </Link>
           </div>
           {/* Image */}
           <div className="mt-3 lg:m-8 w-2/3 lg:w-1/2 lg:my-auto">

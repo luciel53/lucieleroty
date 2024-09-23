@@ -3,13 +3,6 @@ import Header from "../components/Header";
 import ServiceCard from "../components/ServiceCard";
 import WebsiteCreationCard from "../components/WebsiteCreation/WebsiteCreationCard";
 
-const card = {
-  title: "Création de sites web sur mesure",
-  paragraph:
-    "Créer un site web sur mesure est une étape cruciale pour toute entreprise, qu'il s'agisse d'une PME, d'un artisan, d'une association... Un site vitrine, un site one page ou une landing page bien conçus peuvent considérablement améliorer votre visibilité en ligne et vous aider à attirer de nouveaux clients. Un site web professionnel à votre image reflète non seulement votre identité mais aussi votre sérieux et votre engagement envers vos clients. En optant pour une solution personnalisée, vous vous assurez que votre site répond parfaitement à vos besoins spécifiques et qu'il est optimisé pour offrir une expérience utilisateur optimisée. En fin de compte, un site web professionnel est un investissement essentiel pour faire grandir votre entreprise et se démarquer dans un marché compétitif.",
-  img: "/images/CarouselHome/creation.png",
-};
-
 const WebsiteCreation = () => {
   return (
     <main className="flex-grow">
@@ -21,7 +14,45 @@ const WebsiteCreation = () => {
       </div>
       {/* Bubble */}
       <div className="lg:w-80 lg:h-80 bg-lightgreen z-0 absolute drop-shadow-lg rounded-full animate-fade animate-duration-1000 animate-delay-[400ms] animate-ease-in"></div>
-      <ServiceCard {...card} />
+      <ServiceCard
+        title="Création de sites web sur mesure"
+        paragraph={
+          <p>
+            Créer un <strong>site web sur mesure</strong> est une étape cruciale
+            pour toute entreprise, qu'il s'agisse d'une{" "}
+            <em className="not-italic underline font-semibold">PME</em>, d'un{" "}
+            <em className="not-italic underline">artisan</em>, d'une{" "}
+            <em className="not-italic underline">association</em>... Un{" "}
+            <strong>site vitrine</strong>, qu'il soit{" "}
+            <em className="not-italic">"one-page"</em> (
+            <strong>landingpage</strong>) ou "multipages", bien conçu peut
+            considérablement{" "}
+            <strong className="underline">
+              améliorer votre visibilité en ligne
+            </strong>{" "}
+            et vous aider à{" "}
+            <strong className="underline">attirer de nouveaux clients</strong>.
+            Un <strong>site web professionnel</strong>{" "}
+            <em className="underline not-italic">à votre image</em> reflète non
+            seulement <em className="not-italic">votre identité</em> mais aussi
+            votre sérieux et{" "}
+            <em className="not-italic">votre engagement envers vos clients</em>.
+            En optant pour une{" "}
+            <strong className="underline">solution personnalisée</strong>, vous
+            vous assurez que votre site répond parfaitement à vos besoins
+            spécifiques et qu'il est optimisé pour offrir une{" "}
+            <em className="not-italic">expérience utilisateur optimisée</em>. En
+            fin de compte, un <strong>site web professionnel</strong> est un{" "}
+            <em className="not-italic underline">
+              investissement essentiel pour faire grandir votre entreprise et se
+              démarquer dans un marché compétitif
+            </em>
+            .
+          </p>
+        }
+        link="/website-creation"
+        img="/images/CarouselHome/creation.png"
+      />
       {/* title of steps */}
       <div className="flex flex-row justify-center items-center mt-2 md:mt-2 md:ml-10">
         <div className="w-5 h-5 md:w-12 md:h-12 bg-lightgreen z-0 relative drop-shadow-lg rounded-full animate-fade animate-duration-1000 animate-delay-[400ms] animate-ease-in"></div>
