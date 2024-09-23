@@ -21,12 +21,14 @@ module.exports = {
       },
       fontFamily: {
         specialelite: ['var(--font-specialelite)', 'sans-serif'],
+        glitch: ['var(--font-glitch)', 'sans-serif'],
       },
       textAlign: {
         justify: 'justify',
       },
       backgroundImage: {
         wallpaper: "url('/images/Photos/lighttransparentwallpaper.jpg')",
+        tea: "url('/images/Photos/tea.jpg')",
       }
     },
   },
