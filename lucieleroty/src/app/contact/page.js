@@ -160,8 +160,11 @@ const Contact = () => {
                 politique de confidentialité.
               </label>
             </div>
-            <button className="bg-darkgreen w-20 p-0.5 rounded-lg text-verylightgray mx-auto">
-              Envoyer
+            <button className="relative overflow-hidden bg-darkgreen w-20 p-0.5 rounded-lg text-verylightgray mx-auto group">
+              <span className="absolute inset-0 bg-verylightgray transition-transform transform -translate-x-full group-hover:translate-x-0 duration-300 ease-in-out"></span>
+              <span className="relative text-verylightgray group-hover:text-darkgreen transition-colors duration-300 ease-in-out">
+                Envoyer
+              </span>
             </button>
           </form>
         </div>
