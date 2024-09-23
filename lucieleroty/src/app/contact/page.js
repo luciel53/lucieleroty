@@ -1,3 +1,5 @@
+'use client';
+
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 import ServiceCard from "../components/ServiceCard";
@@ -17,6 +19,39 @@ const glitch = localFont({
   variable: "--font-glitch",
   weight: "100 900",
 });
+
+const handleSubmit = async (e) => {
+  e.preventDefault();
+
+  const formData = {
+    name: e.target.name.value,
+    firstname: e.target.firstname.value,
+    company: e.target.company.value,
+    email: e.target.email.value,
+    phone: e.target.phone.value,
+    subject: e.target.subject.value,
+    message: e.target.message.value,
+  };
+
+  try {
+    const response = await fetch('/api/sendEmail', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(formData),
+    });
+
+    if (response.ok) {
+      alert('Votre message a été envoyé avec succès.');
+      e.target.reset();
+    } else {
+      alert("Votre message n\'a pas pu être envoyé.");
+    }
+  } catch (error) {
+    alert("Erreur lors de l\'envoi de votre message");
+  }
+};
 
 const Contact = () => {
   return (
@@ -103,43 +138,53 @@ const Contact = () => {
         <div className="hidden md:block w-[1px] h-60 z-10 bg-black"></div>
         {/* Contact form */}
         <div className="z-10">
-          <form className="flex flex-col lg:mr-6 my-6 lg:my-16">
+          <form
+            onSubmit={handleSubmit}
+            className="flex flex-col lg:mr-6 my-6 lg:my-16"
+          >
             <input
               type="text"
+              name="name"
               placeholder="Nom"
               required
               className="text-xs mb-2 pl-2 py-1 lg:text-xs border rounded-sm shadow-lg w-36 mx-auto lg:w-full"
             />
             <input
               type="text"
+              name="firstname"
               placeholder="Prénom"
               required
               className="text-xs mb-2 pl-2 py-1 lg:text-xs border rounded-sm shadow-lg w-36 mx-auto lg:w-full"
             />
             <input
               type="text"
+              name="company"
               placeholder="Société ou association (facultatif)"
               className="text-xs mb-2 pl-2 py-1 lg:text-xs border rounded-sm shadow-lg w-36 mx-auto lg:w-full"
             />
             <input
               type="email"
+              name="email"
               placeholder="Email"
               required
               className="text-xs mb-2 pl-2 py-1 lg:text-xs border rounded-sm shadow-lg w-36 mx-auto lg:w-full"
             />
             <input
               type="text"
+              name="phone"
               placeholder="Téléphone"
               className="text-xs mb-2 pl-2 py-1 lg:text-xs border rounded-sm shadow-lg w-36 mx-auto lg:w-full"
             />
             <input
               type="text"
+              name="subject"
               placeholder="Sujet"
               required
               className="text-xs mb-2 pl-2 py-1 lg:text-xs border rounded-sm shadow-lg w-36 mx-auto lg:w-full"
             />
             <textarea
               type="text"
+              name="message"
               placeholder="Votre message"
               required
               className="text-xs mb-2 pl-2 py-1 lg:text-xs border rounded-sm shadow-lg w-36 mx-auto lg:w-full h-20"

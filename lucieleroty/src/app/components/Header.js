@@ -64,46 +64,46 @@ const Header = () => {
         >
           <li>
             <Link href="/">
-              <p class="text-lg group relative w-max">
+              <p className="text-lg group relative w-max">
                 <span>Accueil</span>
-                <span class="absolute -bottom-1 left-1/2 w-0 transition-all h-0.5 bg-darkgreen group-hover:w-3/6 duration-300"></span>
-                <span class="absolute -bottom-1 right-1/2 w-0 transition-all h-0.5 bg-darkgreen group-hover:w-3/6  duration-300"></span>
+                <span className="absolute -bottom-1 left-1/2 w-0 transition-all h-0.5 bg-darkgreen group-hover:w-3/6 duration-300"></span>
+                <span className="absolute -bottom-1 right-1/2 w-0 transition-all h-0.5 bg-darkgreen group-hover:w-3/6  duration-300"></span>
               </p>
             </Link>
           </li>
           <li>
             <Link href="/website-creation">
-              <p class="text-lg group relative w-max">
+              <p className="text-lg group relative w-max">
                 <span>Création de sites</span>
-                <span class="absolute -bottom-1 left-1/2 w-0 transition-all h-0.5 bg-darkgreen group-hover:w-3/6 duration-300"></span>
-                <span class="absolute -bottom-1 right-1/2 w-0 transition-all h-0.5 bg-darkgreen group-hover:w-3/6 duration-300"></span>
+                <span className="absolute -bottom-1 left-1/2 w-0 transition-all h-0.5 bg-darkgreen group-hover:w-3/6 duration-300"></span>
+                <span className="absolute -bottom-1 right-1/2 w-0 transition-all h-0.5 bg-darkgreen group-hover:w-3/6 duration-300"></span>
               </p>
             </Link>
           </li>
           <li>
             <Link href="/design">
-              <p class="text-lg group relative w-max">
+              <p className="text-lg group relative w-max">
                 <span>Design</span>
-                <span class="absolute -bottom-1 left-1/2 w-0 transition-all h-0.5 bg-darkgreen group-hover:w-3/6 duration-300"></span>
-                <span class="absolute -bottom-1 right-1/2 w-0 transition-all h-0.5 bg-darkgreen group-hover:w-3/6 duration-300"></span>
+                <span className="absolute -bottom-1 left-1/2 w-0 transition-all h-0.5 bg-darkgreen group-hover:w-3/6 duration-300"></span>
+                <span className="absolute -bottom-1 right-1/2 w-0 transition-all h-0.5 bg-darkgreen group-hover:w-3/6 duration-300"></span>
               </p>
             </Link>
           </li>
           <li>
             <Link href="/photography">
-              <p class="text-lg group relative w-max">
+              <p className="text-lg group relative w-max">
                 <span>Photographie</span>
-                <span class="absolute -bottom-1 left-1/2 w-0 transition-all h-0.5 bg-darkgreen group-hover:w-3/6 duration-300"></span>
-                <span class="absolute -bottom-1 right-1/2 w-0 transition-all h-0.5 bg-darkgreen group-hover:w-3/6 duration-300"></span>
+                <span className="absolute -bottom-1 left-1/2 w-0 transition-all h-0.5 bg-darkgreen group-hover:w-3/6 duration-300"></span>
+                <span className="absolute -bottom-1 right-1/2 w-0 transition-all h-0.5 bg-darkgreen group-hover:w-3/6 duration-300"></span>
               </p>
             </Link>
           </li>
           <li className="lg:text-white">
             <Link href="/contact">
-            <p class="text-lg group relative w-max">
+            <p className="text-lg group relative w-max">
                 <span>Contact</span>
-                <span class="absolute -bottom-1 left-1/2 w-0 transition-all h-0.5 bg-verylightgray group-hover:w-3/6 duration-300"></span>
-                <span class="absolute -bottom-1 right-1/2 w-0 transition-all h-0.5 bg-verylightgray group-hover:w-3/6 duration-300"></span>
+                <span className="absolute -bottom-1 left-1/2 w-0 transition-all h-0.5 bg-verylightgray group-hover:w-3/6 duration-300"></span>
+                <span className="absolute -bottom-1 right-1/2 w-0 transition-all h-0.5 bg-verylightgray group-hover:w-3/6 duration-300"></span>
               </p>
               </Link>
           </li>
