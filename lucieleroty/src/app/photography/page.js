@@ -122,7 +122,7 @@ const Photography = () => {
                 className="w-5 h-5 mr-4"
               />
               <p className="mb-4">
-                Vous êtes un <em className=" not-italic">professionnel</em> ou
+                Vous êtes un <em className=" not-italic underline">professionnel</em> ou
                 une <em className="not-italic">association</em>, et vous avez
                 besoin d&apos;illustrer votre <strong>site web</strong> ou vos{" "}
                 <strong>supports de communication</strong> avec des{" "}
@@ -156,7 +156,7 @@ const Photography = () => {
                 className="w-5 h-5 mr-4"
               />
               <p>
-                Ou bien vous êtes un <em className="not-italic">particulier</em>{" "}
+                Ou bien vous êtes un <em className="not-italic underline">particulier</em>{" "}
                 et vous souhaitez{" "}
                 <em className="not-italic">
                   immortaliser des moments précieux
@@ -198,7 +198,7 @@ const Photography = () => {
               />
               <p>
                 Vous êtes en train de vendre{" "}
-                <strong>votre bien immobilier</strong> ? De belles photos sont
+                <strong className="underline">votre bien immobilier</strong> ? De belles photos sont
                 essentielles pour attirer des acheteurs potentiels et{" "}
                 <em className=" not-italic">accélérer la vente</em>. Je suis à
                 votre écoute pour valoriser votre bien avec des clichés mettant
