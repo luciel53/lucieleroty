@@ -270,11 +270,14 @@ const Photography = () => {
       </div>
       {/* Price */}
       <div className="flex flex-row justify-center items-center mx-auto md:w-80 mb-10 lg:animate-wiggle">
-        <div className=" border-darkgreen bg-verylightgray border-4 w-32 md:w-auto h-auto rounded-lg text-center shadow-lg">
-          <p className="text-darkgreen font-specialelite text-[60%] md:text-sm p-2 md:p-4">
-            A partir de 60€ la séance
-          </p>
-        </div>
+        <Link href="/contact">
+          <div className=" border-darkgreen bg-verylightgray border-4 w-32 md:w-auto h-auto rounded-lg text-center shadow-lg">
+            <p className="text-darkgreen font-specialelite text-[60%] md:text-sm p-2 md:p-4">
+              A partir de 60€ la séance
+            </p>
+            <p className="-mt-5 pb-2">(me contacter pour une estimation)</p>
+          </div>
+        </Link>
       </div>
     </main>
   );

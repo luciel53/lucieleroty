@@ -6,6 +6,7 @@ import Image from "next/image";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 import ServiceCard from "../components/ServiceCard";
+import Link from "next/link";
 
 const WebsiteCreation = () => {
   useEffect(() => {
@@ -31,17 +32,36 @@ const WebsiteCreation = () => {
         }
         ul={
           <ul>
-            <li className="flex flex-row"><span className="w-1 h-1 mt-2.5 mr-2 bg-black rounded-full" /><a href="#flyers"><strong className="text-darkgreen">Flyers</strong></a></li>
-            <li className="flex flex-row"><span className="w-1 h-1 mt-2.5 mr-2 bg-black rounded-full" /><strong>Maquettes</strong></li>
-            <li className="flex flex-row"><span className="w-1 h-1 mt-2.5 mr-2 bg-black rounded-full" /><a href="#cards"><strong className="text-darkgreen">Cartes de visite</strong></a></li>
-            <li className="flex flex-row"><span className="w-1 h-1 mt-2.5 mr-2 bg-black rounded-full" /><strong>Affiches</strong></li>
-            <li className="flex flex-row"><span className="w-1 h-1 mt-2.5 mr-2 bg-black rounded-full" /><strong>Logos</strong></li>
+            <li className="flex flex-row">
+              <span className="w-1 h-1 mt-2.5 mr-2 bg-black rounded-full" />
+              <a href="#flyers">
+                <strong className="text-darkgreen">Flyers</strong>
+              </a>
+            </li>
+            <li className="flex flex-row">
+              <span className="w-1 h-1 mt-2.5 mr-2 bg-black rounded-full" />
+              <strong>Maquettes</strong>
+            </li>
+            <li className="flex flex-row">
+              <span className="w-1 h-1 mt-2.5 mr-2 bg-black rounded-full" />
+              <a href="#cards">
+                <strong className="text-darkgreen">Cartes de visite</strong>
+              </a>
+            </li>
+            <li className="flex flex-row">
+              <span className="w-1 h-1 mt-2.5 mr-2 bg-black rounded-full" />
+              <strong>Affiches</strong>
+            </li>
+            <li className="flex flex-row">
+              <span className="w-1 h-1 mt-2.5 mr-2 bg-black rounded-full" />
+              <strong>Logos</strong>
+            </li>
           </ul>
         }
         paragraph2={
           <p>
-            Le tout en respectant votre <strong>charte graphique</strong> ou en la créant si elle
-            n'est pas encore définie!
+            Le tout en respectant votre <strong>charte graphique</strong> ou en
+            la créant si elle n'est pas encore définie!
           </p>
         }
         img="/images/CarouselHome/design.png"
@@ -117,11 +137,13 @@ const WebsiteCreation = () => {
       </div>
       {/* Price */}
       <div className="flex flex-row justify-center items-center mx-auto mb-10 md:w-80 lg:animate-wiggle">
-        <div className=" border-darkgreen bg-verylightgray border-4 w-32 md:w-auto h-auto rounded-lg text-center shadow-lg">
-          <p className="text-darkgreen font-specialelite text-[60%] md:text-sm p-2 md:p-4">
-            Demandez une estimation
-          </p>
-        </div>
+        <Link href="/contact">
+          <div className=" border-darkgreen bg-verylightgray border-4 w-32 md:w-auto h-auto rounded-lg text-center shadow-lg">
+            <p className="text-darkgreen font-specialelite text-[60%] md:text-sm p-2 md:p-4">
+              Demandez une estimation
+            </p>
+          </div>
+        </Link>
       </div>
     </main>
   );
