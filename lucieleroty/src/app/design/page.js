@@ -45,7 +45,7 @@ const WebsiteCreation = () => {
           </p>
         }
         img="/images/CarouselHome/design.png"
-        link="/design"
+        link="/contact"
       />
       {/* Cartes de visites */}
       <div

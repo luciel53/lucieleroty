@@ -50,7 +50,7 @@ const WebsiteCreation = () => {
             .
           </p>
         }
-        link="/website-creation"
+        link="/contact"
         img="/images/CarouselHome/creation.png"
       />
       {/* title of steps */}

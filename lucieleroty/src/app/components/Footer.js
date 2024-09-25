@@ -1,6 +1,11 @@
+import Link from "next/link";
+
 const Footer = () => {
 	return (
 		<footer className=" w-full py-4 text-[0.6rem] md:text-[0.8rem] bg-lightgray text-center text-black">
+			<div>
+			<Link href="/legalNotices"><p>Mentions Légales</p></Link>
+			</div>
 			<p>© EyeToPixel - Développeuse Web Freelance - 2024</p>
 		</footer>
 	)
