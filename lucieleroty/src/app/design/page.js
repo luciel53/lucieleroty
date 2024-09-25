@@ -61,7 +61,7 @@ const WebsiteCreation = () => {
         paragraph2={
           <p>
             Le tout en respectant votre <strong>charte graphique</strong> ou en
-            la créant si elle n'est pas encore définie!
+            la créant si elle n&apos;est pas encore définie!
           </p>
         }
         img="/images/CarouselHome/design.png"

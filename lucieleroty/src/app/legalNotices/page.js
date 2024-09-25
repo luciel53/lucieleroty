@@ -8,7 +8,7 @@ const LegalNotices = () => {
       {/* Company informations */}
       <div className=" mx-4 md:mx-10 lg:ml-40 mt-5 md:mt-16 text-sm md:text-base">
         <h2 className="mb-2 underline font-specialelite text-xs md:text-base">
-          L'entreprise :
+          L&apos;entreprise :
         </h2>
         <p>
           <strong>EyeToPixel</strong>
@@ -44,7 +44,7 @@ const LegalNotices = () => {
       {/* Hosting company */}
       <div className=" mx-4 md:mx-10 lg:ml-40 mt-5 md:mt-16 text-sm md:text-base">
         <h2 className="mb-2 underline font-specialelite text-xs md:text-base">
-          L'hébergeur :
+          L&apos;hébergeur :
         </h2>
         <p>Hostinger International Ltd.</p>
         <p>61 Lordou Vironos Street, 6023</p>
@@ -72,9 +72,9 @@ const LegalNotices = () => {
           afin de vous contacter via notre formulaire de contact.
         </p>
         <p className="text-justify">
-          Vous avez le droit d'accéder à vos données, de les modifier ou de
+          Vous avez le droit d&apos;accéder à vos données, de les modifier ou de
           demander leur suppression à tout moment. Pour exercer ces droits,
-          veuillez nous contacter à l'adresse suivante:{" "}
+          veuillez nous contacter à l&apos;adresse suivante:{" "}
           <a
             href="mailto:contact@eyetopixel.com"
             className="text-darkgreen hover:text-lightgreen underline"

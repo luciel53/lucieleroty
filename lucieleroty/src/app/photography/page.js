@@ -124,7 +124,7 @@ const Photography = () => {
               <p className="mb-4">
                 Vous êtes un <em className=" not-italic">professionnel</em> ou
                 une <em className="not-italic">association</em>, et vous avez
-                besoin d'illustrer votre <strong>site web</strong> ou vos{" "}
+                besoin d&apos;illustrer votre <strong>site web</strong> ou vos{" "}
                 <strong>supports de communication</strong> avec des{" "}
                 <strong>photos uniques</strong> qui{" "}
                 <em className="not-italic">reflètent votre identité</em> ?<br />
@@ -184,7 +184,7 @@ const Photography = () => {
                     photo-reportages de mariage
                   </strong>
                 </a>{" "}
-                qui captureront l'essence de votre journée. 👰
+                qui captureront l&apos;essence de votre journée. 👰
               </p>
             </div>
             {/* Immobilier */}

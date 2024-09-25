@@ -18,13 +18,13 @@ const WebsiteCreation = () => {
         paragraph={
           <p>
             Créer un <strong>site web sur mesure</strong> est une étape cruciale
-            pour toute entreprise, qu'il s'agisse d'une{" "}
-            <em className="not-italic underline font-semibold">PME</em>, d'un{" "}
-            <em className="not-italic underline">artisan</em>, d'une{" "}
+            pour toute entreprise, qu&apos;il s&apos;agisse d&apos;une{" "}
+            <em className="not-italic underline font-semibold">PME</em>, d&apos;un{" "}
+            <em className="not-italic underline">artisan</em>, d&apos;une{" "}
             <em className="not-italic underline">association</em>... Un{" "}
-            <strong>site vitrine</strong>, qu'il soit{" "}
-            <em className="not-italic">"one-page"</em> (
-            <strong>landingpage</strong>) ou "multipages", bien conçu peut
+            <strong>site vitrine</strong>, qu&apos;il soit{" "}
+            <em className="not-italic">&ldquo;one-page&rdquo;</em> (
+            <strong>landingpage</strong>) ou &ldquo;multipages&rdquo;, bien conçu peut
             considérablement{" "}
             <strong className="underline">
               améliorer votre visibilité en ligne
@@ -39,7 +39,7 @@ const WebsiteCreation = () => {
             En optant pour une{" "}
             <strong className="underline">solution personnalisée</strong>, vous
             vous assurez que votre site répond parfaitement à vos besoins
-            spécifiques et qu'il est optimisé pour offrir une{" "}
+            spécifiques et qu&apos;il est optimisé pour offrir une{" "}
             <em className="not-italic">expérience utilisateur optimisée</em>. En
             fin de compte, un <strong>site web professionnel</strong> est un{" "}
             <em className="not-italic underline">
@@ -56,7 +56,7 @@ const WebsiteCreation = () => {
       <div className="flex flex-row justify-center items-center mt-2 md:mt-2 md:ml-10">
         <div className="w-5 h-5 md:w-12 md:h-12 bg-lightgreen z-0 relative drop-shadow-lg rounded-full animate-fade animate-duration-1000 animate-delay-[400ms] animate-ease-in"></div>
         <h2 className="z-10 w-40 md:w-80 lg:w-[30rem] text-[50%] md:text-[90%] lg:text-[100%] md:p-2 md:pt-9 lg:pt-2 mt-4 md:mt-2 -ml-3 md:-ml-10 font-specialelite">
-          Les étapes de la création d'un site web sur mesures
+          Les étapes de la création d&apos;un site web sur mesures
         </h2>
       </div>
       <WebsiteCreationCard
@@ -102,7 +102,7 @@ const WebsiteCreation = () => {
         ul={
           <ul className="ml-4 ">
             <li>- Déploiement du site</li>
-            <li>- Tests et corrections d'éventuels bugs</li>
+            <li>- Tests et corrections d&apos;éventuels bugs</li>
             <li>- Définir la structure (menu, ...)</li>
             <li>- Livraison de votre site web!</li>
           </ul>

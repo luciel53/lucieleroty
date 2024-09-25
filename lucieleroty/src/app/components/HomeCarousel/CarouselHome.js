@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef, useCallback } from "react";
 import Card from "./Card";
 
 const cards = [
@@ -70,9 +70,9 @@ const HomeCarousel = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const intervalRef = useRef(null); // Use a ref to keep track of the interval
 
-  const nextCard = () => {
+  const nextCard = useCallback(() => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % cards.length);
-  };
+  }, []);
 
   const prevCard = () => {
     setCurrentIndex((prevIndex) =>
@@ -81,11 +81,11 @@ const HomeCarousel = () => {
   };
 
    // Function to start the interval
-   const startAutoSlide = () => {
+   const startAutoSlide = useCallback(() => {
     intervalRef.current = setInterval(() => {
       nextCard();
     }, 15000);
-  };
+  }, [nextCard]);
 
   // Function to stop the interval
   const stopAutoSlide = () => {
@@ -102,7 +102,7 @@ const HomeCarousel = () => {
     return () => {
       stopAutoSlide();
     };
-  }, [])
+  }, [startAutoSlide]);
 
   return (
     <div

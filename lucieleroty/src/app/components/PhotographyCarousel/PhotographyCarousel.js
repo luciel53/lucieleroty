@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect, useRef } from "react";
+import { useState, useEffect, useRef, useCallback } from "react";
 import Card from "./PhotographyCarouselCard";
 
 
@@ -43,9 +43,9 @@ const PhotographyCarousel = ({ photos }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const intervalRef = useRef(null); // Use a ref to keep track of the interval
 
-  const nextCard = () => {
+  const nextCard = useCallback(() => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % photos.length);
-  };
+  }, [photos.length]);
 
   const prevCard = () => {
     setCurrentIndex((prevIndex) =>
@@ -54,11 +54,11 @@ const PhotographyCarousel = ({ photos }) => {
   };
 
    // Function to start the interval
-   const startAutoSlide = () => {
+   const startAutoSlide = useCallback(() => {
     intervalRef.current = setInterval(() => {
       nextCard();
-    }, 15000);
-  };
+    }, 5000);
+  }, [nextCard]);
 
   // Function to stop the interval
   const stopAutoSlide = () => {
@@ -75,7 +75,7 @@ const PhotographyCarousel = ({ photos }) => {
     return () => {
       stopAutoSlide();
     };
-  }, [])
+  }, [startAutoSlide, photos.length]);
 
   return (
     <div

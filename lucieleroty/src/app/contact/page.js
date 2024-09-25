@@ -201,7 +201,7 @@ const Contact = () => {
                 htmlFor="terms"
                 className="mb-2 pl-2 rounded-sm text-[60%] md:text-xs hover:cursor-pointer"
               >
-                J'accepte les conditions générales d'utilisation et autorise le
+                J&apos;accepte les conditions générales d&apos;utilisation et autorise le
                 traitement de mes données personnelles conformément à la
                 politique de confidentialité.
               </label>

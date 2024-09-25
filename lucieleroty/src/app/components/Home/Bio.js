@@ -21,15 +21,15 @@ const Bio = () => {
           </h3>
           <p className="text-[0.55rem] md:text-[0.8rem] lg:text-[1rem] text-justify">
             En tant que <strong>développeuse web freelance</strong> et{" "}
-            <strong>photographe</strong>, issue de l'école{" "}
+            <strong>photographe</strong>, issue de l&apos;école{" "}
             <strong>internationale Holberton School</strong>. Polyvalente,{" "}
             <strong>je crée des sites internet sur-mesure</strong> qui reflètent
             votre univers. De la
             <em className=" not-italic">conception graphique</em> à la{" "}
             <em className=" not-italic">programmation</em>, je vous accompagne
             pas à pas pour donner vie à votre{" "}
-            <em className=" not-italic">projet web</em>. Des sites "one-page"
-            aux sites multipages, je m'adapte à vos besoins.{" "}
+            <em className=" not-italic">projet web</em>. Des sites &ldquo;one-page&rdquo;
+            aux sites multipages, je m&apos;adapte à vos besoins.{" "}
             <strong>Passionnée de photographie</strong>, je vous accompagne
             également pour la réalisation de vos projets photographiques
             (particuliers ou professionnels).
