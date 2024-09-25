@@ -17,7 +17,8 @@ const PhotographyCarouselCard = ({ img, title, quote }) => {
           width={800}
           height={800}
           priority
-          className="object-cover w-full h-full rounded-lg"
+
+          className="object-contain w-full h-full rounded-lg"
         />
         {/* Quote */}
         <blockquote
