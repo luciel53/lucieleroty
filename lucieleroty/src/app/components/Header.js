@@ -55,7 +55,7 @@ const Header = () => {
       <nav
         className={`lg:flex lg:space-x-6 ${isMenuOpen ? "block animate-fade-down" : "hidden"} absolute z-20 right-0.5 w-32 md:w-40 p-3 rounded-bl-xl bg-verylightgray shadow-lg lg:relative lg:top-0 lg:left-auto lg:flex lg:space-x-6 lg:w-auto lg:bg-transparent lg:shadow-none`}
       >
-        <ul className={`lg:z-30 lg:flex flex-row lg:space-x-10 text-xs md:text-base lg:text-lg lg:mr-4 lg:mt-1`}>
+        <ul className={`lg:z-30 lg:flex flex-row lg:space-x-10 sm:text-xs md:text-base lg:text-lg lg:mr-4 lg:mt-1`}>
           {[
             { href: "/", label: "Accueil" },
             { href: "/website-creation", label: "Création de sites" },
@@ -65,10 +65,10 @@ const Header = () => {
           ].map(({ href, label, isContact }) => (
             <li key={href} className="relative z-10">
               <Link href={href}>
-                <p className={`text-lg group relative z-10 w-max ${isContact ? 'lg:text-white' : ''}`}>
+                <p className={`lg:text-lg group relative z-10 w-max ${isContact ? 'lg:text-white' : ''}`}>
                   <span>{label}</span>
-                  <span className={`absolute -bottom-1 left-1/2 w-0 transition-all h-0.5 ${isContact ? 'bg-white' : 'bg-darkgreen'} group-hover:w-3/6 duration-300`}></span>
-                  <span className={`absolute -bottom-1 right-1/2 w-0 transition-all h-0.5 ${isContact ? 'bg-white' : 'bg-darkgreen'} group-hover:w-3/6 duration-300`}></span>
+                  <span className={`lg:absolute -bottom-1 left-1/2 w-0 transition-all h-0.5 ${isContact ? 'bg-white' : 'bg-darkgreen'} group-hover:w-3/6 duration-300`}></span>
+                  <span className={`lg:absolute -bottom-1 right-1/2 w-0 transition-all h-0.5 ${isContact ? 'bg-white' : 'bg-darkgreen'} group-hover:w-3/6 duration-300`}></span>
                 </p>
               </Link>
               {isActive(href) && (
