@@ -70,11 +70,11 @@ const WebsiteCreation = () => {
       {/* Cartes de visites */}
       <div
         id="cards"
-        className="flex flex-wrap scroll-mt-20 lg:flex-nowrap md:flex-col h-auto p-4 mt-2 md:mt-5 mx-1 md:mx-4 lg:mx-64 md:mb-10 z-10 relative justify-center items-center opacity-90 bg-verylightgray border-2 border-lightgreen rounded-lg"
+        className="flex flex-wrap scroll-mt-20 lg:flex-nowrap md:flex-col h-auto w-[50%] p-4 mt-2 md:mt-5 mx-auto md:mb-10 z-10 relative justify-center items-center opacity-90 bg-verylightgray border-2 border-lightgreen rounded-lg"
         data-aos="fade-up"
         data-aos-transform="translate"
       >
-        <p className="pb-4 font-specialelite text-[60%] md:text-sm drop-shadow-left">
+        <p className="pb-4 font-specialelite text-[40%] md:text-sm drop-shadow-left">
           Cartes de visite
         </p>
         <div className="flex flex-row justify-center ">
@@ -117,11 +117,11 @@ const WebsiteCreation = () => {
       {/* Flyers */}
       <div
         id="flyers"
-        className="flex flex-wrap scroll-mt-20 lg:flex-nowrap md:flex-col h-auto p-4 mt-2 md:mt-5 mx-1 md:mx-4 lg:mx-64 z-10 relative justify-center items-center opacity-90 bg-verylightgray border-2 border-lightgreen rounded-lg mb-10"
+        className="flex flex-wrap scroll-mt-20 lg:flex-nowrap md:flex-col h-auto w-[50%] p-4 mt-2 md:mt-5 mx-auto z-10 relative justify-center items-center opacity-90 bg-verylightgray border-2 border-lightgreen rounded-lg mb-10"
         data-aos="fade-up"
         data-aos-transform="translate"
       >
-        <p className="pb-4 font-specialelite text-[60%] md:text-sm drop-shadow-left">
+        <p className="pb-4 font-specialelite text-[40%] md:text-sm drop-shadow-left">
           Flyers
         </p>
         <div className="flex flex-row justify-center ">
