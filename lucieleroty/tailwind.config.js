@@ -14,7 +14,7 @@ module.exports = {
         darkgreen: "#1DA23C",
         lightgreen: "#82E398",
         lightgray: "#EAE4E4",
-        verylightgray: "#F7F4F4",
+        verylightgray: "#FCFBFB",
       },
       dropShadow: {
         'left': '-10px 5px 8px rgba(0, 0, 0, 0.23)',

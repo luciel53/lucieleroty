@@ -35,8 +35,8 @@ const WebsiteCreation = () => {
             <strong className="italic">solution personnalisée</strong>, vous
             vous assurez que votre site répond parfaitement à vos besoins
             spécifiques et qu&apos;il est optimisé pour offrir une{" "}
-            <em className="not-italic">expérience utilisateur optimisée</em>. En
-            fin de compte, un <strong>site web professionnel</strong> est un{" "}
+            <em className="not-italic">expérience utilisateur agréable</em>. En
+            fin de compte, un <strong>site web de qualité</strong> est un{" "}
             <em>
               investissement essentiel pour faire grandir votre entreprise et se
               démarquer dans un marché compétitif
