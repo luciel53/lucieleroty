@@ -65,7 +65,7 @@ const Contact = () => {
       {/* Bubble */}
       {/* <div className="lg:w-80 lg:h-80 bg-lightgreen z-0 absolute drop-shadow-lg rounded-full animate-fade animate-duration-1000 animate-delay-[400ms] animate-ease-in"></div> */}
       {/* Contact section */}
-      <section className="flex flex-col md:flex-row justify-evenly items-center mx-auto md:mb-10 relative z-10 w-[80%] md:w-[90%] p-2 min-h-[28rem]">
+      <section className="flex flex-col md:flex-row justify-evenly items-center mx-auto md:mb-10 relative z-10 w-[80%] md:w-[90%] p-2 min-h-[28rem] animate-fade-down animate-duration-1000 animate-delay-[400ms] animate-ease-in">
         {/* Background image */}
         <div className="absolute inset-0 bg-tea bg-cover bg-center opacity-10 z-0"></div>
 
@@ -130,6 +130,64 @@ const Contact = () => {
                 className="w-4 h-4 ml-0.5 mt-0.5"
               />
               <p className="pl-1">N° Siret: 81821811700021</p>
+            </div>
+            {/* Social networks links */}
+            <div className="flex flex-col self-center mt-5">
+            <p className="italic text-xs md:text-sm">Retrouvez-moi sur les réseaux sociaux:</p>
+            <div className="flex flex-row justify-center py-2 -mt-1">
+              <a
+                href="https://www.malt.fr/profile/lucieleroty"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Image
+                  src="/images/icons/malt.png"
+                  alt="Page professionnelle malt"
+                  width={30}
+                  height={30}
+                  className="w-3.5 h-3.5 mt-[2px] mr-1 hover:opacity-80 cursor-pointer"
+                />
+              </a>
+              <a
+                href="https://www.facebook.com/eyetopixeldev/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Image
+                  src="/images/icons/facebook.png"
+                  alt="Page professionnelle facebook"
+                  width={30}
+                  height={30}
+                  className="mr-1 hover:opacity-80 cursor-pointer"
+                />
+              </a>
+              <a
+                href="https://www.instagram.com/eyeto_pixel"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Image
+                  src="/images/icons/insta.png"
+                  alt="Page professionnelle instagram"
+                  width={30}
+                  height={30}
+                  className="mr-1 hover:opacity-80 cursor-pointer"
+                />
+              </a>
+              <a
+                href="https://www.linkedin.com/company/eyetopixel/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Image
+                  src="/images/icons/linkedin.png"
+                  alt="Page professionnelle linkedin"
+                  width={30}
+                  height={30}
+                  className="hover:opacity-80 cursor-pointer"
+                />
+              </a>
+            </div>
             </div>
           </div>
         </div>

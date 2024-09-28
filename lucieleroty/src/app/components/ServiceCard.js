@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const ServiceCard = ({ title, paragraph, ul, paragraph2, img, link }) => {
   return (
-    <section className="mx-1 md:mx-4 lg:mx-20 lg:mt-5 lg:mb-10">
+    <section className="mx-1 md:mx-4 lg:mx-20 lg:mt-5 lg:mb-10 animate-fade animate-duration-1000 animate-delay-[400ms] animate-ease-in">
       <div className="flex flex-wrap-reverse lg:flex-nowrap md:flex-row h-auto z-10 relative justify-center opacity-90 bg-verylightgray border-2 border-lightgreen rounded-lg">
         {/* Paragraph and button */}
         <div className="flex flex-col lg:w-1/2">

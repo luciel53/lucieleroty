@@ -108,7 +108,7 @@ const Photography = () => {
       </div>
       {/* Bubble */}
       <div className="lg:w-80 lg:h-80 bg-lightgreen z-0 absolute drop-shadow-lg rounded-full animate-fade animate-duration-1000 animate-delay-[400ms] animate-ease-in"></div>
-      <section className="mx-1 md:mx-4 lg:mx-20 lg:mt-5 lg:mb-10">
+      <section className="mx-1 md:mx-4 lg:mx-20 lg:mt-5 lg:mb-10 animate-fade animate-duration-1000 animate-delay-[400ms] animate-ease-in">
         <div className="flex flex-wrap-reverse lg:flex-nowrap md:flex-row h-auto z-10 relative justify-center bg-verylightgray border-2 border-lightgreen rounded-lg">
           {/* Paragraph */}
           <div className="lg:ml-8 mx-3 md:mx-0 lg:mx-0 my-3 lg:my-8 text-justify text-xs md:text-sm lg:text-base md:w-[80%] lg:w-1/2">
@@ -143,7 +143,7 @@ const Photography = () => {
                   </em>
                 </Link>
                 . Ensemble, nous mettrons en valeur votre activité avec des{" "}
-                <em className="not-italic">images percutantes</em> 📸.
+                <em className="not-italic">images percutantes</em>.
               </p>
             </div>
             {/* Particuliers */}
@@ -166,7 +166,7 @@ const Photography = () => {
                   <strong className="text-darkgreen underline">
                     grossesse
                   </strong>{" "}
-                  🤰
+
                 </a>
                 ,{" "}
                 <a href="#portraits">
@@ -174,11 +174,11 @@ const Photography = () => {
                     naissance
                   </strong>
                 </a>{" "}
-                👶,{" "}
+                ,{" "}
                 <a href="#portraits">
                   <strong className="text-darkgreen underline">famille</strong>
                 </a>{" "}
-                👨‍👩‍👦,{" "}
+                ,{" "}
                 <a href="#animals">
                   <strong className="text-darkgreen underline">animaux</strong>
                   🐈🐶🐎
@@ -186,10 +186,10 @@ const Photography = () => {
                 , et je me tiens à votre disposition pour des{" "}
                 <a href="#portraits">
                   <strong className="text-darkgreen underline">
-                    photo-reportages de mariage
+                    photo-reportages de mariage 👰
                   </strong>
                 </a>{" "}
-                qui captureront l&apos;essence de votre journée. 👰
+                qui captureront l&apos;essence de votre journée.
               </p>
             </div>
             {/* Immobilier */}
