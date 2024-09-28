@@ -6,8 +6,8 @@ const WebsiteCreation = () => {
   return (
     <main className="flex-grow">
       {/* title */}
-      <div className="flex flex-col z-0 font-specialelite mt-1 lg:mt-3 mb-2 animate-flip-down">
-        <h1 className="mx-auto drop-shadow-left text-[0.6rem] md:text-lg lg:text-xl">
+      <div className="flex flex-col z-0 font-specialelite mt-1 mb-2 animate-flip-down">
+        <h1 className="mx-auto drop-shadow-left text-[0.6rem] md:text-lg">
           Création de sites web sur mesures
         </h1>
       </div>
@@ -19,30 +19,25 @@ const WebsiteCreation = () => {
           <p>
             Créer un <strong>site web sur mesure</strong> est une étape cruciale
             pour toute entreprise, qu&apos;il s&apos;agisse d&apos;une{" "}
-            <em className="not-italic underline font-semibold">PME</em>, d&apos;un{" "}
-            <em className="not-italic underline">artisan</em>, d&apos;une{" "}
-            <em className="not-italic underline">association</em>... Un{" "}
-            <strong>site vitrine</strong>, qu&apos;il soit{" "}
-            <em className="not-italic">&ldquo;one-page&rdquo;</em> (
-            <strong>landingpage</strong>) ou &ldquo;multipages&rdquo;, bien conçu peut
-            considérablement{" "}
-            <strong className="underline">
+            <em>PME</em>, d&apos;un <em>artisan</em>, d&apos;une{" "}
+            <em>association</em>... Un <strong>site vitrine</strong>, qu&apos;il
+            soit <em className="not-italic">&ldquo;one-page&rdquo;</em> (
+            <strong>landingpage</strong>) ou &ldquo;multipages&rdquo;, bien
+            conçu, peut considérablement{" "}
+            <strong className="italic">
               améliorer votre visibilité en ligne
             </strong>{" "}
             et vous aider à{" "}
-            <strong className="underline">attirer de nouveaux clients</strong>.
-            Un <strong>site web professionnel</strong>{" "}
-            <em className="underline not-italic">à votre image</em> reflète non
-            seulement <em className="not-italic">votre identité</em> mais aussi
-            votre sérieux et{" "}
-            <em className="not-italic">votre engagement envers vos clients</em>.
-            En optant pour une{" "}
-            <strong className="underline">solution personnalisée</strong>, vous
+            <strong className="italic">attirer de nouveaux clients</strong>. Un{" "}
+            <strong>site web professionnel</strong> <em>à VOTRE image</em>{" "}
+            reflète non seulement <em>votre identité</em> mais aussi votre
+            sérieux et votre engagement envers vos clients. En optant pour une{" "}
+            <strong className="italic">solution personnalisée</strong>, vous
             vous assurez que votre site répond parfaitement à vos besoins
             spécifiques et qu&apos;il est optimisé pour offrir une{" "}
             <em className="not-italic">expérience utilisateur optimisée</em>. En
             fin de compte, un <strong>site web professionnel</strong> est un{" "}
-            <em className="not-italic underline">
+            <em>
               investissement essentiel pour faire grandir votre entreprise et se
               démarquer dans un marché compétitif
             </em>
@@ -50,7 +45,7 @@ const WebsiteCreation = () => {
           </p>
         }
         link="/contact"
-        img="/images/CarouselHome/creation.png"
+        img="/images/Photos/creation.png"
       />
       {/* title of steps */}
       <div className="flex flex-row justify-center items-center mt-2 md:mt-2 md:ml-10">

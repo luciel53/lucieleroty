@@ -39,6 +39,7 @@ const Header = () => {
           </span>
         </div>
       </Link>
+      {/* Burger button */}
       <div className="relative overflow-hidden">
         <button
           onClick={toggleMenu}
@@ -83,8 +84,9 @@ const Header = () => {
             </li>
           ))}
         </ul>
+        {/* Contact bubble */}
         <div className="relative">
-          <span className="lg:z-10 flex absolute drop-shadow-lg animate-bounce animate-duration-[800ms] animate-delay-[20000ms] animate-ease-out hover:animate-none lg:w-40 lg:h-40 lg:bg-darkgreen text-white rounded-full lg:-mt-20 lg:-right-12 overflow-hidden"></span>
+          <span className="lg:z-10 flex absolute drop-shadow-lg animate-bounce animate-duration-[800ms] animate-delay-[20000ms] animate-ease-out hover:animate-none lg:w-40 lg:h-40 lg:bg-darkgreen text-white rounded-full lg:-mt-20 lg:-right-12"></span>
         </div>
       </nav>
     </header>

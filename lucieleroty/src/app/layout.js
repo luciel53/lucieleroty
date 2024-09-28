@@ -18,7 +18,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="fr">
+    <html lang="fr" className="overflow-x-hidden">
       <body
         className={`${pompiere.variable} antialiased flex flex-col min-h-screen bg-wallpaper bg-cover bg-no-repeat zoom-out`}
       >
