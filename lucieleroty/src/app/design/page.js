@@ -16,8 +16,8 @@ const WebsiteCreation = () => {
   return (
     <main className="flex-grow">
       {/* title */}
-      <div className="flex flex-col z-0 font-specialelite mt-1 lg:mt-3 mb-2 animate-flip-down">
-        <h1 className="mx-auto drop-shadow-left text-[0.6rem] md:text-lg lg:text-xl">
+      <div className="flex flex-col z-0 font-specialelite mt-1 mb-2 animate-flip-down">
+        <h1 className="mx-auto drop-shadow-left text-[0.6rem] md:text-lg">
           Création de designs
         </h1>
       </div>

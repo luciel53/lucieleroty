@@ -6,7 +6,7 @@ import Image from "next/image";
 
 const Bio = () => {
   useEffect(() => {
-    AOS.init({ duration: 1000, offset: 350 });
+    AOS.init({ duration: 700, offset: 350 });
   }, []);
   return (
     <section

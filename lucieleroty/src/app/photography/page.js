@@ -95,14 +95,14 @@ const landscapePhotos = [
 
 const Photography = () => {
   useEffect(() => {
-    AOS.init({ duration: 1000, offset: 350 });
+    AOS.init({ duration: 700, offset: 150 });
   }, []);
 
   return (
     <main className="flex-grow">
       {/* title */}
       <div className="flex flex-col z-0 font-specialelite mt-1 lg:mt-3 mb-2 animate-flip-down">
-        <h1 className="mx-auto drop-shadow-left text-[0.6rem] md:text-lg lg:text-xl">
+        <h1 className="mx-auto drop-shadow-left text-[0.6rem] md:text-lg">
           Photographie
         </h1>
       </div>
@@ -119,26 +119,26 @@ const Photography = () => {
                 alt="Vous êtes un professionnel"
                 width={30}
                 height={30}
-                className="w-5 h-5 mr-4"
+                className="w-3 h-3 md:w-5 md:h-5 mr-2 md:mr-4"
               />
               <p className="mb-4">
-                Vous êtes un <em className=" not-italic underline">professionnel</em> ou
-                une <em className="not-italic">association</em>, et vous avez
-                besoin d&apos;illustrer votre <strong>site web</strong> ou vos{" "}
+                Vous êtes un <em>professionnel</em> ou une <em>association</em>,
+                et vous avez besoin d&apos;illustrer votre{" "}
+                <strong>site web</strong> ou vos{" "}
                 <strong>supports de communication</strong> avec des{" "}
                 <strong>photos uniques</strong> qui{" "}
                 <em className="not-italic">reflètent votre identité</em> ?<br />
                 Je vous accompagne dans la{" "}
                 <em className="not-italic">réalisation de vos projets</em>, que
                 ce soit pour une <strong>séance photo</strong> sur-mesure ou la{" "}
-                <em className=" not-italic text-darkgreen hover:opacity-80">
+                <em className=" not-italic underline text-darkgreen hover:opacity-80">
                   <Link href="/website-creation">
                     création complète de votre site web
                   </Link>
                 </em>{" "}
                 et/ou de vos{" "}
                 <Link href="/design">
-                  <em className="not-italic text-darkgreen hover:opacity-80">
+                  <em className="not-italic underline text-darkgreen hover:opacity-80">
                     supports visuels
                   </em>
                 </Link>
@@ -153,34 +153,39 @@ const Photography = () => {
                 alt="Vous êtes un professionnel"
                 width={30}
                 height={30}
-                className="w-5 h-5 mr-4"
+                className="w-3 h-3 md:w-5 md:h-5 mr-2 md:mr-4"
               />
               <p>
-                Ou bien vous êtes un <em className="not-italic underline">particulier</em>{" "}
-                et vous souhaitez{" "}
+                Vous êtes un <em>particulier</em> et vous souhaitez{" "}
                 <em className="not-italic">
                   immortaliser des moments précieux
                 </em>{" "}
                 ? Je vous propose des <strong>séances photos</strong> adaptées à
                 chaque étape de la vie :{" "}
                 <a href="#portraits">
-                  <strong className="text-darkgreen">grossesse</strong> 🤰
+                  <strong className="text-darkgreen underline">
+                    grossesse
+                  </strong>{" "}
+                  🤰
                 </a>
                 ,{" "}
                 <a href="#portraits">
-                  <strong className="text-darkgreen">naissance</strong>
+                  <strong className="text-darkgreen underline">
+                    naissance
+                  </strong>
                 </a>{" "}
                 👶,{" "}
                 <a href="#portraits">
-                  <strong className="text-darkgreen">famille</strong>
+                  <strong className="text-darkgreen underline">famille</strong>
                 </a>{" "}
                 👨‍👩‍👦,{" "}
                 <a href="#animals">
-                  <strong className="text-darkgreen">animaux</strong>🐈🐶🐎
+                  <strong className="text-darkgreen underline">animaux</strong>
+                  🐈🐶🐎
                 </a>
                 , et je me tiens à votre disposition pour des{" "}
                 <a href="#portraits">
-                  <strong className="text-darkgreen">
+                  <strong className="text-darkgreen underline">
                     photo-reportages de mariage
                   </strong>
                 </a>{" "}
@@ -194,12 +199,13 @@ const Photography = () => {
                 alt="Vous êtes un professionnel"
                 width={30}
                 height={30}
-                className="w-5 h-5 mr-4"
+                className="w-3 h-3 md:w-5 md:h-5 mr-2 md:mr-4"
               />
               <p>
                 Vous êtes en train de vendre{" "}
-                <strong className="underline">votre bien immobilier</strong> ? De belles photos sont
-                essentielles pour attirer des acheteurs potentiels et{" "}
+                <strong className="italic">votre bien immobilier</strong> ? De
+                belles photos sont essentielles pour attirer des acheteurs
+                potentiels et{" "}
                 <em className=" not-italic">accélérer la vente</em>. Je suis à
                 votre écoute pour valoriser votre bien avec des clichés mettant
                 votre bien sous son meilleur jour.
@@ -275,7 +281,9 @@ const Photography = () => {
             <p className="text-darkgreen font-specialelite text-[60%] md:text-sm p-2 md:p-4">
               A partir de 60€ la séance
             </p>
-            <p className="-mt-5 pb-2">(me contacter pour une estimation)</p>
+            <p className="-mt-2 md:-mt-5 pb-2 text-xs">
+              (me contacter pour une estimation)
+            </p>
           </div>
         </Link>
       </div>

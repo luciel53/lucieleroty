@@ -11,7 +11,7 @@ const ArrowLeft = () => (
     fill="none"
     viewBox="0 0 24 24"
     stroke="lightgray"
-    className="w-4 h-4 lg:w-8 lg:h-8"
+    className="w-4 h-4 lg:w-5 lg:h-5"
   >
     <path
       strokeLinecap="round"
@@ -28,7 +28,7 @@ const ArrowRight = () => (
     fill="none"
     viewBox="0 0 24 24"
     stroke="lightgray"
-    className="w-4 h-4 lg:w-8 lg:h-8"
+    className="w-4 h-4 lg:w-5 lg:h-5"
   >
     <path
       strokeLinecap="round"

@@ -57,8 +57,8 @@ const Contact = () => {
   return (
     <main className="flex-grow">
       {/* title */}
-      <div className="flex flex-col z-0 font-specialelite mt-1 lg:mt-3 mb-2 animate-flip-down">
-        <h1 className="mx-auto drop-shadow-left text-[0.6rem] md:text-lg lg:text-xl">
+      <div className="flex flex-col z-0 font-specialelite mt-1 lg:mt-3 mb-2 lg:mb-0 animate-flip-down">
+        <h1 className="mx-auto drop-shadow-left text-[0.6rem] md:text-lg">
           Contactez-moi
         </h1>
       </div>
@@ -67,7 +67,7 @@ const Contact = () => {
       {/* Contact section */}
       <section className="flex flex-col md:flex-row justify-evenly items-center mx-auto md:mb-10 relative z-10 w-[80%] md:w-[90%] p-2 min-h-[28rem]">
         {/* Background image */}
-        <div className=""></div>
+
         <div className="absolute inset-0 bg-tea bg-cover bg-center opacity-30 z-0"></div>
 
         {/* Presentation and contact */}
@@ -89,7 +89,7 @@ const Contact = () => {
           </div>
           {/* Contact details */}
           <div className="flex flex-col text-sm lg:text-base">
-            <p className="font-specialelite text-[60%] md:text-[60%] lg:text-base text-gray-500 -mt-2 mb-4">
+            <p className="font-specialelite text-[60%] md:text-[60%] lg:text-[80%] text-gray-500 -mt-2 mb-4">
               Développeuse web & Photographe
             </p>
             <div className="flex flex-row">
@@ -130,7 +130,7 @@ const Contact = () => {
                 height={30}
                 className="w-4 h-4 ml-0.5 mt-0.5"
               />
-              <p className="pl-1">818218117</p>
+              <p className="pl-1">N° Siret: 81821811700021</p>
             </div>
           </div>
         </div>
@@ -190,7 +190,7 @@ const Contact = () => {
               className="text-xs mb-2 pl-2 py-1 lg:text-xs border rounded-sm shadow-lg w-36 mx-auto lg:w-full h-20"
             />
             {/* Checkbox */}
-            <div className="md:w-40 lg:w-80 mb-4 ">
+            <div className="md:w-40 lg:w-80 mb-4 bg-white bg-opacity-45 p-1 rounded-sm">
               <input
                 type="checkbox"
                 id="terms"
@@ -206,7 +206,7 @@ const Contact = () => {
                 politique de confidentialité.
               </label>
             </div>
-            <button className="relative overflow-hidden bg-darkgreen w-20 p-0.5 rounded-lg text-verylightgray mx-auto border-2 border-darkgreen hover:border-darkgreen group">
+            <button className="relative overflow-hidden bg-darkgreen w-16 p-0.5 rounded-lg text-verylightgray mx-auto border-2 border-darkgreen hover:border-darkgreen group">
               <span className="absolute inset-0 bg-verylightgray transition-transform transform -translate-x-full group-hover:translate-x-0 duration-300 ease-in-out"></span>
               <span className="relative text-verylightgray group-hover:text-darkgreen transition-colors duration-300 ease-in-out">
                 Envoyer

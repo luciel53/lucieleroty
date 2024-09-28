@@ -1,12 +1,12 @@
 const LegalNotices = () => {
   return (
-    <main className="flex flex-col">
-      <h1 className="font-specialelite text-sm md:text-xl lg:text-xl mt-5 text-center">
+    <main className="z-10 flex flex-col">
+      <h1 className="font-specialelite text-sm md:text-lg mt-5 text-center">
         Mentions Légales
       </h1>
 
       {/* Company informations */}
-      <div className=" mx-4 md:mx-10 lg:ml-40 mt-5 md:mt-16 text-sm md:text-base">
+      <div className=" mx-4 md:mx-10 lg:ml-40 mt-5 md:mt-8 lg:mt-10 text-sm md:text-base">
         <h2 className="mb-2 underline font-specialelite text-xs md:text-base">
           L&apos;entreprise :
         </h2>
@@ -34,7 +34,7 @@ const LegalNotices = () => {
             www.eyetopixel.com
           </a>
         </p>
-        <p>n° de SIREN : 818218117</p>
+        <p>N° siret: 81821811700021</p>
         <p>
           Directrice et créatrice de la publication: Lucie Leroty, dirigeante
           de EyeToPixel
@@ -42,7 +42,7 @@ const LegalNotices = () => {
       </div>
 
       {/* Hosting company */}
-      <div className=" mx-4 md:mx-10 lg:ml-40 mt-5 md:mt-16 text-sm md:text-base">
+      <div className=" mx-4 md:mx-10 lg:ml-40 mt-5 md:mt-8 text-sm md:text-base">
         <h2 className="mb-2 underline font-specialelite text-xs md:text-base">
           L&apos;hébergeur :
         </h2>
@@ -62,7 +62,7 @@ const LegalNotices = () => {
       </div>
 
       {/* Data privacy */}
-      <div className=" mx-4 md:mx-10 lg:mx-40 mt-5 md:mt-16 mb-10 text-sm md:text-base">
+      <div className=" mx-4 md:mx-10 lg:mx-40 mt-5 md:mt-8 mb-10 text-sm md:text-base">
         <h2 className="mb-2 underline font-specialelite text-xs md:text-base">
           Protection des données :
         </h2>

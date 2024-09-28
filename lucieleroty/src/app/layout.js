@@ -3,6 +3,7 @@ import "./globals.css";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 
+
 const pompiere = localFont({
   src: "../../public/fonts/Pompiere.ttf",
   variable: "--font-pompiere",
@@ -20,8 +21,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="fr" className="overflow-x-hidden">
       <body
-        className={`${pompiere.variable} antialiased flex flex-col min-h-screen bg-wallpaper bg-cover bg-no-repeat zoom-out`}
+        className={`${pompiere.variable} antialiased flex flex-col min-h-screen bg-wallpaper bg-cover bg-no-repeat zoom-out relative`}
       >
+        <div className="absolute inset-0 bg-white/50 z-0"></div>
         <Header />
 
         {children}
