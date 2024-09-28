@@ -1,4 +1,4 @@
-'use client';
+"use client";
 
 import Footer from "../components/Footer";
 import Header from "../components/Header";
@@ -34,22 +34,22 @@ const handleSubmit = async (e) => {
   };
 
   try {
-    const response = await fetch('/api/sendEmail', {
-      method: 'POST',
+    const response = await fetch("/api/sendEmail", {
+      method: "POST",
       headers: {
-        'Content-Type': 'application/json',
+        "Content-Type": "application/json",
       },
       body: JSON.stringify(formData),
     });
 
     if (response.ok) {
-      alert('Votre message a été envoyé avec succès.');
+      alert("Votre message a été envoyé avec succès.");
       e.target.reset();
     } else {
-      alert("Votre message n\'a pas pu être envoyé.");
+      alert("Votre message n'a pas pu être envoyé.");
     }
   } catch (error) {
-    alert("Erreur lors de l\'envoi de votre message");
+    alert("Erreur lors de l'envoi de votre message");
   }
 };
 
@@ -67,8 +67,7 @@ const Contact = () => {
       {/* Contact section */}
       <section className="flex flex-col md:flex-row justify-evenly items-center mx-auto md:mb-10 relative z-10 w-[80%] md:w-[90%] p-2 min-h-[28rem]">
         {/* Background image */}
-
-        <div className="absolute inset-0 bg-tea bg-cover bg-center opacity-30 z-0"></div>
+        <div className="absolute inset-0 bg-tea bg-cover bg-center opacity-10 z-0"></div>
 
         {/* Presentation and contact */}
         <div className="z-10">
@@ -201,9 +200,9 @@ const Contact = () => {
                 htmlFor="terms"
                 className="mb-2 pl-2 rounded-sm text-[60%] md:text-xs hover:cursor-pointer"
               >
-                J&apos;accepte les conditions générales d&apos;utilisation et autorise le
-                traitement de mes données personnelles conformément à la
-                politique de confidentialité.
+                J&apos;accepte les conditions générales d&apos;utilisation et
+                autorise le traitement de mes données personnelles conformément
+                à la politique de confidentialité.
               </label>
             </div>
             <button className="relative overflow-hidden bg-darkgreen w-16 p-0.5 rounded-lg text-verylightgray mx-auto border-2 border-darkgreen hover:border-darkgreen group">

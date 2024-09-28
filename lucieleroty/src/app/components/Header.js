@@ -1,6 +1,6 @@
 'use client';
 
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import Image from "next/image";
@@ -17,6 +17,7 @@ const glitch = localFont({
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const menuRef = useRef(null); // Reference for the menu element
   const pathname = usePathname();
 
   const toggleMenu = () => {
@@ -24,6 +25,22 @@ const Header = () => {
   };
 
   const isActive = (path) => pathname === path;
+
+   // Close menu when clicking outside of the menu or burger button
+   useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (menuRef.current && !menuRef.current.contains(event.target)) {
+        setIsMenuOpen(false);
+      }
+    };
+    // Add event listener to detect clicks outside
+    document.addEventListener("mousedown", handleClickOutside);
+
+    return () => {
+      // Cleanup the event listener on component unmount
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [menuRef]);
 
   return (
     <header className="flex flex-row justify-between w-full lg:justify-around">
@@ -54,6 +71,7 @@ const Header = () => {
         </button>
       </div>
       <nav
+        ref={menuRef}
         className={`lg:flex lg:space-x-6 ${isMenuOpen ? "block animate-fade-down" : "hidden"} absolute z-20 right-0.5 w-32 md:w-40 p-3 rounded-bl-xl bg-verylightgray shadow-lg lg:relative lg:top-0 lg:left-auto lg:flex lg:space-x-6 lg:w-auto lg:bg-transparent lg:shadow-none`}
       >
         <ul className={`lg:z-30 lg:flex flex-row lg:space-x-10 sm:text-xs md:text-base lg:text-lg lg:mr-4 lg:mt-1`}>
