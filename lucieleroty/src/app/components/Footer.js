@@ -12,7 +12,7 @@ const Footer = () => {
       {/* Social networks links */}
       <div className="flex flex-row justify-center py-2">
         <a
-          href="https://www.facebook.com/tonprofil"
+          href="https://www.malt.fr/profile/lucieleroty"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -24,6 +24,11 @@ const Footer = () => {
             className="w-3.5 h-3.5 mt-[2px] mr-1 hover:opacity-80 cursor-pointer"
           />
         </a>
+		<a
+          href="https://www.facebook.com/eyetopixeldev/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
         <Image
           src="/images/icons/facebook.png"
           alt="Page professionnelle facebook"
@@ -31,6 +36,12 @@ const Footer = () => {
           height={30}
           className="mr-1 hover:opacity-80 cursor-pointer"
         />
+		</a>
+		<a
+          href="https://www.instagram.com/eyeto_pixel"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
         <Image
           src="/images/icons/insta.png"
           alt="Page professionnelle instagram"
@@ -38,6 +49,12 @@ const Footer = () => {
           height={30}
           className="mr-1 hover:opacity-80 cursor-pointer"
         />
+		</a>
+		<a
+          href="https://www.linkedin.com/company/eyetopixel/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
         <Image
           src="/images/icons/linkedin.png"
           alt="Page professionnelle linkedin"
@@ -45,6 +62,7 @@ const Footer = () => {
           height={30}
           className="hover:opacity-80 cursor-pointer"
         />
+		</a>
       </div>
       <p>© EyeToPixel - Développeuse Web Freelance - 2024</p>
     </footer>

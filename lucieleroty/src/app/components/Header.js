@@ -1,4 +1,4 @@
-'use client';
+"use client";
 
 import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
@@ -18,6 +18,7 @@ const glitch = localFont({
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const menuRef = useRef(null); // Reference for the menu element
+  const buttonRef = useRef(null); // Reference for the button element
   const pathname = usePathname();
 
   const toggleMenu = () => {
@@ -26,10 +27,15 @@ const Header = () => {
 
   const isActive = (path) => pathname === path;
 
-   // Close menu when clicking outside of the menu or burger button
-   useEffect(() => {
+  // Close menu when clicking outside of the menu or burger button
+  useEffect(() => {
     const handleClickOutside = (event) => {
-      if (menuRef.current && !menuRef.current.contains(event.target)) {
+      if (
+        menuRef.current &&
+        !menuRef.current.contains(event.target) &&
+        buttonRef.current &&
+        !buttonRef.current.contains(event.target)
+      ) {
         setIsMenuOpen(false);
       }
     };
@@ -40,7 +46,7 @@ const Header = () => {
       // Cleanup the event listener on component unmount
       document.removeEventListener("mousedown", handleClickOutside);
     };
-  }, [menuRef]);
+  }, [menuRef, buttonRef]);
 
   return (
     <header className="flex flex-row justify-between w-full lg:justify-around">
@@ -51,7 +57,9 @@ const Header = () => {
             alt="Logo"
             className="w-10 h-10 md:w-16 md:h-16 lg:w-16 lg:h-16 drop-shadow-left"
           />
-          <span className={`font-glitch-important text-xs md:text-lg mt-3 md:mt-4 -ml-1 md:-ml-2 ${glitch.variable} antialiased`}>
+          <span
+            className={`font-glitch-important text-xs md:text-lg mt-3 md:mt-4 -ml-1 md:-ml-2 ${glitch.variable} antialiased`}
+          >
             EYE<span className="text-darkgreen">TO</span>PIXEL
           </span>
         </div>
@@ -60,6 +68,7 @@ const Header = () => {
       <div className="relative overflow-hidden">
         <button
           onClick={toggleMenu}
+          ref={buttonRef}
           className="relative z-30 block bg-darkgreen rounded-full w-16 md:w-20 h-16 md:h-20 -mt-6 md:-mt-4 -mr-6 md:-mr-6 lg:hidden p-2"
         >
           <span className="sr-only">Ouvrir le menu</span>
@@ -72,9 +81,13 @@ const Header = () => {
       </div>
       <nav
         ref={menuRef}
-        className={`lg:flex lg:space-x-6 ${isMenuOpen ? "block animate-fade-down" : "hidden"} absolute z-20 right-0.5 w-32 md:w-40 p-3 rounded-bl-xl bg-verylightgray shadow-lg lg:relative lg:top-0 lg:left-auto lg:flex lg:space-x-6 lg:w-auto lg:bg-transparent lg:shadow-none`}
+        className={`lg:flex lg:space-x-6 ${
+          isMenuOpen ? "block animate-fade-down" : "hidden"
+        } absolute z-20 right-0.5 w-32 md:w-40 p-3 rounded-bl-xl bg-verylightgray shadow-lg lg:relative lg:top-0 lg:left-auto lg:flex lg:space-x-6 lg:w-auto lg:bg-transparent lg:shadow-none`}
       >
-        <ul className={`lg:z-30 lg:flex flex-row lg:space-x-10 sm:text-xs md:text-base lg:text-lg lg:mr-4 lg:mt-1`}>
+        <ul
+          className={`lg:z-30 lg:flex flex-row lg:space-x-10 sm:text-xs md:text-base lg:text-lg lg:mr-4 lg:mt-1`}
+        >
           {[
             { href: "/", label: "Accueil" },
             { href: "/website-creation", label: "Création de sites" },
@@ -84,10 +97,22 @@ const Header = () => {
           ].map(({ href, label, isContact }) => (
             <li key={href} className="relative z-10">
               <Link href={href}>
-                <p className={`lg:text-lg group relative z-10 w-max ${isContact ? 'lg:text-white' : ''}`}>
+                <p
+                  className={`lg:text-lg group relative z-10 w-max ${
+                    isContact ? "lg:text-white" : ""
+                  }`}
+                >
                   <span>{label}</span>
-                  <span className={`lg:absolute -bottom-1 left-1/2 w-0 transition-all h-0.5 ${isContact ? 'bg-white' : 'bg-darkgreen'} group-hover:w-3/6 duration-300`}></span>
-                  <span className={`lg:absolute -bottom-1 right-1/2 w-0 transition-all h-0.5 ${isContact ? 'bg-white' : 'bg-darkgreen'} group-hover:w-3/6 duration-300`}></span>
+                  <span
+                    className={`lg:absolute -bottom-1 left-1/2 w-0 transition-all h-0.5 ${
+                      isContact ? "bg-white" : "bg-darkgreen"
+                    } group-hover:w-3/6 duration-300`}
+                  ></span>
+                  <span
+                    className={`lg:absolute -bottom-1 right-1/2 w-0 transition-all h-0.5 ${
+                      isContact ? "bg-white" : "bg-darkgreen"
+                    } group-hover:w-3/6 duration-300`}
+                  ></span>
                 </p>
               </Link>
               {isActive(href) && (
