@@ -41,7 +41,6 @@ const Bio = () => {
         <Image
           src="/images/Photos/CVme1.png"
           alt="Avatar"
-          layout="responsive"
           width={400}
           height={400}
           className=" relative"
