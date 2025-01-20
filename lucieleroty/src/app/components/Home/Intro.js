@@ -55,7 +55,7 @@ const Intro = () => {
                 </span>
               </button>
             </Link>
-            <Link href="/website-creation">
+            <Link href="/promo">
               <button className="relative overflow-hidden bg-indigo-500 w-[170px] h-9 md:w-48 lg:w-48 md:h-10 mt-2 mb-2 lg:mb-4 mx-1 md:mx-0 lg:mx-auto rounded-lg shadow-lg text-verylightgray text-xs md:text-lg border-2 border-indigo-500 hover:border-2 hover:border-indigo-500 group">
                 <span className="absolute inset-0 bg-verylightgray transition-transform transform -translate-x-full group-hover:translate-x-0 duration-300 ease-in-out"></span>
                 <span className="relative text-verylightgray group-hover:text-indigo-500 transition-colors duration-300 ease-in-out">

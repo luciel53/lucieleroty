@@ -304,7 +304,7 @@ const Photography = () => {
         {/* Button to book */}
         <div>
           <p className="italic mt-4 text-xs mx-4">
-            *Offre de lancement valable jusqu'au 28 février 2025 inclus.
+            *Offre de lancement valable jusqu'au 31 mars 2025 inclus.
           </p>
         </div>
         <Link href="/contact">
