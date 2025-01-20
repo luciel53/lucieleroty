@@ -5,42 +5,42 @@ import { FaCheck } from "react-icons/fa";
 
 export default function Cards({ title, p1, p2, p3, p4, p5, link, price }) {
   return (
-    <div className="card flex flex-col justify-between px-4 py-3 border border-darkgreen bg-white rounded-lg shadow-lg transition-transform duration-100 ease-in-out hover:scale-105 hover:drop-shadow-xl">
+    <div className="card flex flex-col justify-between px-4 py-3 border border-darkgreen bg-white rounded-lg shadow-lg transition-transform duration-300 ease-in-out hover:scale-105 hover:drop-shadow-xl">
       <h3 className="text-md font-specialelite mb-4">{title}</h3>
 
       <div className="flex flex-col">
         {p1 && (
           <div className="flex flex-row text-justify mb-1.5">
-            <FaCheck className="w-8 text-darkgreen pr-2 mt-1" />
+            <FaCheck className="w-7 text-darkgreen pr-2 mt-1" />
             <p className="w-80">{p1}</p>
           </div>
         )}
         {p2 && (
           <div className="flex flex-row text-justify mb-1.5">
-            <FaCheck className="w-8 text-darkgreen pr-2 mt-1" />
+            <FaCheck className="w-7 text-darkgreen pr-2 mt-1" />
             <p className="w-80">{p2}</p>
           </div>
         )}
         {p3 && (
           <div className="flex flex-row text-justify mb-1.5">
-            <FaCheck className="w-8 text-darkgreen pr-2 mt-1" />
+            <FaCheck className="w-7 text-darkgreen pr-2 mt-1" />
             <p className="w-80">{p3}</p>
           </div>
         )}
         {p4 && (
           <div className="flex flex-row text-justify mb-1.5">
-            <FaCheck className="w-8 text-darkgreen pr-2 mt-1" />
+            <FaCheck className="w-7 text-darkgreen pr-2 mt-1" />
             <p className="w-80">{p4}</p>
           </div>
         )}
         {p5 && (
           <div className="flex flex-row text-justify mb-1.5">
-            <FaCheck className="w-8 text-darkgreen pr-2 mt-1" />
+            <FaCheck className="w-7 text-darkgreen pr-2 mt-1" />
             <p className="w-80">{p5}</p>
           </div>
         )}
         <div className="flex flex-row text-justify mb-1.5">
-          <FaCheck className="w-8 text-darkgreen pr-2 mt-1" />
+          <FaCheck className="w-7 text-darkgreen pr-2 mt-1" />
           <p className="w-80 font-bold">{price}</p>
         </div>
       </div>

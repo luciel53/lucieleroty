@@ -33,7 +33,7 @@ const WebsiteCreation = () => {
             p4="Référencement naturel (SEO) pour améliorer votre visibilité sur les moteurs de recherche"
             p5="Mentions légales incluses"
             link="/contact"
-            price="À partir de 800€"
+            price="À partir de 800€ (mais profitez de notre offre de lancement de 20%! Soit à partir de 640€!)"
           />
           <Cards
             title="Landing Page"
@@ -44,11 +44,14 @@ const WebsiteCreation = () => {
             p4="Site responsive (adapté aux formats tablettes et mobiles)"
             p5="Mentions légales incluses"
             link="/contact"
-            price="À partir de 400€"
+            price="À partir de 400€ (mais profitez de notre offre de lancement de 20%! Soit à partir de 320€!)"
           />
           <Cards
             title="Refonte de Site Web"
-            p1="Modernisez votre site existant avec un design épuré et des performances optimisées."
+            p1="Un site web élégant et fonctionnel pour présenter votre activité, vos services ou votre portfolio."
+            p2="Modernisez votre site existant avec un design épuré et des performances optimisées."
+            p3="Référencement naturel (SEO) pour améliorer votre visibilité sur les moteurs de recherche"
+            p4="Mentions légales incluses"
             link="/contact"
             price="Prix: Me contacter"
           />
@@ -56,7 +59,7 @@ const WebsiteCreation = () => {
       </section>
 
       <ServiceCard
-        title="Création de sites web sur mesure"
+        title="Pourquoi un site web sur mesure ?"
         paragraph={
           <p>
             Créer un <strong>site web sur mesure</strong> est une étape cruciale
