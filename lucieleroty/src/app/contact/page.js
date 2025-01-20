@@ -58,7 +58,7 @@ const Contact = () => {
     <main className="flex-grow">
       {/* title */}
       <div className="flex flex-col z-0 font-specialelite mt-1 lg:mt-3 mb-2 lg:mb-0 animate-flip-down">
-        <h1 className="mx-auto drop-shadow-left text-[0.6rem] md:text-lg">
+        <h1 className="mx-auto drop-shadow-left text-[0.9rem] md:text-lg">
           Contactez-moi
         </h1>
       </div>
@@ -192,7 +192,7 @@ const Contact = () => {
           </div>
         </div>
         {/* Vertical bar */}
-        <div className="hidden md:block w-[1px] h-60 z-10 bg-black"></div>
+        <div className="hidden md:block w-[1px] h-60 z-10 mx-2 bg-black"></div>
         {/* Contact form */}
         <div className="z-10">
           <form
@@ -204,50 +204,50 @@ const Contact = () => {
               name="name"
               placeholder="Nom"
               required
-              className="text-xs mb-2 pl-2 py-1 lg:text-xs border rounded-sm shadow-lg w-36 mx-auto lg:w-full"
+              className="text-xs mb-2 pl-2 py-1 lg:text-xs border rounded-sm shadow-lg w-36 mx-auto md:w-48 xl:w-full"
             />
             <input
               type="text"
               name="firstname"
               placeholder="Prénom"
               required
-              className="text-xs mb-2 pl-2 py-1 lg:text-xs border rounded-sm shadow-lg w-36 mx-auto lg:w-full"
+              className="text-xs mb-2 pl-2 py-1 lg:text-xs border rounded-sm shadow-lg w-36 mx-auto md:w-48 xl:w-full"
             />
             <input
               type="text"
               name="company"
               placeholder="Société ou association (facultatif)"
-              className="text-xs mb-2 pl-2 py-1 lg:text-xs border rounded-sm shadow-lg w-36 mx-auto lg:w-full"
+              className="text-xs mb-2 pl-2 py-1 lg:text-xs border rounded-sm shadow-lg w-36 mx-auto md:w-48 xl:w-full"
             />
             <input
               type="email"
               name="email"
               placeholder="Email"
               required
-              className="text-xs mb-2 pl-2 py-1 lg:text-xs border rounded-sm shadow-lg w-36 mx-auto lg:w-full"
+              className="text-xs mb-2 pl-2 py-1 lg:text-xs border rounded-sm shadow-lg w-36 mx-auto md:w-48 xl:w-full"
             />
             <input
               type="text"
               name="phone"
               placeholder="Téléphone"
-              className="text-xs mb-2 pl-2 py-1 lg:text-xs border rounded-sm shadow-lg w-36 mx-auto lg:w-full"
+              className="text-xs mb-2 pl-2 py-1 lg:text-xs border rounded-sm shadow-lg w-36 mx-auto md:w-48 xl:w-full"
             />
             <input
               type="text"
               name="subject"
               placeholder="Sujet"
               required
-              className="text-xs mb-2 pl-2 py-1 lg:text-xs border rounded-sm shadow-lg w-36 mx-auto lg:w-full"
+              className="text-xs mb-2 pl-2 py-1 lg:text-xs border rounded-sm shadow-lg w-36 mx-auto md:w-48 xl:w-full"
             />
             <textarea
               type="text"
               name="message"
               placeholder="Votre message"
               required
-              className="text-xs mb-2 pl-2 py-1 lg:text-xs border rounded-sm shadow-lg w-36 mx-auto lg:w-full h-20"
+              className="text-xs mb-2 pl-2 py-1 lg:text-xs border rounded-sm shadow-lg w-36 mx-auto md:w-48 xl:w-full h-20"
             />
             {/* Checkbox */}
-            <div className="md:w-40 lg:w-80 mb-4 bg-white bg-opacity-45 p-1 rounded-sm">
+            <div className="md:w-48 mb-4 bg-white bg-opacity-45 p-1 rounded-sm">
               <input
                 type="checkbox"
                 id="terms"

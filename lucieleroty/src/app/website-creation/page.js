@@ -9,22 +9,22 @@ const WebsiteCreation = () => {
     <main className="flex-grow">
       {/* title */}
       <div className="flex flex-col z-0 font-specialelite mt-1 mb-2 animate-flip-down">
-        <h1 className="mx-auto drop-shadow-left text-[0.6rem] md:text-lg">
+        <h1 className="mx-auto drop-shadow-left text-[0.65rem] md:text-lg">
           Création de sites web sur mesure
         </h1>
       </div>
-      <div className="flex flex-col justify-center items-center relative z-10">
+      <div className="flex flex-col justify-center items-center relative z-10 text-xs md:text-sm text-center">
         <h2>Développez votre visibilité et attirez de nouveaux clients !</h2>
       </div>
       {/* Bubble */}
       <div className="lg:w-80 lg:h-80 bg-lightgreen z-0 absolute drop-shadow-lg rounded-full animate-fade animate-duration-1000 animate-delay-[400ms] animate-ease-in"></div>
-      <section className="text-center py-0 relative z-10">
-        <p className=" mb-8">
+      <section className="text-center text-xs md:text-sm py-0 relative z-10">
+        <p className=" mb-4 md:mb-8 lg:mb-0">
           Je suis à votre écoute pour créer un site vitrine sur mesure qui{" "}
           <em>vous ressemble</em>.
         </p>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-2 xl:mx-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-1 xl:mx-12">
           <Cards
             title="Site Vitrine"
             p1="Un site web élégant et fonctionnel pour présenter votre activité, vos services ou votre portfolio."
@@ -61,7 +61,7 @@ const WebsiteCreation = () => {
       <ServiceCard
         title="Pourquoi un site web sur mesure ?"
         paragraph={
-          <p>
+          <p className=" lg:ml-10 lg:w-96 text-justify ">
             Créer un <strong>site web sur mesure</strong> est une étape cruciale
             pour toute entreprise, qu&apos;il s&apos;agisse d&apos;une{" "}
             <em>PME</em>, d&apos;un <em>artisan</em>, d&apos;une{" "}
@@ -95,7 +95,7 @@ const WebsiteCreation = () => {
       {/* title of steps */}
       <div className="flex flex-row justify-center items-center mt-2 md:mt-2 md:ml-10">
         <div className="w-5 h-5 md:w-12 md:h-12 bg-lightgreen z-0 relative drop-shadow-lg rounded-full animate-fade animate-duration-1000 animate-delay-[400ms] animate-ease-in"></div>
-        <h2 className="z-10 w-40 md:w-80 lg:w-[30rem] text-[50%] md:text-[90%] lg:text-[100%] md:p-2 md:pt-9 lg:pt-2 mt-4 md:mt-2 -ml-3 md:-ml-10 font-specialelite">
+        <h2 className="z-10 w-40 md:w-80 lg:w-[30rem] text-[50%] md:text-[90%] lg:text-[100%] md:p-2 md:pt-9 lg:pt-2 mt-6 md:mt-2 -ml-3 md:-ml-10 font-specialelite">
           Les étapes de la création d&apos;un site web sur mesure
         </h2>
       </div>
@@ -162,12 +162,12 @@ const WebsiteCreation = () => {
       <section
         data-aos="fade-up"
         data-aos-transform="translate"
-        className="z-20 relative mt-12 mb-0"
+        className="z-20 relative mt-6 md:mt-12 mb-0"
         id="realisations"
       >
-        <div className="flex flex-row justify-center items-center mt-2 md:mt-2 md:ml-60 mb-4">
+        <div className="flex flex-row justify-center items-center mt-2 md:mt-2 md:mx-auto mb-4">
           <div className="w-5 h-5 md:w-12 md:h-12 bg-lightgreen z-0 relative drop-shadow-lg rounded-full animate-fade animate-duration-1000 animate-delay-[400ms] animate-ease-in"></div>
-          <h2 className="z-10 w-40 md:w-80 lg:w-[30rem] text-[50%] md:text-[90%] lg:text-[100%] md:p-2 md:pt-9 lg:pt-2 mt-4 md:mt-2 -ml-3 md:-ml-10 font-specialelite">
+          <h2 className="z-10 w-40 md:w-80 lg:w-[30rem] text-[50%] md:text-[90%] lg:text-[100%] md:p-2 md:pt-9 lg:pt-2 mt-0 md:mt-0 -ml-3 md:-ml-10 font-specialelite">
             Quelques réalisations...
           </h2>
         </div>

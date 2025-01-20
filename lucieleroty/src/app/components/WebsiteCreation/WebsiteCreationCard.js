@@ -17,10 +17,10 @@ const WebsiteCreationCard = ({ srcImg, title, ul }) => {
     >
       <h3 className="p-4 font-specialelite text-darkgreen text-[70%] md:text-[90%] lg:text-[90%]">{title}</h3>
       <div className="flex flex-row pb-4">
-        <div className="w-[40%]">
+        <div className="w-[25%]">
           <Image src={srcImg} alt={title} width={300} height={300} />
         </div>
-        <div className="flex flex-col w-[60%]">
+        <div className="flex flex-col w-[75%]">
           <div className="text-[60%] md:text-[90%] lg:text-[100%]">{ul}</div>
         </div>
       </div>

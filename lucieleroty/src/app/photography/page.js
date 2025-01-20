@@ -102,17 +102,17 @@ const Photography = () => {
   return (
     <main className="flex-grow z-10">
       {/* title */}
-      <div className="flex flex-col z-0 font-specialelite  lg:mt-0 mb-2 animate-flip-down">
+      <div className="flex flex-col z-0 font-specialelite lg:mt-0 mb-0 md:mb-2 animate-flip-down">
         <div className="z-10 relative mx-auto mt-3">
-          <h1 className=" mx-auto drop-shadow-left text-[0.6rem] md:text-lg">
+          <h1 className=" mx-auto drop-shadow-left text-[0.8rem] md:text-lg">
             Photographie
           </h1>
         </div>
       </div>
 
       <section className="flex flex-col items-center mb-10 text-justify animate-fade">
-        <div className="py-6 mx-4 md:mx-20">
-          <h2 className="z-10 relative">
+        <div className=" py-2 md:py-6 mx-4 md:mx-20">
+          <h2 className="z-10 relative text-xs md:text-sm">
             Je vous propose des séances photos adaptées à chaque étape de la vie
             : <strong>grossesse</strong>, <strong>naissance</strong>,{" "}
             <strong>famille</strong>, <strong>couple</strong>, mais aussi{" "}
@@ -303,12 +303,12 @@ const Photography = () => {
         </div>
         {/* Button to book */}
         <div>
-          <p className="italic mt-4  mx-4">
+          <p className="italic mt-4 text-xs mx-4">
             *Offre de lancement valable jusqu'au 28 février 2025 inclus.
           </p>
         </div>
         <Link href="/contact">
-          <button className="relative overflow-hidden bg-darkgreen w-28 md:w-40 lg:w-40 md:h-8 p-1 lg:p-0 mb-2 mt-4 lg:mt-2 mx-10 md:mx-28 lg:mx-auto rounded-lg shadow-lg text-verylightgray text-[0.9rem] md:text-lg border-2 border-darkgreen hover:border-2 hover:border-darkgreen group">
+          <button className="relative overflow-hidden bg-darkgreen w-28 md:w-40 lg:w-40 md:h-10 p-1 lg:p-0 mb-2 mt-4 lg:mt-2 mx-10 md:mx-28 lg:mx-auto rounded-lg shadow-lg text-verylightgray text-[0.9rem] md:text-lg border-2 border-darkgreen hover:border-2 hover:border-darkgreen group">
             <span className="absolute inset-0 bg-verylightgray transition-transform transform -translate-x-full group-hover:translate-x-0 duration-300 ease-in-out"></span>
             <span className="relative text-verylightgray group-hover:text-darkgreen transition-colors duration-300 ease-in-out">
               Réservez votre séance
@@ -319,13 +319,13 @@ const Photography = () => {
 
       {/* Photographie Grid Gallery */}
       <section className="z-10 relative w-screen">
-        <h2 className="text-center font-specialelite p-4">
+        <h2 className="text-center text-sm font-specialelite p-4">
           Quelques réalisations...
         </h2>
         <GridPhotos />
       </section>
 
-      
+
     </main>
   );
 };

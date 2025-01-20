@@ -3,8 +3,6 @@
 import AOS from "aos";
 import { useEffect } from "react";
 import Image from "next/image";
-import Footer from "../components/Footer";
-import Header from "../components/Header";
 import ServiceCard from "../components/ServiceCard";
 import Link from "next/link";
 
@@ -17,7 +15,7 @@ const WebsiteCreation = () => {
     <main className="flex-grow z-10">
       {/* title */}
       <div className="flex flex-col z-0 font-specialelite mt-1 mb-2 animate-flip-down">
-        <h1 className="mx-auto drop-shadow-left text-[0.6rem] md:text-lg">
+        <h1 className="mx-auto drop-shadow-left text-[0.6rem] md:text-[1rem]">
           Création de designs
         </h1>
       </div>
@@ -70,11 +68,11 @@ const WebsiteCreation = () => {
       {/* Cartes de visites */}
       <div
         id="cards"
-        className="flex flex-wrap scroll-mt-20 lg:flex-nowrap md:flex-col h-auto w-[50%] p-4 mt-2 md:mt-5 mx-auto md:mb-10 z-10 relative justify-center items-center opacity-90 bg-verylightgray border-2 border-lightgreen rounded-lg"
+        className="flex flex-wrap scroll-mt-20 lg:flex-nowrap md:flex-col h-auto w-[90%] p-2 mt-2 md:mt-5 mx-auto md:mb-10 z-10 relative justify-center items-center opacity-90 bg-verylightgray border-2 border-lightgreen rounded-lg"
         data-aos="fade-up"
         data-aos-transform="translate"
       >
-        <p className="pb-4 font-specialelite text-[40%] md:text-sm drop-shadow-left">
+        <p className="pb-0 font-specialelite text-[70%] md:text-sm drop-shadow-left">
           Cartes de visite
         </p>
         <div className="flex flex-row justify-center ">
@@ -82,16 +80,16 @@ const WebsiteCreation = () => {
             <Image
               src="/images/design/llrecto.png"
               alt="Carte de visite de Lucie Leroty"
-              width={400}
-              height={400}
+              width={600}
+              height={600}
             />
           </div>
           <div className="p-0.5">
             <Image
               src="/images/design/llverso.png"
               alt="Carte de visite de Lucie Leroty"
-              width={400}
-              height={400}
+              width={600}
+              height={600}
             />
           </div>
         </div>
@@ -100,16 +98,16 @@ const WebsiteCreation = () => {
             <Image
               src="/images/design/jrrecto.png"
               alt="Carte de visite de Lucie Leroty"
-              width={400}
-              height={400}
+              width={600}
+              height={600}
             />
           </div>
           <div className="p-0.5">
             <Image
               src="/images/design/jrverso.png"
               alt="Carte de visite de Lucie Leroty"
-              width={400}
-              height={400}
+              width={600}
+              height={600}
             />
           </div>
         </div>
@@ -117,11 +115,11 @@ const WebsiteCreation = () => {
       {/* Flyers */}
       <div
         id="flyers"
-        className="flex flex-wrap scroll-mt-20 lg:flex-nowrap md:flex-col h-auto w-[50%] p-4 mt-2 md:mt-5 mx-auto z-10 relative justify-center items-center opacity-90 bg-verylightgray border-2 border-lightgreen rounded-lg mb-10"
+        className="flex flex-wrap scroll-mt-20 w-[90%] lg:flex-nowrap md:flex-col h-auto p-2 mt-2 md:mt-5 mx-auto z-10 relative justify-center items-center opacity-90 bg-verylightgray border-2 border-lightgreen rounded-lg mb-10"
         data-aos="fade-up"
         data-aos-transform="translate"
       >
-        <p className="pb-4 font-specialelite text-[40%] md:text-sm drop-shadow-left">
+        <p className="pb-1 font-specialelite text-[70%] md:text-sm drop-shadow-left">
           Flyers
         </p>
         <div className="flex flex-row justify-center ">
