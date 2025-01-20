@@ -101,13 +101,230 @@ const Photography = () => {
   return (
     <main className="flex-grow z-10">
       {/* title */}
-      <div className="flex flex-col z-0 font-specialelite mt-1 lg:mt-3 mb-2 animate-flip-down">
-        <h1 className="mx-auto drop-shadow-left text-[0.6rem] md:text-lg">
-          Photographie
-        </h1>
+      <div className="flex flex-col z-0 font-specialelite mt-1 lg:mt-0 mb-2 animate-flip-down">
+
+        <div className="z-10 relative mx-auto mt-3">
+          <h1 className=" mx-auto drop-shadow-left text-[0.6rem] md:text-lg">
+            Photographie
+          </h1>
+        </div>
       </div>
-      {/* Bubble */}
-      <div className="lg:w-80 lg:h-80 bg-lightgreen z-0 absolute drop-shadow-lg rounded-full animate-fade animate-duration-1000 animate-delay-[400ms] animate-ease-in"></div>
+
+      <section className="flex flex-col items-center mb-20 text-justify animate-fade">
+        <div className="py-6 mx-4 md:mx-20">
+          <h2 className="z-10 relative">
+            Je vous propose des séances photos adaptées à chaque étape de la vie
+            : <strong>grossesse</strong>, <strong>naissance</strong>,{" "}
+            <strong>famille</strong>, <strong>couple</strong>, mais aussi{" "}
+            <strong>photos animalières</strong> et je me tiens à votre
+            disposition pour des <strong>photo-reportages</strong> de{" "}
+            <strong>mariage</strong> qui captureront l'essence de votre journée.
+          </h2>
+        </div>
+        {/* Presentation grid */}
+        <div className="grid grid-cols  md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-1 md:gap-2">
+          {/* Vignette Grossesse */}
+          <div className=" flex flex-col items-center w-40 h-40 bg-verylightgray border-2 border-gray-200 rounded-lg drop-shadow-lg">
+            <Image
+              src="images/CarouselPhotos/couple1.jpg"
+              width="300"
+              height="300"
+              priority
+              alt="Séance grossesse en couple"
+              className="rounded-t-lg"
+            />
+            <div className="my-auto">
+              <h3 className="font-specialelite text-xs ">Grossesse</h3>
+              <p>
+                <span className="line-through">120€</span> 96€*
+              </p>
+            </div>
+            {/* Bandeau -20% */}
+            <div className="absolute top-1 -right-1.5 bg-indigo-500 text-white text-[70%] font-bold rounded-lg w-8 h-6 font-geist">
+              <p className="mt-1 text-center">-20%</p>
+            </div>
+          </div>
+          {/* Vignette Naissance */}
+          <div className=" flex flex-col items-center w-40 h-40 bg-verylightgray border-2 border-gray-200 rounded-lg drop-shadow-lg">
+            <Image
+              src="images/CarouselPhotos/test/main-bebe.jpg"
+              width="300"
+              height="300"
+              priority
+              alt="Séance photo de naissance"
+              className="rounded-t-lg"
+            />
+            <div className="my-auto">
+              <h3 className="font-specialelite text-xs ">Naissance</h3>
+              <p>
+                <span className="line-through">120€</span> 96€*
+              </p>
+            </div>
+            {/* Bandeau -20% */}
+            <div className="absolute top-1 -right-1.5 bg-indigo-500 text-white text-[70%] font-bold rounded-lg w-8 h-6 font-geist">
+              <p className="mt-1 text-center">-20%</p>
+            </div>
+          </div>
+          {/* Vignette Couple */}
+          <div className="flex flex-col items-center w-40 h-40 bg-verylightgray border-2 border-gray-200 rounded-lg drop-shadow-lg relative">
+            <div className="w-full h-[67%] overflow-hidden rounded-t-lg">
+              <Image
+                src="images/CarouselPhotos/test/couple-amoureux1.jpg"
+                width="300"
+                height="300"
+                priority
+                alt="Séance grossesse en couple"
+                className="w-full h-40 object-cover"
+              />
+            </div>
+            <div className="my-auto">
+              <h3 className="font-specialelite text-xs ">Couple</h3>
+              <p>
+                <span className="line-through">120€</span> 96€*
+              </p>
+            </div>
+            {/* Bandeau -20% */}
+            <div className="absolute top-1 -right-1.5 bg-indigo-500 text-white text-[70%] font-bold rounded-lg w-8 h-6 font-geist">
+              <p className="mt-1 text-center">-20%</p>
+            </div>
+          </div>
+          {/* Vignette Famille */}
+          <div className=" flex flex-col items-center w-40 h-40 bg-verylightgray border-2 border-gray-200 rounded-lg drop-shadow-lg">
+            <Image
+              src="images/CarouselPhotos/test/famille2.JPG"
+              width="300"
+              height="300"
+              priority
+              alt="En famille"
+              className="rounded-t-lg h-[67%]"
+            />
+            <div className="my-auto">
+              <h3 className="font-specialelite text-xs ">Famille</h3>
+              <p>
+                <span className="line-through">120€</span> 96€*
+              </p>
+            </div>
+            {/* Bandeau -20% */}
+            <div className="absolute top-1 -right-1.5 bg-indigo-500 text-white text-[70%] font-bold rounded-lg w-8 h-6 font-geist">
+              <p className="mt-1 text-center">-20%</p>
+            </div>
+          </div>
+          {/* Vignette Portrait */}
+          <div className=" flex flex-col items-center w-40 h-40 bg-verylightgray border-2 border-gray-200 rounded-lg drop-shadow-lg">
+            <div className="w-full h-[67%] overflow-hidden rounded-t-lg">
+              <Image
+                src="images/CarouselPhotos/test/enfant.jpg"
+                width="300"
+                height="600"
+                alt="Séance grossesse en couple"
+                className="w-full h-40 object-cover"
+              />
+            </div>
+            <div className="my-auto">
+              <h3 className="font-specialelite text-xs ">Portrait</h3>
+              <p>
+                <span className="line-through">120€</span> 96€*
+              </p>
+            </div>
+            {/* Bandeau -20% */}
+            <div className="absolute top-1 -right-1.5 bg-indigo-500 text-white text-[70%] font-bold rounded-lg w-8 h-6 font-geist">
+              <p className="mt-1 text-center">-20%</p>
+            </div>
+          </div>
+          {/* Vignette Mariage */}
+          <div className=" flex flex-col items-center w-40 h-40 bg-verylightgray border-2 border-gray-200 rounded-lg drop-shadow-lg">
+            <div className="w-full h-[67%] overflow-hidden rounded-t-lg">
+              <Image
+                src="images/CarouselPhotos/test/mariage1.JPG"
+                width="300"
+                height="300"
+                priority
+                alt="lightSéance grossesse en couple"
+                className="w-full h-40 object-cover"
+              />
+            </div>
+            <div className="my-auto">
+              <h3 className="font-specialelite text-xs text-center">Mariage</h3>
+              <p>
+                <span className="line-through">800€</span> 640€*
+              </p>
+            </div>
+            {/* Bandeau -20% */}
+            <div className="absolute top-1 -right-1.5 bg-indigo-500 text-white text-[70%] font-bold rounded-lg w-8 h-6 font-geist">
+              <p className="mt-1 text-center">-20%</p>
+            </div>
+          </div>
+          {/* Vignette Animaux */}
+          <div className=" flex flex-col items-center w-40 h-40 bg-verylightgray border-2 border-gray-200 rounded-lg drop-shadow-lg">
+            <div className="w-full h-[67%] overflow-hidden rounded-t-lg">
+              <Image
+                src="images/CarouselPhotos/test/chatbengal.jpg"
+                width="300"
+                height="300"
+                priority
+                alt="lightSéance grossesse en couple"
+                className="w-full h-40 object-cover"
+              />
+            </div>
+            <div className="my-auto">
+              <h3 className="font-specialelite text-xs ">Photos animalières</h3>
+              <p className="text-center">
+                <span className="line-through">120€</span> 96€*
+              </p>
+            </div>
+            {/* Bandeau -20% */}
+            <div className="absolute top-1 -right-1.5 bg-indigo-500 text-white text-[70%] font-bold rounded-lg w-8 h-6 font-geist">
+              <p className="mt-1 text-center">-20%</p>
+            </div>
+          </div>
+          {/* Vignette Professionnels */}
+          <div className=" flex flex-col items-center w-40 h-40 bg-verylightgray border-2 border-gray-200 rounded-lg drop-shadow-lg">
+            <div className="w-full h-[67%] overflow-hidden rounded-t-lg">
+              <Image
+                src="images/CarouselPhotos/croatie.jpg"
+                width="300"
+                height="300"
+                priority
+                alt="Séance grossesse en couple"
+                className="w-full h-40 object-cover"
+              />
+            </div>
+            <div className="my-auto">
+              <h3 className="font-specialelite text-xs ">Professionnels</h3>
+              <p className="text-center">
+                <span className="line-through">150€</span> 120€*
+              </p>
+            </div>
+            {/* Bandeau -20% */}
+            <div className="absolute top-1 -right-1.5 bg-indigo-500 text-white text-[70%] font-bold rounded-lg w-8 h-6 font-geist">
+              <p className="mt-1 text-center">-20%</p>
+            </div>
+          </div>
+        </div>
+        {/* Button to book */}
+        <div>
+          <p className="italic mt-4  mx-4">
+            *Offre de lancement valable jusqu'au 28 février 2025 inclus.
+          </p>
+        </div>
+        <Link href="/contact">
+          <button className="relative overflow-hidden bg-darkgreen w-28 md:w-40 lg:w-40 md:h-8 p-1 lg:p-0 mb-2 mt-4 lg:mt-2 mx-10 md:mx-28 lg:mx-auto rounded-lg shadow-lg text-verylightgray text-[0.9rem] md:text-lg border-2 border-darkgreen hover:border-2 hover:border-darkgreen group">
+            <span className="absolute inset-0 bg-verylightgray transition-transform transform -translate-x-full group-hover:translate-x-0 duration-300 ease-in-out"></span>
+            <span className="relative text-verylightgray group-hover:text-darkgreen transition-colors duration-300 ease-in-out">
+              Réservez votre séance
+            </span>
+          </button>
+        </Link>
+      </section>
+
+      {/* Photographie Grid Gallery */}
+      <section className="z-10 relative w-screen">
+        <h2 className="text-center font-specialelite p-4">Réalisations</h2>
+        <div  className="grid grid-cols-4">
+
+
+        </div>
+      </section>
       <section className="mx-1 md:mx-4 lg:mx-20 lg:mt-5 lg:mb-10 animate-fade animate-duration-1000 animate-delay-[400ms] animate-ease-in">
         <div className="flex flex-wrap-reverse lg:flex-nowrap md:flex-row h-auto z-10 relative justify-center bg-verylightgray border-2 border-lightgreen rounded-lg">
           {/* Paragraph */}
@@ -166,7 +383,6 @@ const Photography = () => {
                   <strong className="text-darkgreen underline">
                     grossesse
                   </strong>{" "}
-
                 </a>
                 ,{" "}
                 <a href="#portraits">
@@ -219,14 +435,14 @@ const Photography = () => {
                 </small>
               </em>
             </p>
-            <Link href="/contact">
-              <button className="relative overflow-hidden bg-darkgreen w-20 md:w-40 lg:w-40 md:h-8 mb-2  lg:mt-4 mx-10 md:mx-28 lg:mx-56 rounded-lg shadow-lg text-verylightgray text-[0.6rem] md:text-lg border-2 border-darkgreen hover:border-2 hover:border-darkgreen group">
+            {/* <Link href="/contact">
+              <button className="relative overflow-hidden bg-darkgreen w-20 md:w-40 lg:w-40 md:h-8 mb-2  lg:mt-4 mx-10 md:mx-auto lg:mx-56 rounded-lg shadow-lg text-verylightgray text-[0.6rem] md:text-lg border-2 border-darkgreen hover:border-2 hover:border-darkgreen group">
                 <span className="absolute inset-0 bg-verylightgray transition-transform transform -translate-x-full group-hover:translate-x-0 duration-300 ease-in-out"></span>
                 <span className="relative text-verylightgray group-hover:text-darkgreen transition-colors duration-300 ease-in-out">
                   Demandez une estimation
                 </span>
               </button>
-            </Link>
+            </Link> */}
           </div>
           {/* Image */}
           <div className="mt-3 lg:m-8 w-2/3 lg:w-1/2 lg:my-auto">
@@ -242,7 +458,7 @@ const Photography = () => {
       </section>
 
       {/* Carousel Pregnant, Birth, Portraits... */}
-      <div
+      {/* <div
         id="portraits"
         className=" scroll-mt-20 md:mb-10"
         data-aos="fade-up"
@@ -273,9 +489,9 @@ const Photography = () => {
           Photos animalières, chats, chiens, chevaux...
         </h2>
         <PhotographyCarousel photos={animalsPhotos} />
-      </div>
+      </div> */}
       {/* Price */}
-      <div className="flex flex-row justify-center items-center mx-auto md:w-80 mb-10 lg:animate-wiggle">
+      {/* <div className="flex flex-row justify-center items-center mx-auto md:w-80 mb-10 lg:animate-wiggle">
         <Link href="/contact">
           <div className=" border-darkgreen bg-verylightgray border-4 w-32 md:w-auto h-auto rounded-lg text-center shadow-lg">
             <p className="text-darkgreen font-specialelite text-[60%] md:text-sm p-2 md:p-4">
@@ -286,7 +502,7 @@ const Photography = () => {
             </p>
           </div>
         </Link>
-      </div>
+      </div> */}
     </main>
   );
 };

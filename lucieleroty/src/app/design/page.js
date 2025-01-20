@@ -10,7 +10,7 @@ import Link from "next/link";
 
 const WebsiteCreation = () => {
   useEffect(() => {
-    AOS.init({ duration: 1000, offset: 200 });
+    AOS.init({ duration: 500, offset: 200 });
   }, []);
 
   return (

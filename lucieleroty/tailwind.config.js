@@ -22,6 +22,12 @@ module.exports = {
       fontFamily: {
         specialelite: ['var(--font-specialelite)', 'sans-serif'],
         glitch: ['var(--font-glitch)', 'sans-serif'],
+        // geist: ['var(--font-geist)', 'sans-serif'],
+        helvetica: ['Helvetica', 'sans-serif'],
+        Cartoonist: ['var(--font-Cartoonist)', 'sans-serif'],
+        caramella: ['var(--font-caramella)', 'sans-serif'],
+        primer: ['var(--font-primer)', 'sans-serif'],
+
       },
       textAlign: {
         justify: 'justify',

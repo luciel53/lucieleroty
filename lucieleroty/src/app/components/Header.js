@@ -49,7 +49,7 @@ const Header = () => {
   }, [menuRef, buttonRef]);
 
   return (
-    <header className="flex flex-row justify-between w-full lg:justify-around">
+    <header className="flex flex-row justify-between w-full xl:justify-around">
       <Link href="/">
         <div className="flex flex-row animate-rotate-y animate-once animate-delay-[1000ms] animate-ease-in">
           <Image
@@ -69,7 +69,7 @@ const Header = () => {
         <button
           onClick={toggleMenu}
           ref={buttonRef}
-          className="relative z-30 block bg-darkgreen rounded-full w-16 md:w-20 h-16 md:h-20 -mt-6 md:-mt-4 -mr-6 md:-mr-6 lg:hidden p-2"
+          className="relative z-30 block bg-darkgreen rounded-full w-16 md:w-20 h-16 md:h-20 -mt-6 md:-mt-4 -mr-6 md:-mr-6 xl:hidden p-2"
         >
           <span className="sr-only">Ouvrir le menu</span>
           <Image
@@ -81,12 +81,12 @@ const Header = () => {
       </div>
       <nav
         ref={menuRef}
-        className={`lg:flex lg:space-x-6 ${
+        className={`xl:flex lg:space-x-6 ${
           isMenuOpen ? "block animate-fade-down" : "hidden"
-        } absolute z-20 right-0.5 w-32 md:w-40 p-3 rounded-bl-xl bg-verylightgray shadow-lg lg:relative lg:top-0 lg:left-auto lg:flex lg:space-x-6 lg:w-auto lg:bg-transparent lg:shadow-none`}
+        } absolute z-20 right-0.5 w-32 md:w-40 p-3 rounded-bl-xl bg-verylightgray shadow-lg xl:relative xl:top-0 xl:left-auto xl:flex xl:space-x-6 xl:w-auto xl:bg-transparent xl:shadow-none`}
       >
         <ul
-          className={`lg:z-30 lg:flex flex-row lg:space-x-10 sm:text-xs md:text-base lg:text-lg lg:mr-4 lg:mt-1`}
+          className={`xl:z-30 xl:flex flex-row xl:space-x-10 sm:text-xs md:text-base xl:text-lg xl:mr-4 xl:mt-1`}
         >
           {[
             { href: "/", label: "Accueil" },
@@ -98,18 +98,18 @@ const Header = () => {
             <li key={href} className="relative z-10">
               <Link href={href}>
                 <p
-                  className={`lg:text-lg group relative z-10 w-max ${
-                    isContact ? "lg:text-white" : ""
+                  className={`xl:text-lg group relative z-10 w-max ${
+                    isContact ? "xl:text-white" : ""
                   }`}
                 >
                   <span>{label}</span>
                   <span
-                    className={`lg:absolute -bottom-1 left-1/2 w-0 transition-all h-0.5 ${
+                    className={`xl:absolute -bottom-1 left-1/2 w-0 transition-all h-0.5 ${
                       isContact ? "bg-white" : "bg-darkgreen"
                     } group-hover:w-3/6 duration-300`}
                   ></span>
                   <span
-                    className={`lg:absolute -bottom-1 right-1/2 w-0 transition-all h-0.5 ${
+                    className={`xl:absolute -bottom-1 right-1/2 w-0 transition-all h-0.5 ${
                       isContact ? "bg-white" : "bg-darkgreen"
                     } group-hover:w-3/6 duration-300`}
                   ></span>
@@ -129,7 +129,7 @@ const Header = () => {
         </ul>
         {/* Contact bubble */}
         <div className="relative">
-          <span className="lg:z-10 flex absolute drop-shadow-lg animate-bounce animate-duration-[800ms] animate-delay-[20000ms] animate-ease-out hover:animate-none lg:w-40 lg:h-40 lg:bg-darkgreen text-white rounded-full lg:-mt-20 lg:-right-12"></span>
+          <span className="xl:z-10 flex absolute drop-shadow-lg animate-bounce animate-duration-[800ms] animate-delay-[20000ms] animate-ease-out hover:animate-none xl:w-40 xl:h-40 xl:bg-darkgreen text-white rounded-full lg:-mt-20 lg:-right-12"></span>
         </div>
       </nav>
     </header>

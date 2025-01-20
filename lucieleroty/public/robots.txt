@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://www.eyetopixel.com
+
+# Sitemaps
+Sitemap: https://www.eyetopixel.com/sitemap.xml

@@ -65,7 +65,7 @@ const Contact = () => {
       {/* Bubble */}
       {/* <div className="lg:w-80 lg:h-80 bg-lightgreen z-0 absolute drop-shadow-lg rounded-full animate-fade animate-duration-1000 animate-delay-[400ms] animate-ease-in"></div> */}
       {/* Contact section */}
-      <section className="flex flex-col md:flex-row justify-evenly items-center mx-auto md:mb-10 relative z-10 w-[80%] md:w-[90%] p-2 min-h-[28rem] animate-fade-down animate-duration-1000 animate-delay-[400ms] animate-ease-in">
+      <section className="flex flex-col md:flex-row justify-evenly items-center mx-auto md:mb-10 relative z-10 w-[80%] md:w-[90%] p-2 min-h-[28rem] animate-fade animate-duration-1000 animate-delay-[400ms] animate-ease-in">
         {/* Background image */}
         <div className="absolute inset-0 bg-tea bg-cover bg-center opacity-10 z-0"></div>
 

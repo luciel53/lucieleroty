@@ -11,10 +11,34 @@
 }
 
 @font-face {
-  font-family: 'Glitch';
-  src: url('/fonts/Glitch.ttf') format('truetype');
+  font-family: 'primer';
+  src: url('/fonts/primer.otf') format('opentype');
+  /* font-weight: normal;
+  font-style: normal; */
+}
+
+@font-face {
+  font-family: 'Cartoonist';
+  src: url('/fonts/Cartoonist.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
+}
+
+@font-face {
+  font-family: 'Caramella';
+  src: url('/fonts/Caramella.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Glitch';
+  src: url('/fonts/Glitch.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Geist';
+  src: url('/fonts/GeistVF.woff') format('truetype');
 }
 
 :root {
@@ -22,6 +46,11 @@
   --foreground: #171717;
   --color-darkgreen: #59A76B;
   --font-specialelite: 'SpecialElite', sans-serif;
+  --font-glitch: 'Glitch', sans-serif;
+  --font-geist: 'Geist', sans-serif;
+  --font-Cartoonist: 'Cartoonist', sans-serif;
+  --font-caramella: 'Caramella', sans-serif;
+  --font-primer: 'primer', sans-serif;
 }
 
 html {
@@ -32,6 +61,7 @@ body {
   color: var(--foreground);
   background: var(--background);
   font-family: var(--font-pompiere), Arial, Helvetica, sans-serif;
+
 }
 
 .font-glitch-important {
