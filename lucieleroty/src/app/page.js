@@ -19,10 +19,10 @@ export default function Home() {
       {/* title */}
       <div className="flex flex-row justify-center space-x-36">
         <div className="flex flex-col z-0 font-specialelite mt-1 lg:mt-4 mb-2 lg:mb-0 animate-flip-down">
-          <h1 className="mx-auto drop-shadow-left text-[0.7rem] md:text-xl">
+          <h1 className="mx-auto drop-shadow-left text-[0.8rem] md:text-xl">
             Développeuse Web Freelance
           </h1>
-          <h2 className="mx-auto drop-shadow-left text-gray-500 text-[0.6rem] md:text-sm lg:text-md -mt-1">
+          <h2 className="mx-auto drop-shadow-left text-gray-500 text-[0.7rem] md:text-sm lg:text-md -mt-1">
             & Photographe
           </h2>
         </div>
@@ -39,7 +39,7 @@ export default function Home() {
         data-aos-transform="translate"
         id="services"
       >
-        <h2 className="font-specialelite text-center mb-4 z-10">
+        <h2 className="font-specialelite text-sm text-center mb-4 z-10">
           Mes services
         </h2>
 
