@@ -8,7 +8,7 @@ export default function Promo() {
           Offre de Lancement Exceptionnelle
         </h1>
         <p className="text-xs md:text-lg text-gray-600 mb-8">
-          Pour célébrer le lancement de notre activité, bénéficiez d'une offre
+          Pour célébrer le lancement de notre activité, bénéficiez d&apos;une offre
           exclusive sur nos <Link href="/website-creation" className="underline">services de création de sites web</Link> et de{" "}
           <Link href="/photography" className="underline">photographie</Link>.
         </p>
@@ -24,7 +24,7 @@ export default function Promo() {
             habituels.
           </p>
           <p className="text-red-500 font-semibold text-lg">
-            Offre valable jusqu'au 31 mars 2025.
+            Offre valable jusqu&apos;au 31 mars 2025.
           </p>
         </div>
 

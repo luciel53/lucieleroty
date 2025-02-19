@@ -67,7 +67,7 @@ const Intro = () => {
         </div>
         <div className="flex flex-row items-center w-[94%] md:w-80">
           <p className="italic text-xs text-justify">
-            *En ce moment profitez de l'offre de lancement à -20% sur tous les
+            *En ce moment profitez de l&apos;offre de lancement à -20% sur tous les
             services ! Attention, durée limitée !
           </p>
         </div>

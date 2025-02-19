@@ -118,7 +118,7 @@ const Photography = () => {
             <strong>famille</strong>, <strong>couple</strong>, mais aussi{" "}
             <strong>photos animalières</strong> et je me tiens à votre
             disposition pour des <strong>photo-reportages</strong> de{" "}
-            <strong>mariage</strong> qui captureront l'essence de votre journée.
+            <strong>mariage</strong> qui captureront l&apos;essence de votre journée.
           </h2>
         </div>
         {/* Presentation grid */}
@@ -304,7 +304,7 @@ const Photography = () => {
         {/* Button to book */}
         <div>
           <p className="italic mt-4 text-xs mx-4">
-            *Offre de lancement valable jusqu'au 31 mars 2025 inclus.
+            *Offre de lancement valable jusqu&apos;au 31 mars 2025 inclus.
           </p>
         </div>
         <Link href="/contact">
