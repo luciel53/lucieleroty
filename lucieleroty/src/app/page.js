@@ -34,7 +34,7 @@ export default function Home() {
             ease: "power3.out",
             scrollTrigger: {
               trigger: section.current,
-              start: "top 80%", // Animation starts when top of the section is at 80% of viewport
+              start: "top 70%", // Animation starts when top of the section is at 80% of viewport
               end: "bottom bottom", // Animation finish when bottom of section is at top of viewport
               scrub: true,
             },
@@ -74,7 +74,7 @@ export default function Home() {
   useEffect(() => {
     gsap.utils.toArray(".bubble").forEach((bubble) => {
       gsap.to(bubble, {
-        y: "+=" + gsap.utils.random(-90, 200, 5),
+        y: "+=" + gsap.utils.random(90, 200, 5),
         x: "+=" + gsap.utils.random(0, -200, 5),
         duration: gsap.utils.random(3, 5),
         repeat: -1,

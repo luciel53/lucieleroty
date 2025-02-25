@@ -1,8 +1,5 @@
 "use client";
 
-import Footer from "../components/Footer";
-import Header from "../components/Header";
-import ServiceCard from "../components/ServiceCard";
 import Image from "next/image";
 import localFont from "next/font/local";
 import "../globals.css";
@@ -57,8 +54,8 @@ const Contact = () => {
   return (
     <main className="flex-grow">
       {/* title */}
-      <div className="flex flex-col z-0 font-specialelite mt-1 lg:mt-3 mb-2 lg:mb-0 animate-flip-down">
-        <h1 className="mx-auto drop-shadow-left text-[0.9rem] md:text-lg">
+      <div className="flex flex-col z-0 font-specialelite mt-1 lg:mt-3 mb-2 lg:mb-0">
+        <h1 className="mx-auto drop-shadow-left text-[0.8rem] md:text-lg">
           Contactez-moi
         </h1>
       </div>
@@ -75,7 +72,7 @@ const Contact = () => {
           <div className="flex flex-row">
             <Image
               src="/images/logo.png"
-              alt="Logo"
+              alt="Logo de Eyetopixel, créatrice de site web et photographe"
               width={400}
               height={400}
               className="w-10 h-10 md:w-10 md:h-10 lg:w-16 lg:h-16 drop-shadow-left"
@@ -142,7 +139,7 @@ const Contact = () => {
               >
                 <Image
                   src="/images/icons/malt.png"
-                  alt="Page professionnelle malt"
+                  alt="Page professionnelle malt de Eyetopixel"
                   width={30}
                   height={30}
                   className="w-3.5 h-3.5 mt-[2px] mr-1 hover:opacity-80 cursor-pointer"
@@ -168,7 +165,7 @@ const Contact = () => {
               >
                 <Image
                   src="/images/icons/insta.png"
-                  alt="Page professionnelle instagram"
+                  alt="Page professionnelle instagram de Eyetopixel"
                   width={30}
                   height={30}
                   className="mr-1 hover:opacity-80 cursor-pointer"
@@ -181,7 +178,7 @@ const Contact = () => {
               >
                 <Image
                   src="/images/icons/linkedin.png"
-                  alt="Page professionnelle linkedin"
+                  alt="Page professionnelle linkedin de Eyetopixel"
                   width={30}
                   height={30}
                   className="hover:opacity-80 cursor-pointer"

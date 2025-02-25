@@ -37,145 +37,145 @@ const GridPhotos = () => {
       <div className="relative w-full h-20 md:h-40">
         <Image
           src="/images/GridPhotos/1puydufou.png"
-          alt="Photo 1"
+          alt="Le Puy-du-fou en Vendée"
           layout="fill"
-          objectFit="cover"
-          className="rounded-lg"
+        
+          className="rounded-lg object-cover"
         />
       </div>
       <div className="relative w-full h-20 md:h-40">
         <Image
           src="/images/GridPhotos/2etna2_1.png"
-          alt="Photo 2"
+          alt="LE volcan Etna, en Sicile, Italie"
           layout="fill"
-          objectFit="cover"
-          className="rounded-lg"
+        
+          className="rounded-lg object-cover"
         />
       </div>
       <div className="relative w-full h-20 md:h-40">
         <Image
           src="/images/GridPhotos/3PerthByNight_1.png"
-          alt="Photo 3"
+          alt="Perth, en Australie, de nuit"
           layout="fill"
-          objectFit="cover"
-          className="rounded-lg"
+        
+          className="rounded-lg object-cover"
         />
       </div>
       <div className="relative w-full h-20 md:h-40">
         <Image
           src="/images/GridPhotos/4usineAbandonee.png"
-          alt="Photo 4"
+          alt="Urbex dans une usine abandonnée"
           layout="fill"
-          objectFit="cover"
-          className="rounded-lg"
+        
+          className="rounded-lg object-cover"
         />
       </div>
 	  <div className="relative w-full h-20 md:h-40">
         <Image
           src="/images/GridPhotos/5macaque.png"
-          alt="Photo 4"
+          alt="Macaque crabier à Bali en Indonésie"
           layout="fill"
-          objectFit="cover"
-          className="rounded-lg"
+        
+          className="rounded-lg object-cover"
         />
       </div>
 	  <div className="relative w-full h-20 md:h-40">
         <Image
           src="/images/GridPhotos/6plitvice.png"
-          alt="Photo 4"
+          alt="Parc national de Plitvice en Croatie"
           layout="fill"
-          objectFit="cover"
-          className="rounded-lg"
+        
+          className="rounded-lg object-cover"
         />
       </div>
 	  <div className="relative w-full h-20 md:h-40">
         <Image
           src="/images/GridPhotos/7chenonceau.png"
-          alt="Photo 4"
+          alt="Château de Chenonceau"
           layout="fill"
-          objectFit="cover"
-          className="rounded-lg"
+        
+          className="rounded-lg object-cover"
         />
       </div>
 	  <div className="relative w-full h-20 md:h-40">
         <Image
           src="/images/GridPhotos/8floemeric.png"
-          alt="Photo 4"
+          alt="Mariage en Mayenne"
           layout="fill"
-          objectFit="cover"
-          className="rounded-lg"
+        
+          className="rounded-lg object-cover"
         />
       </div>
 	  <div className="relative w-full h-20 md:h-40">
         <Image
           src="/images/GridPhotos/9playaindo.png"
-          alt="Photo 4"
+          alt="Coucher de soleil en indonésie, à Bali"
           layout="fill"
-          objectFit="cover"
-          className="rounded-lg"
+        
+          className="rounded-lg object-cover"
         />
       </div>
 	  <div className="relative w-full h-20 md:h-40">
         <Image
           src="/images/GridPhotos/10broceliandre.png"
-          alt="Photo 4"
+          alt="Forêt de Broceliandre"
           layout="fill"
-          objectFit="cover"
-          className="rounded-lg"
+        
+          className="rounded-lg object-cover"
         />
       </div>
 	  <div className="relative w-full h-20 md:h-40">
         <Image
           src="/images/GridPhotos/11rizieres.png"
-          alt="Photo 4"
+          alt="Rizières d'Ubud à Bali en indonésie"
           layout="fill"
-          objectFit="cover"
-          className="rounded-lg"
+        
+          className="rounded-lg object-cover"
         />
       </div>
 	  <div className="relative w-full h-20 md:h-40">
         <Image
           src="/images/GridPhotos/12bebe.png"
-          alt="Photo 4"
+          alt="Naissance de bébé"
           layout="fill"
-          objectFit="cover"
-          className="rounded-lg"
+        
+          className="rounded-lg object-cover"
         />
       </div>
 	  <div className="relative w-full h-20 md:h-40">
         <Image
           src="/images/GridPhotos/13mtstmich.png"
-          alt="Photo 4"
+          alt="Mont-Saint-Michel en Normandie ou en Bretagne"
           layout="fill"
-          objectFit="cover"
-          className="rounded-lg"
+        
+          className="rounded-lg object-cover"
         />
       </div>
 	  <div className="relative w-full h-20 md:h-40">
         <Image
           src="/images/GridPhotos/14gorilla.png"
-          alt="Photo 4"
+          alt="Gorille au zoo de beauval"
           layout="fill"
-          objectFit="cover"
-          className="rounded-lg"
+        
+          className="rounded-lg object-cover"
         />
       </div>
 	  <div className="relative w-full h-20 md:h-40">
         <Image
           src="/images/GridPhotos/15bangkok.png"
-          alt="Photo 4"
+          alt="Bangkok de nuit en pose longue"
           layout="fill"
-          objectFit="cover"
-          className="rounded-lg"
+        
+          className="rounded-lg object-cover"
         />
       </div>
 	  <div className="relative w-full h-20 md:h-40">
         <Image
           src="/images/GridPhotos/16ileseoliennes.png"
-          alt="Photo 4"
+          alt="îles éoliennes en Sicile"
           layout="fill"
-          objectFit="cover"
-          className="rounded-lg"
+        
+          className="rounded-lg object-cover"
         />
       </div>
     </div>

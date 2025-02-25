@@ -103,7 +103,7 @@ const Photography = () => {
   return (
     <main className="flex-grow z-10">
       {/* title */}
-      <div className="flex flex-col z-0 font-specialelite lg:mt-0 mb-0 md:mb-2 animate-flip-down">
+      <div className="flex flex-col z-0 font-specialelite lg:mt-0 mb-0 md:mb-2">
         <div className="z-10 relative mx-auto mt-3">
           <h1 className=" mx-auto drop-shadow-left text-[0.8rem] md:text-lg">
             Photographie
@@ -263,7 +263,7 @@ const Photography = () => {
                 width={300}
                 height={300}
                 priority
-                alt="lightSéance grossesse en couple"
+                alt="Séance grossesse en couple"
                 className="w-full h-40 object-cover"
               />
             </div>

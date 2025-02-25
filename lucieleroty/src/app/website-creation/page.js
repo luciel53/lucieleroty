@@ -8,8 +8,8 @@ const WebsiteCreation = () => {
   return (
     <main className="flex-grow">
       {/* title */}
-      <div className="flex flex-col z-0 font-specialelite mt-1 mb-2 animate-flip-down">
-        <h1 className="mx-auto drop-shadow-left text-[0.65rem] md:text-lg">
+      <div className="flex flex-col z-0 font-specialelite mt-1 mb-2">
+        <h1 className="mx-auto drop-shadow-left text-[0.8rem] md:text-lg">
           Création de sites web sur mesure
         </h1>
       </div>
