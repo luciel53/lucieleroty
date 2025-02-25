@@ -83,3 +83,7 @@ body {
   transform-origin: top left;
   width: 125%;
 } */
+
+.scroll-section {
+  position: relative;
+}

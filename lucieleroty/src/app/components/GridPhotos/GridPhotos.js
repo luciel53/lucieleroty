@@ -1,8 +1,39 @@
 import Image from "next/image";
+import { useEffect, useRef } from "react";
+import { gsap } from "gsap";
+import ScrollTrigger from "gsap/ScrollTrigger";
+
+
+gsap.registerPlugin(ScrollTrigger);
 
 const GridPhotos = () => {
+  const cardsRefGrid = useRef(null);
+
+  // images appear one after the other
+  useEffect(() => {
+    if (cardsRefGrid.current) {
+      gsap.fromTo(
+        cardsRefGrid.current.children,
+        { opacity: 0, y: 150 }, // initial
+        {
+          opacity: 1,
+          y: 0,
+          duration: 1,
+          stagger: 0.2,
+          ease: "power3.out",
+          scrollTrigger: {
+            trigger: cardsRefGrid.current, // animation when the section appears
+            start: "top 80%",
+            end: "bottom bottom",
+            toggleActions: "play none none none", // Play animation once
+          },
+        }
+      );
+    }
+  }, []);
+
   return (
-    <div className="grid grid-cols-2 lg:grid-cols-4 gap-1 px-1">
+    <div ref={cardsRefGrid} className="grid grid-cols-2 lg:grid-cols-4 gap-1 px-1">
       <div className="relative w-full h-20 md:h-40">
         <Image
           src="/images/GridPhotos/1puydufou.png"

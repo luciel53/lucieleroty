@@ -10,6 +10,7 @@ import ServiceCard from "../components/ServiceCard";
 import Link from "next/link";
 import GridPhotos from "../components/GridPhotos/GridPhotos";
 
+
 const portraitPhotos = [
   {
     img: "/images/CarouselPhotos/test/familleheureuse.jpg",
@@ -127,8 +128,8 @@ const Photography = () => {
           <div className=" flex flex-col items-center w-40 h-40 bg-verylightgray border-2 border-gray-200 rounded-lg drop-shadow-lg">
             <Image
               src="images/CarouselPhotos/couple1.jpg"
-              width="300"
-              height="300"
+              width={300}
+              height={300}
               priority
               alt="Séance grossesse en couple"
               className="rounded-t-lg"
@@ -148,8 +149,8 @@ const Photography = () => {
           <div className=" flex flex-col items-center w-40 h-40 bg-verylightgray border-2 border-gray-200 rounded-lg drop-shadow-lg">
             <Image
               src="images/CarouselPhotos/test/main-bebe.jpg"
-              width="300"
-              height="300"
+              width={300}
+              height={300}
               priority
               alt="Séance photo de naissance"
               className="rounded-t-lg"
@@ -170,8 +171,8 @@ const Photography = () => {
             <div className="w-full h-[67%] overflow-hidden rounded-t-lg">
               <Image
                 src="images/CarouselPhotos/test/couple-amoureux1.jpg"
-                width="300"
-                height="300"
+                width={300}
+                height={300}
                 priority
                 alt="Séance grossesse en couple"
                 className="w-full h-40 object-cover"
@@ -192,8 +193,8 @@ const Photography = () => {
           <div className=" flex flex-col items-center w-40 h-40 bg-verylightgray border-2 border-gray-200 rounded-lg drop-shadow-lg">
             <Image
               src="images/CarouselPhotos/test/famille2.JPG"
-              width="300"
-              height="300"
+              width={300}
+              height={300}
               priority
               alt="En famille"
               className="rounded-t-lg h-[67%]"
@@ -214,7 +215,7 @@ const Photography = () => {
             <div className="w-full h-[67%] overflow-hidden rounded-t-lg">
               <Image
                 src="images/CarouselPhotos/test/enfant.jpg"
-                width="300"
+                width={300}
                 height="600"
                 alt="Séance grossesse en couple"
                 className="w-full h-40 object-cover"
@@ -236,8 +237,8 @@ const Photography = () => {
             <div className="w-full h-[67%] overflow-hidden rounded-t-lg">
               <Image
                 src="images/CarouselPhotos/test/mariage1.JPG"
-                width="300"
-                height="300"
+                width={300}
+                height={300}
                 priority
                 alt="lightSéance grossesse en couple"
                 className="w-full h-40 object-cover"
@@ -259,8 +260,8 @@ const Photography = () => {
             <div className="w-full h-[67%] overflow-hidden rounded-t-lg">
               <Image
                 src="images/CarouselPhotos/test/chatbengal.jpg"
-                width="300"
-                height="300"
+                width={300}
+                height={300}
                 priority
                 alt="lightSéance grossesse en couple"
                 className="w-full h-40 object-cover"
@@ -282,8 +283,8 @@ const Photography = () => {
             <div className="w-full h-[67%] overflow-hidden rounded-t-lg">
               <Image
                 src="images/CarouselPhotos/croatie.jpg"
-                width="300"
-                height="300"
+                width={300}
+                height={300}
                 priority
                 alt="Séance grossesse en couple"
                 className="w-full h-40 object-cover"

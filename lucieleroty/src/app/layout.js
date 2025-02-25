@@ -3,6 +3,7 @@ import "./globals.css";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 
+
 // const montserrat = localFont({
 //   src: "../../public/fonts/Montserrat.ttf",
 //   variable: "--font-montserrat",
