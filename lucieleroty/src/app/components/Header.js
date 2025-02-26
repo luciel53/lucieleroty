@@ -5,7 +5,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 import Image from "next/image";
 import burger from "../../../public/images/icons/burgertablet.png";
-import logo from "../../../public/images/logo.png";
+import logo from "../../../public/images/logo.webp";
 import localFont from "next/font/local";
 import "../globals.css";
 
@@ -51,14 +51,14 @@ const Header = () => {
   return (
     <header className="flex flex-row justify-between w-full xl:justify-around">
       <Link href="/">
-        <div className="flex flex-row animate-rotate-y animate-once animate-delay-[1000ms] animate-ease-in">
+        <div className="flex flex-row">
           <Image
             src={logo}
             alt="Logo"
             className="w-10 h-10 md:w-16 md:h-16 lg:w-16 lg:h-16 drop-shadow-left"
           />
           <span
-            className={`font-glitch-important text-xs md:text-lg mt-3 md:mt-4 -ml-1 md:-ml-2 ${glitch.variable} antialiased`}
+            className={`font-glitch-important z-10 text-xs md:text-lg mt-3 md:mt-4 -ml-1 md:-ml-2 ${glitch.variable} antialiased`}
           >
             EYE<span className="text-darkgreen">TO</span>PIXEL
           </span>

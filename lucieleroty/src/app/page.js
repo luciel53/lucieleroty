@@ -3,7 +3,6 @@
 import Bio from "./components/Home/Bio.js";
 import Intro from "./components/Home/Intro.js";
 import RoundedCard from "./components/Home/RoundedCard.js";
-import HomeCarousel from "./components/HomeCarousel/CarouselHome.js";
 import { useEffect, useRef } from "react";
 import Link from "next/link.js";
 import { gsap } from "gsap";

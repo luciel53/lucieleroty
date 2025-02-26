@@ -33,7 +33,7 @@ module.exports = {
         justify: 'justify',
       },
       backgroundImage: {
-        wallpaper: "url('/images/Photos/lighttransparentwallpaper.jpg')",
+        wallpaper: "url('/images/Photos/lighttransparentwallpaper.webp')",
         tea: "url('/images/Photos/tea.jpg')",
       }
     },

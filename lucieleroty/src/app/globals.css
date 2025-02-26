@@ -8,6 +8,7 @@
   src: url('/fonts/SpecialElite-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -15,6 +16,7 @@
   src: url('/fonts/primer.otf') format('opentype');
   /* font-weight: normal;
   font-style: normal; */
+  font-display: swap;
 }
 
 @font-face {
@@ -22,6 +24,7 @@
   src: url('/fonts/Cartoonist.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -29,16 +32,19 @@
   src: url('/fonts/Caramella.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
   font-family: 'Glitch';
   src: url('/fonts/Glitch.ttf') format('truetype');
+  font-display: swap;
 }
 
 @font-face {
   font-family: 'Geist';
   src: url('/fonts/GeistVF.woff') format('truetype');
+  font-display: swap;
 }
 
 :root {

@@ -1,104 +1,11 @@
 "use client";
 
-import AOS from "aos";
-import { useEffect } from "react";
 import Image from "next/image";
-import Footer from "../components/Footer";
-import Header from "../components/Header";
-import PhotographyCarousel from "../components/PhotographyCarousel/PhotographyCarousel";
-import ServiceCard from "../components/ServiceCard";
 import Link from "next/link";
 import GridPhotos from "../components/GridPhotos/GridPhotos";
 
 
-const portraitPhotos = [
-  {
-    img: "/images/CarouselPhotos/test/familleheureuse.jpg",
-    title: "Une famille heureuse, dans les bois",
-    quote: "Une famille heureuse, dans les bois",
-  },
-  {
-    img: "/images/CarouselPhotos/test/mariage.jpg",
-    title: "Mariage",
-    quote: "Mariage",
-  },
-  {
-    img: "/images/CarouselPhotos/test/enfant-dune-du-pilat.jpg",
-    title: "Dune du pilat",
-    quote: "Dune du pilat",
-  },
-  {
-    img: "/images/CarouselPhotos/test/balinais.jpg",
-    title: "Balinais",
-    quote: "Balinais",
-  },
-  {
-    img: "/images/CarouselPhotos/test/pied-nourrisson.jpg",
-    title: "Naissance",
-    quote: "Naissance",
-  },
-];
-
-const animalsPhotos = [
-  {
-    img: "/images/CarouselPhotos/test/ecureuil-roux.jpg",
-    title: "Ecureil roux en Mayenne",
-    quote: "Ecureil roux en Mayenne",
-  },
-  {
-    img: "/images/CarouselPhotos/puydufou.jpg",
-    title: "Puy-Du-Fou",
-    quote: "Puy-Du-Fou",
-  },
-  {
-    img: "/images/CarouselPhotos/test/gorille.jpg",
-    title: "Gorille au zoo de Beauval",
-    quote: "Gorille au zoo de Beauval",
-  },
-  {
-    img: "/images/CarouselPhotos/test/chatbengal.jpg",
-    title: "Chat de race Bengal",
-    quote: "Chat Bengal blue sepia",
-  },
-  {
-    img: "/images/CarouselPhotos/test/chevalnoir.jpg",
-    title: "Cheval selle français noir",
-    quote: "Cheval selle français noir",
-  },
-];
-
-const landscapePhotos = [
-  {
-    img: "/images/CarouselPhotos/test/site-de-coupeau.jpg",
-    title: "Site de Coupeau à Saint-Berthevin en Mayenne",
-    quote: "Site de Coupeau, Saint-Berthevin, Mayenne",
-  },
-  {
-    img: "/images/CarouselPhotos/test/perth.jpg",
-    title: "Perth, en Australie",
-    quote: "Perth, en Australie",
-  },
-  {
-    img: "/images/CarouselPhotos/test/laval.jpg",
-    title: "Laval en Mayenne",
-    quote: "Laval en Mayenne",
-  },
-  {
-    img: "/images/CarouselPhotos/test/etnabrumeneige.jpg",
-    title: "Etna sous la brume et la neige",
-    quote: "Etna sous la brume et la neige",
-  },
-  {
-    img: "/images/CarouselPhotos/test/phare-australie.jpg",
-    title: "Phare à Exmouth en Australie",
-    quote: "Phare à Exmouth en Australie",
-  },
-];
-
 const Photography = () => {
-  useEffect(() => {
-    AOS.init({ duration: 700, offset: 150 });
-  }, []);
 
   return (
     <main className="flex-grow z-10">
@@ -113,29 +20,32 @@ const Photography = () => {
 
       <section className="flex flex-col items-center mb-10 text-justify animate-fade">
         <div className=" py-2 md:py-6 mx-4 md:mx-20">
-          <h2 className="z-10 relative text-xs md:text-sm">
+          <div className="z-10 relative text-xs md:text-sm">
             Je vous propose des séances photos adaptées à chaque étape de la vie
             : <strong>grossesse</strong>, <strong>naissance</strong>,{" "}
             <strong>famille</strong>, <strong>couple</strong>, mais aussi{" "}
             <strong>photos animalières</strong> et je me tiens à votre
             disposition pour des <strong>photo-reportages</strong> de{" "}
             <strong>mariage</strong> qui captureront l&apos;essence de votre journée.
-          </h2>
+          </div>
         </div>
         {/* Presentation grid */}
         <div className="grid grid-cols  md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-1 md:gap-2">
           {/* Vignette Grossesse */}
           <div className=" flex flex-col items-center w-40 h-40 bg-verylightgray border-2 border-gray-200 rounded-lg drop-shadow-lg">
             <Image
-              src="images/CarouselPhotos/couple1.jpg"
+              src="images/CarouselPhotos/couple1.webp"
               width={300}
               height={300}
+              quality={75}
+              sizes="(max-width: 768px) 100vw, 50vw"
+              objectFit="cover"
               priority
               alt="Séance grossesse en couple"
               className="rounded-t-lg"
             />
             <div className="my-auto">
-              <h3 className="font-specialelite text-xs ">Grossesse</h3>
+              <h2 className="font-specialelite text-xs ">Grossesse</h2>
               <p>
                 <span className="line-through">120€</span> 96€*
               </p>
@@ -148,15 +58,17 @@ const Photography = () => {
           {/* Vignette Naissance */}
           <div className=" flex flex-col items-center w-40 h-40 bg-verylightgray border-2 border-gray-200 rounded-lg drop-shadow-lg">
             <Image
-              src="images/CarouselPhotos/test/main-bebe.jpg"
+              src="images/CarouselPhotos/test/main-bebe.webp"
               width={300}
               height={300}
+              quality={75}
+              sizes="(max-width: 768px) 100vw, 50vw"
               priority
               alt="Séance photo de naissance"
               className="rounded-t-lg"
             />
             <div className="my-auto">
-              <h3 className="font-specialelite text-xs ">Naissance</h3>
+              <h2 className="font-specialelite text-xs ">Naissance</h2>
               <p>
                 <span className="line-through">120€</span> 96€*
               </p>
@@ -170,16 +82,18 @@ const Photography = () => {
           <div className="flex flex-col items-center w-40 h-40 bg-verylightgray border-2 border-gray-200 rounded-lg drop-shadow-lg relative">
             <div className="w-full h-[67%] overflow-hidden rounded-t-lg">
               <Image
-                src="images/CarouselPhotos/test/couple-amoureux1.jpg"
+                src="images/CarouselPhotos/test/couple-amoureux1.webp"
                 width={300}
                 height={300}
+                quality={75}
+                sizes="(max-width: 768px) 100vw, 50vw"
                 priority
                 alt="Séance grossesse en couple"
-                className="w-full h-40 object-cover"
+                className="rounded-t-lg"
               />
             </div>
             <div className="my-auto">
-              <h3 className="font-specialelite text-xs ">Couple</h3>
+              <h2 className="font-specialelite text-xs ">Couple</h2>
               <p>
                 <span className="line-through">120€</span> 96€*
               </p>
@@ -192,15 +106,17 @@ const Photography = () => {
           {/* Vignette Famille */}
           <div className=" flex flex-col items-center w-40 h-40 bg-verylightgray border-2 border-gray-200 rounded-lg drop-shadow-lg">
             <Image
-              src="images/CarouselPhotos/test/famille2.JPG"
+              src="images/CarouselPhotos/test/famille2.webp"
               width={300}
               height={300}
+              quality={75}
+              sizes="(max-width: 768px) 100vw, 50vw"
               priority
               alt="En famille"
               className="rounded-t-lg h-[67%]"
             />
             <div className="my-auto">
-              <h3 className="font-specialelite text-xs ">Famille</h3>
+              <h2 className="font-specialelite text-xs ">Famille</h2>
               <p>
                 <span className="line-through">120€</span> 96€*
               </p>
@@ -214,7 +130,7 @@ const Photography = () => {
           <div className=" flex flex-col items-center w-40 h-40 bg-verylightgray border-2 border-gray-200 rounded-lg drop-shadow-lg">
             <div className="w-full h-[67%] overflow-hidden rounded-t-lg">
               <Image
-                src="images/CarouselPhotos/test/enfant.jpg"
+                src="images/CarouselPhotos/test/enfant.webp"
                 width={300}
                 height="600"
                 alt="Séance grossesse en couple"
@@ -222,7 +138,7 @@ const Photography = () => {
               />
             </div>
             <div className="my-auto">
-              <h3 className="font-specialelite text-xs ">Portrait</h3>
+              <h2 className="font-specialelite text-xs ">Portrait</h2>
               <p>
                 <span className="line-through">120€</span> 96€*
               </p>
@@ -236,16 +152,18 @@ const Photography = () => {
           <div className=" flex flex-col items-center w-40 h-40 bg-verylightgray border-2 border-gray-200 rounded-lg drop-shadow-lg">
             <div className="w-full h-[67%] overflow-hidden rounded-t-lg">
               <Image
-                src="images/CarouselPhotos/test/mariage1.JPG"
+                src="images/CarouselPhotos/test/mariage1.webp"
                 width={300}
                 height={300}
+                quality={75}
+                sizes="(max-width: 768px) 100vw, 50vw"
                 priority
                 alt="lightSéance grossesse en couple"
                 className="w-full h-40 object-cover"
               />
             </div>
             <div className="my-auto">
-              <h3 className="font-specialelite text-xs text-center">Mariage</h3>
+              <h2 className="font-specialelite text-xs text-center">Mariage</h2>
               <p>
                 <span className="line-through">800€</span> 640€*
               </p>
@@ -259,16 +177,18 @@ const Photography = () => {
           <div className=" flex flex-col items-center w-40 h-40 bg-verylightgray border-2 border-gray-200 rounded-lg drop-shadow-lg">
             <div className="w-full h-[67%] overflow-hidden rounded-t-lg">
               <Image
-                src="images/CarouselPhotos/test/chatbengal.jpg"
+                src="images/CarouselPhotos/test/chatbengal.webp"
                 width={300}
                 height={300}
+                quality={75}
+                sizes="(max-width: 768px) 100vw, 50vw"
                 priority
                 alt="Séance grossesse en couple"
                 className="w-full h-40 object-cover"
               />
             </div>
             <div className="my-auto">
-              <h3 className="font-specialelite text-xs ">Photos animalières</h3>
+              <h2 className="font-specialelite text-xs ">Photos animalières</h2>
               <p className="text-center">
                 <span className="line-through">120€</span> 96€*
               </p>
@@ -282,16 +202,18 @@ const Photography = () => {
           <div className=" flex flex-col items-center w-40 h-40 bg-verylightgray border-2 border-gray-200 rounded-lg drop-shadow-lg">
             <div className="w-full h-[67%] overflow-hidden rounded-t-lg">
               <Image
-                src="images/CarouselPhotos/croatie.jpg"
+                src="images/CarouselPhotos/croatie.webp"
                 width={300}
                 height={300}
+                quality={75}
+                sizes="(max-width: 768px) 100vw, 50vw"
                 priority
                 alt="Séance grossesse en couple"
                 className="w-full h-40 object-cover"
               />
             </div>
             <div className="my-auto">
-              <h3 className="font-specialelite text-xs ">Professionnels</h3>
+              <h2 className="font-specialelite text-xs ">Professionnels</h2>
               <p className="text-center">
                 <span className="line-through">150€</span> 120€*
               </p>

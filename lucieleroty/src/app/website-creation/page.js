@@ -13,16 +13,18 @@ const WebsiteCreation = () => {
           Création de sites web sur mesure
         </h1>
       </div>
-      <div className="flex flex-col justify-center items-center relative z-10 text-xs md:text-sm text-center">
-        <h2>Développez votre visibilité et attirez de nouveaux clients !</h2>
-      </div>
+
       {/* Bubble */}
       <div className="lg:w-80 lg:h-80 bg-lightgreen z-0 absolute drop-shadow-lg rounded-full animate-fade animate-duration-1000 animate-delay-[400ms] animate-ease-in"></div>
       <section className="text-center text-xs md:text-sm py-0 relative z-10">
+      <div className="flex flex-col justify-center items-center relative z-10 bg-white bg-opacity-60 rounded-lg p-5 w-80 mx-auto text-xs md:text-sm text-center">
+        <h2>Développez votre visibilité et attirez de nouveaux clients !</h2>
+
         <p className=" mb-4 md:mb-8 lg:mb-0">
           Je suis à votre écoute pour créer un site vitrine sur mesure qui{" "}
           <em>vous ressemble</em>.
         </p>
+        </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-1 xl:mx-12">
           <Cards

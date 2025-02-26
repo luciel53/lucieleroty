@@ -2,6 +2,7 @@
 
 import { useState, useEffect, useRef, useCallback } from "react";
 import Card from "./Card";
+import Image from "next/image";
 
 const cards = [
   {

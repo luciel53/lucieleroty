@@ -1,5 +1,6 @@
 "use client";
 import { useEffect, useRef } from "react";
+import Image from "next/image";
 import { gsap } from "gsap";
 
 export default function RoundedCard({ image, title }) {
@@ -37,9 +38,11 @@ export default function RoundedCard({ image, title }) {
       className="w-40 h-40 rounded-full bg-darkgreen shadow-xl flex flex-col items-center justify-center text-white text-center p-4 my-1 md:my-0 mx-3 transition-all duration-300"
     >
       {/* Image */}
-      <img
+      <Image
         src={image}
         alt={title}
+        width={150}
+        height={150}
         className="w-14 h-14 mb-2 object-contain transition-transform duration-300"
       />
 
