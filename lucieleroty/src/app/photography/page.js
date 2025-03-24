@@ -19,7 +19,7 @@ const Photography = () => {
       </div>
 
       <section className="flex flex-col items-center mb-10 text-justify animate-fade">
-        <div className=" py-2 md:py-6 mx-4 md:mx-20">
+        <div className=" p-2 md:p-4 mx-4 md:mx-10 xl:mx-40 mb-2 md:mb-3 bg-verylightgray rounded-lg">
           <div className="z-10 relative text-xs md:text-sm">
             Je vous propose des séances photos adaptées à chaque étape de la vie
             : <strong>grossesse</strong>, <strong>naissance</strong>,{" "}
@@ -231,7 +231,7 @@ const Photography = () => {
           </p>
         </div>
         <Link href="/contact">
-          <button className="relative overflow-hidden bg-darkgreen w-28 md:w-40 lg:w-40 md:h-10 p-1 lg:p-0 mb-2 mt-4 lg:mt-2 mx-10 md:mx-28 lg:mx-auto rounded-lg shadow-lg text-verylightgray text-[0.9rem] md:text-lg border-2 border-darkgreen hover:border-2 hover:border-darkgreen group">
+          <button className="relative overflow-hidden bg-darkgreen w-32 md:w-40 lg:w-40 md:h-10 p-1 lg:p-0 mb-2 mt-4 lg:mt-2 mx-auto md:mx-28 lg:mx-auto rounded-lg shadow-lg text-verylightgray text-[0.9rem] md:text-lg border-2 border-darkgreen hover:border-2 hover:border-darkgreen group">
             <span className="absolute inset-0 bg-verylightgray transition-transform transform -translate-x-full group-hover:translate-x-0 duration-300 ease-in-out"></span>
             <span className="relative text-verylightgray group-hover:text-darkgreen transition-colors duration-300 ease-in-out">
               Réservez votre séance

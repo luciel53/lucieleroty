@@ -35,7 +35,7 @@ export default function RoundedCard({ image, title }) {
   return (
     <div
       ref={cardRef}
-      className="w-40 h-40 rounded-full bg-darkgreen shadow-xl flex flex-col items-center justify-center text-white text-center p-4 my-1 md:my-0 mx-3 transition-all duration-300"
+      className="w-32 md:w-40 h-32 md:h-40 rounded-full bg-darkgreen shadow-xl flex flex-col items-center justify-center text-white text-center p-4 my-1 md:my-0 md:mx-3 transition-all duration-300"
     >
       {/* Image */}
       <Image
@@ -43,11 +43,11 @@ export default function RoundedCard({ image, title }) {
         alt={title}
         width={150}
         height={150}
-        className="w-14 h-14 mb-2 object-contain transition-transform duration-300"
+        className="w-10 md:w-14 h-10 md:h-14 mb-2 object-contain transition-transform duration-300"
       />
 
       {/* Titre toujours visible */}
-      <span className="text-sm font-semibold">{title}</span>
+      <span className="text-xs md:text-sm font-semibold">{title}</span>
 
       {/* Effet hover dynamique */}
       <style jsx>{`

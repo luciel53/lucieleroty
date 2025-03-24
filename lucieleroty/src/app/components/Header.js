@@ -121,7 +121,7 @@ const Header = () => {
                   alt="Tache"
                   width={30}
                   height={30}
-                  className="absolute z-0 top-2 -left-2 w-5 h-5"
+                  className="absolute z-0 top-0 -left-2 w-5 h-5"
                 />
               )}
             </li>

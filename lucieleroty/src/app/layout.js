@@ -1,5 +1,4 @@
 import "./globals.css";
-import Head from "next/head";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 
@@ -34,27 +33,11 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="fr" className="overflow-x-hidden">
-      <Head>
-        {/* Pre-load of the police */}
-        <link
-          rel="preload"
-          href="/fonts/SpecialElite-Regular.ttf"
-          as="font"
-          type="font/ttf"
-          crossorigin="anonymous"
-        />
-        <link
-            rel="preload"
-            href="/globals.css"
-            as="style"
-            type="text/css"
-            crossorigin="anonymous"
-          />
-      </Head>
+
       <body
-        className={` font-primer antialiased flex flex-col min-h-screen bg-wallpaper bg-cover text-base font-normal bg-no-repeat zoom-out relative`}
+        className={` font-primer antialiased flex flex-col min-h-screen w-full bg-wallpaper bg-cover text-base font-normal bg-no-repeat relative`}
       >
-        <div className="absolute inset-0 bg-white/50 z-0"></div>
+        {/* <div className="absolute inset-0 bg-white/50 z-0"></div> */}
         <Header />
 
         {children}

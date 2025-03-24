@@ -1,18 +1,49 @@
 "use client";
 
-import AOS from "aos";
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 import Image from "next/image";
 import ServiceCard from "../components/ServiceCard";
 import Link from "next/link";
+import gsap from "gsap";
+import ScrollTrigger from "gsap/ScrollTrigger";
 
-const WebsiteCreation = () => {
+const Design = () => {
+  const visitRef = useRef(null);
+  const flyersRef = useRef(null);
+  const priceRef = useRef(null);
+
   useEffect(() => {
-    AOS.init({ duration: 500, offset: 200 });
+    // Animate sections with scrollTrigger
+    const animateSections = [visitRef, flyersRef, priceRef];
+
+    animateSections.forEach((section) => {
+      if (section.current) {
+        gsap.fromTo(
+          section.current,
+          { opacity: 0, y: 200 }, // initial
+          {
+            opacity: 1,
+            y: 0,
+            duration: 1,
+            ease: "power3.out",
+            scrollTrigger: {
+              trigger: section.current,
+              start: "top 80%", // Animation starts when top of the section is at 80% of viewport
+              end: "bottom bottom", // Animation finish when bottom of section is at top of viewport
+              scrub: false,
+            },
+          }
+        );
+      }
+    });
+
+    // refresh after config
+    ScrollTrigger.refresh();
   }, []);
 
+
   return (
-    <main className="flex-grow z-10">
+    <main className="flex-grow z-10 animate-fade">
       {/* title */}
       <div className="flex flex-col z-0 font-specialelite mt-1 mb-2">
         <h1 className="mx-auto drop-shadow-left text-[0.8rem] md:text-lg">
@@ -21,13 +52,9 @@ const WebsiteCreation = () => {
       </div>
       {/* Bubble */}
       <div className="lg:w-80 lg:h-80 bg-lightgreen z-0 absolute drop-shadow-lg rounded-full animate-fade animate-duration-1000 animate-delay-[400ms] animate-ease-in"></div>
+      <section className=" mx-2 md:mx-4 lg:mx-0 mt-6 lg:mt-0 lg:mb-0 animate-fade animate-duration-1000 animate-delay-[400ms] animate-ease-in">
       <ServiceCard
-        title="Création de Designs"
-        paragraph={
-          <p>
-            <strong>Création de supports de communication tels que:</strong>
-          </p>
-        }
+        title="Création de supports de communication"
         ul={
           <ul>
             <li className="flex flex-row">
@@ -65,8 +92,9 @@ const WebsiteCreation = () => {
         img="/images/CarouselHome/design.png"
         link="/contact"
       />
+      </section>
       {/* Cartes de visites */}
-      <div
+      <section ref={visitRef}
         id="cards"
         className="flex flex-wrap scroll-mt-20 lg:flex-nowrap md:flex-col h-auto w-[90%] p-2 mt-2 md:mt-5 mx-auto md:mb-10 z-10 relative justify-center items-center opacity-90 bg-verylightgray border-2 border-lightgreen rounded-lg"
         data-aos="fade-up"
@@ -75,7 +103,7 @@ const WebsiteCreation = () => {
         <p className="pb-0 font-specialelite text-[70%] md:text-sm drop-shadow-left">
           Cartes de visite
         </p>
-        <div className="flex flex-row justify-center ">
+        <div className="flex flex-col md:flex-row  justify-center ">
           <div className="p-0.5">
             <Image
               src="/images/design/llrecto.png"
@@ -93,7 +121,7 @@ const WebsiteCreation = () => {
             />
           </div>
         </div>
-        <div className="flex flex-row justify-center ">
+        <div className="flex flex-col md:flex-row  justify-center ">
           <div className="p-0.5">
             <Image
               src="/images/design/jrrecto.png"
@@ -111,9 +139,10 @@ const WebsiteCreation = () => {
             />
           </div>
         </div>
-      </div>
+      </section>
       {/* Flyers */}
-      <div
+      <section
+        ref={flyersRef}
         id="flyers"
         className="flex flex-wrap scroll-mt-20 w-[90%] lg:flex-nowrap md:flex-col h-auto p-2 mt-2 md:mt-5 mx-auto z-10 relative justify-center items-center opacity-90 bg-verylightgray border-2 border-lightgreen rounded-lg mb-10"
         data-aos="fade-up"
@@ -132,9 +161,9 @@ const WebsiteCreation = () => {
             />
           </div>
         </div>
-      </div>
+      </section>
       {/* Price */}
-      <div className="flex flex-row justify-center items-center mx-auto mb-10 md:w-80 lg:animate-wiggle">
+      <section ref={priceRef} className="flex flex-row justify-center items-center mx-auto mb-10 md:w-80 lg:animate-wiggle">
         <Link href="/contact">
           <div className=" border-darkgreen bg-verylightgray border-4 w-32 md:w-auto h-auto rounded-lg text-center shadow-lg">
             <p className="text-darkgreen font-specialelite text-[60%] md:text-sm p-2 md:p-4">
@@ -142,9 +171,9 @@ const WebsiteCreation = () => {
             </p>
           </div>
         </Link>
-      </div>
+      </section>
     </main>
   );
 };
 
-export default WebsiteCreation;
+export default Design;

@@ -84,12 +84,6 @@ body {
   }
 }
 
-/* .zoom-out {
-  transform: scale(0.8);
-  transform-origin: top left;
-  width: 125%;
-} */
-
 .scroll-section {
   position: relative;
 }

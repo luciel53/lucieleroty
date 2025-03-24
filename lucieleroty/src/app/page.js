@@ -25,15 +25,15 @@ export default function Home() {
       if (section.current) {
         gsap.fromTo(
           section.current,
-          { opacity: 0, y: 200 }, // initial
+          { opacity: 0, y: 250 }, // initial
           {
             opacity: 2,
             y: 0,
-            duration: 1,
+            duration: 2,
             ease: "power3.out",
             scrollTrigger: {
               trigger: section.current,
-              start: "top 70%", // Animation starts when top of the section is at 80% of viewport
+              start: "top 80%", // Animation starts when top of the section is at 80% of viewport
               end: "bottom bottom", // Animation finish when bottom of section is at top of viewport
               scrub: true,
             },
@@ -84,7 +84,7 @@ export default function Home() {
   }, []);
 
   return (
-    <main className="flex-grow">
+    <main className="flex-grow animate-fade">
       {/* title */}
       <div className="flex flex-row justify-center space-x-36">
         <div className="flex flex-col z-0 font-specialelite mt-1 lg:mt-4 mb-2 lg:mb-0">
@@ -109,13 +109,13 @@ export default function Home() {
       <section
         ref={servicesRef}
         id="services"
-        className="flex flex-col scroll-section -mt-5 md:mt-0"
+        className="flex flex-col scroll-section -mt-10 md:mt-0"
       >
         <h2 className="font-specialelite text-sm text-center mb-4 z-10">
           Mes services
         </h2>
 
-        <div ref={cardsRef} className="flex flex-wrap justify-center space-x-0">
+        <div ref={cardsRef} className="flex flex-wrap justify-center space-x-2">
           <Link href="/website-creation">
             <RoundedCard
               ref={(el) => (cardsRef.current[0] = el)}
