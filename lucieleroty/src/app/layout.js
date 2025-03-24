@@ -8,10 +8,10 @@ export const metadata = {
   title:
     "EyeToPixel - Création de sites web",
   description:
-    "EyeToPixel vous propose des services de création de sites web professionnels et de photographie sur mesure. Découvrez comment nous pouvons transformer vos idées en réalité avec des solutions web et visuelles adaptées à vos besoins.",
+    "EyeToPixel vous propose des services de création de sites web professionnels et de photographie sur mesure au Mans (72). Découvrez comment nous pouvons transformer vos idées en réalité avec des solutions web et visuelles adaptées à vos besoins.",
   openGraph: {
     title: "EyeToPixel",
-    description: "Création de sites web vitrine, design et photographie",
+    description: "Création de sites web vitrine, design et photographie sue Le Mans",
     url: "https://www.eyetopixel.com",
     siteName: "EyeToPixel",
     images: [
